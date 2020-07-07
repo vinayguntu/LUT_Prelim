@@ -1,0 +1,54 @@
+{
+  "manifest": {
+    "$BASE_DIR": ".", 
+    "$COMPONENTS_DIR": "$BASE_DIR/biophys_components", 
+    "$NETWORK_DIR": "$BASE_DIR/network"
+  }, 
+  "components": {
+    "point_neuron_models_dir": "$COMPONENTS_DIR/point_neuron_templates", 
+    "biophysical_neuron_models_dir": "$COMPONENTS_DIR/biophysical_neuron_templates", 
+    "mechanisms_dir": "$COMPONENTS_DIR/mechanisms", 
+    "morphologies_dir": "$COMPONENTS_DIR/morphologies", 
+    "synaptic_models_dir": "$COMPONENTS_DIR/synaptic_models",
+    "templates_dir": "$COMPONENTS_DIR/hoc_templates"
+  }, 
+  "networks": {
+    "nodes": [
+	    {
+		    "nodes_file": "$NETWORK_DIR//LUT_nodes.h5",
+		    "node_types_file": "$NETWORK_DIR//LUT_node_types.csv"
+	    },
+	    {
+		    "nodes_file": "$NETWORK_DIR//Blad_aff_virt_nodes.h5",
+		    "node_types_file": "$NETWORK_DIR//Blad_aff_virt_node_types.csv"
+	    },
+	    {
+		    "nodes_file": "$NETWORK_DIR//EUS_aff_virt_nodes.h5",
+		    "node_types_file": "$NETWORK_DIR//EUS_aff_virt_node_types.csv"
+	    },
+	    {
+		    "nodes_file": "$NETWORK_DIR//PAG_aff_virt_nodes.h5",
+		    "node_types_file": "$NETWORK_DIR//PAG_aff_virt_node_types.csv"
+	    }
+
+    ], 
+    "edges": [
+	    {
+		    "edges_file": "$NETWORK_DIR//LUT_LUT_edges.h5",
+		    "edge_types_file": "$NETWORK_DIR//LUT_LUT_edge_types.csv"
+	    },
+	    {
+		    "edges_file": "$NETWORK_DIR//Blad_aff_virt_LUT_edges.h5",
+		    "edge_types_file": "$NETWORK_DIR//Blad_aff_virt_LUT_edge_types.csv"
+	    },
+	    {
+		    "edges_file": "$NETWORK_DIR//EUS_aff_virt_LUT_edges.h5",
+		    "edge_types_file": "$NETWORK_DIR//EUS_aff_virt_LUT_edge_types.csv"
+	    },
+	    {
+		    "edges_file": "$NETWORK_DIR//PAG_aff_virt_LUT_edges.h5",
+		    "edge_types_file": "$NETWORK_DIR//PAG_aff_virt_LUT_edge_types.csv"
+	    }
+    ]
+  }
+}
