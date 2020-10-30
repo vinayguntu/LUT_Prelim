@@ -1,0 +1,118 @@
+{
+  "target_simulator": "NEURON",
+  "run": {
+    "nsteps_block": 2000,
+    "tstop": 60500.0,
+    "dt": 0.1,
+    "dL": 9999,
+    "spike_threshold": -10.0
+  },
+  "conditions": {
+    "celsius": 34.0,
+    "v_init": -70.0
+  },
+  "inputs": {
+    "Blad_spikes": {
+      "input_type": "spikes",
+      "module": "csv",
+      "input_file": "Blad_spikes.csv",
+      "node_set": "Blad_aff_virt"
+    },
+    "EUS_spikes": {
+      "input_type": "spikes",
+      "module": "csv",
+      "input_file": "EUS_spikes.csv",
+      "node_set": "EUS_aff_virt"
+    },
+    "PAG_spikes": {
+      "input_type": "spikes",
+      "module": "csv",
+      "input_file": "PAG_spikes.csv",
+      "node_set": "PAG_aff_virt",
+      "default_population": "PAG_aff_virt"
+    }
+  },
+  "output": {
+    "spikes_file_csv": "./output/spikes.csv",
+    "spikes_file": "./output/spikes.h5",
+    "log_file": "./output/log.txt",
+    "output_dir": "./output",
+    "overwrite_output_dir": true
+  },
+  "reports": {
+    "membrane_report": {
+      "module": "membrane_report",
+      "cells": "all",
+      "variable_name": [
+        "v"
+      ],
+      "file_name": "cell_vars.h5",
+      "sections": "soma"
+    }
+  },
+  "node_sets": {
+    "inp_nodes": {
+      "model_type": "virtual"
+    },
+    "low_level_neurons": {
+      "level": "low",
+      "pop_name": "PGN"
+    },
+    "high_level_neurons": {
+      "level": "high",
+      "pop_name": "Bladaff"
+    },
+    "pag_neurons": {
+      "pop_name": "PAGaff"
+    }
+  },
+  "network": "./circuit_config.json",
+  "config_path": "/Users/latimerb/LUT_Prelim/simulation_config.json",
+  "config_dir": "/Users/latimerb/LUT_Prelim",
+  "components": {
+    "point_neuron_models_dir": "./biophys_components/point_neuron_templates",
+    "biophysical_neuron_models_dir": "./biophys_components/biophysical_neuron_templates",
+    "mechanisms_dir": "./biophys_components/mechanisms",
+    "morphologies_dir": "./biophys_components/morphologies",
+    "synaptic_models_dir": "./biophys_components/synaptic_models",
+    "templates_dir": "./biophys_components/hoc_templates"
+  },
+  "networks": {
+    "nodes": [
+      {
+        "nodes_file": "./network//LUT_nodes.h5",
+        "node_types_file": "./network//LUT_node_types.csv"
+      },
+      {
+        "nodes_file": "./network//Blad_aff_virt_nodes.h5",
+        "node_types_file": "./network//Blad_aff_virt_node_types.csv"
+      },
+      {
+        "nodes_file": "./network//EUS_aff_virt_nodes.h5",
+        "node_types_file": "./network//EUS_aff_virt_node_types.csv"
+      },
+      {
+        "nodes_file": "./network//PAG_aff_virt_nodes.h5",
+        "node_types_file": "./network//PAG_aff_virt_node_types.csv"
+      }
+    ],
+    "edges": [
+      {
+        "edges_file": "./network//LUT_LUT_edges.h5",
+        "edge_types_file": "./network//LUT_LUT_edge_types.csv"
+      },
+      {
+        "edges_file": "./network//Blad_aff_virt_LUT_edges.h5",
+        "edge_types_file": "./network//Blad_aff_virt_LUT_edge_types.csv"
+      },
+      {
+        "edges_file": "./network//EUS_aff_virt_LUT_edges.h5",
+        "edge_types_file": "./network//EUS_aff_virt_LUT_edge_types.csv"
+      },
+      {
+        "edges_file": "./network//PAG_aff_virt_LUT_edges.h5",
+        "edge_types_file": "./network//PAG_aff_virt_LUT_edge_types.csv"
+      }
+    ]
+  }
+}
