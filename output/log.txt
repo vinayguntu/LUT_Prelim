@@ -1,0 +1,132 @@
+2020-10-30 08:15:56,244 [INFO] Created log file
+2020-10-30 08:15:56,356 [INFO] Building cells.
+2020-10-30 08:15:56,475 [INFO] Building recurrent connections
+2020-10-30 08:15:59,256 [INFO] Building virtual cell stimulations for Blad_spikes
+2020-10-30 08:15:59,405 [INFO] Building virtual cell stimulations for EUS_spikes
+2020-10-30 08:15:59,547 [INFO] Building virtual cell stimulations for PAG_spikes
+2020-10-30 08:16:00,006 [INFO] Found 10 PAG neurons
+2020-10-30 08:16:00,109 [INFO] Running simulation for 60500.000 ms with the time step 0.100 ms
+2020-10-30 08:16:00,109 [INFO] Starting timestep: 0 at t_sim: 0.000 ms
+2020-10-30 08:16:00,109 [INFO] Block save every 2000 steps
+2020-10-30 08:16:03,258 [INFO]     step:2000 t_sim:200.00 ms
+2020-10-30 08:16:03,264 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:06,423 [INFO]     step:4000 t_sim:400.00 ms
+2020-10-30 08:16:06,428 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:09,600 [INFO]     step:6000 t_sim:600.00 ms
+2020-10-30 08:16:09,607 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:12,765 [INFO]     step:8000 t_sim:800.00 ms
+2020-10-30 08:16:12,772 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:15,932 [INFO]     step:10000 t_sim:1000.00 ms
+2020-10-30 08:16:15,939 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:19,121 [INFO]     step:12000 t_sim:1200.00 ms
+2020-10-30 08:16:19,127 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:22,260 [INFO]     step:14000 t_sim:1400.00 ms
+2020-10-30 08:16:22,265 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:25,397 [INFO]     step:16000 t_sim:1600.00 ms
+2020-10-30 08:16:25,404 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:28,586 [INFO]     step:18000 t_sim:1800.00 ms
+2020-10-30 08:16:28,592 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:31,826 [INFO]     step:20000 t_sim:2000.00 ms
+2020-10-30 08:16:31,833 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:35,022 [INFO]     step:22000 t_sim:2200.00 ms
+2020-10-30 08:16:35,028 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:38,279 [INFO]     step:24000 t_sim:2400.00 ms
+2020-10-30 08:16:38,286 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:41,510 [INFO]     step:26000 t_sim:2600.00 ms
+2020-10-30 08:16:41,517 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:44,783 [INFO]     step:28000 t_sim:2800.00 ms
+2020-10-30 08:16:44,789 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:48,118 [INFO]     step:30000 t_sim:3000.00 ms
+2020-10-30 08:16:48,126 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:51,500 [INFO]     step:32000 t_sim:3200.00 ms
+2020-10-30 08:16:51,506 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:54,820 [INFO]     step:34000 t_sim:3400.00 ms
+2020-10-30 08:16:54,826 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:16:58,130 [INFO]     step:36000 t_sim:3600.00 ms
+2020-10-30 08:16:58,135 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:01,446 [INFO]     step:38000 t_sim:3800.00 ms
+2020-10-30 08:17:01,452 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:04,801 [INFO]     step:40000 t_sim:4000.00 ms
+2020-10-30 08:17:04,807 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:08,106 [INFO]     step:42000 t_sim:4200.00 ms
+2020-10-30 08:17:08,112 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:11,436 [INFO]     step:44000 t_sim:4400.00 ms
+2020-10-30 08:17:11,442 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:14,773 [INFO]     step:46000 t_sim:4600.00 ms
+2020-10-30 08:17:14,779 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:18,118 [INFO]     step:48000 t_sim:4800.00 ms
+2020-10-30 08:17:18,125 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:21,462 [INFO]     step:50000 t_sim:5000.00 ms
+2020-10-30 08:17:21,468 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:24,796 [INFO]     step:52000 t_sim:5200.00 ms
+2020-10-30 08:17:24,804 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:28,114 [INFO]     step:54000 t_sim:5400.00 ms
+2020-10-30 08:17:28,119 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:31,449 [INFO]     step:56000 t_sim:5600.00 ms
+2020-10-30 08:17:31,455 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:34,804 [INFO]     step:58000 t_sim:5800.00 ms
+2020-10-30 08:17:34,811 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:38,143 [INFO]     step:60000 t_sim:6000.00 ms
+2020-10-30 08:17:38,149 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:41,445 [INFO]     step:62000 t_sim:6200.00 ms
+2020-10-30 08:17:41,452 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:44,764 [INFO]     step:64000 t_sim:6400.00 ms
+2020-10-30 08:17:44,771 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:48,099 [INFO]     step:66000 t_sim:6600.00 ms
+2020-10-30 08:17:48,105 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:51,433 [INFO]     step:68000 t_sim:6800.00 ms
+2020-10-30 08:17:51,440 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:54,782 [INFO]     step:70000 t_sim:7000.00 ms
+2020-10-30 08:17:54,788 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:17:58,114 [INFO]     step:72000 t_sim:7200.00 ms
+2020-10-30 08:17:58,122 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:01,426 [INFO]     step:74000 t_sim:7400.00 ms
+2020-10-30 08:18:01,431 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:04,763 [INFO]     step:76000 t_sim:7600.00 ms
+2020-10-30 08:18:04,770 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:08,101 [INFO]     step:78000 t_sim:7800.00 ms
+2020-10-30 08:18:08,107 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:11,466 [INFO]     step:80000 t_sim:8000.00 ms
+2020-10-30 08:18:11,472 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:14,781 [INFO]     step:82000 t_sim:8200.00 ms
+2020-10-30 08:18:14,789 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:18,115 [INFO]     step:84000 t_sim:8400.00 ms
+2020-10-30 08:18:18,120 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:21,452 [INFO]     step:86000 t_sim:8600.00 ms
+2020-10-30 08:18:21,458 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:24,804 [INFO]     step:88000 t_sim:8800.00 ms
+2020-10-30 08:18:24,809 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:28,141 [INFO]     step:90000 t_sim:9000.00 ms
+2020-10-30 08:18:28,148 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:31,480 [INFO]     step:92000 t_sim:9200.00 ms
+2020-10-30 08:18:31,487 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:34,792 [INFO]     step:94000 t_sim:9400.00 ms
+2020-10-30 08:18:34,797 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:38,147 [INFO]     step:96000 t_sim:9600.00 ms
+2020-10-30 08:18:38,153 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:41,489 [INFO]     step:98000 t_sim:9800.00 ms
+2020-10-30 08:18:41,495 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:44,817 [INFO]     step:100000 t_sim:10000.00 ms
+2020-10-30 08:18:48,174 [INFO]     step:102000 t_sim:10200.00 ms
+2020-10-30 08:18:51,527 [INFO]     step:104000 t_sim:10400.00 ms
+2020-10-30 08:18:51,534 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:54,903 [INFO]     step:106000 t_sim:10600.00 ms
+2020-10-30 08:18:54,909 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:18:58,262 [INFO]     step:108000 t_sim:10800.00 ms
+2020-10-30 08:18:58,267 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:19:01,611 [INFO]     step:110000 t_sim:11000.00 ms
+2020-10-30 08:19:01,617 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:19:04,962 [INFO]     step:112000 t_sim:11200.00 ms
+2020-10-30 08:19:04,968 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:19:08,333 [INFO]     step:114000 t_sim:11400.00 ms
+2020-10-30 08:19:08,339 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:19:11,707 [INFO]     step:116000 t_sim:11600.00 ms
+2020-10-30 08:19:11,712 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:19:15,076 [INFO]     step:118000 t_sim:11800.00 ms
+2020-10-30 08:19:15,082 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:19:18,456 [INFO]     step:120000 t_sim:12000.00 ms
+2020-10-30 08:19:18,463 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:19:21,823 [INFO]     step:122000 t_sim:12200.00 ms
+2020-10-30 08:19:21,829 [INFO]      _activate_hln: firing rate 0
+2020-10-30 08:19:25,199 [INFO]     step:124000 t_sim:12400.00 ms
+2020-10-30 08:19:25,206 [INFO]      _activate_hln: firing rate 0
