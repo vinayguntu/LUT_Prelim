@@ -40,8 +40,7 @@ begintemplate IMGP
 		
 		RaAll= 200
 		nash=10
-		insert cadyn 
-		gcabar_cadyn = 0 
+		insert cadyn gcabar_cadyn = 0 
 		eca = 120
 		insert leak el_leak= -54 glbar_leak = 6e-5 Ra=RaAll cm=1.5
 		insert hd ghdbar_hd=0

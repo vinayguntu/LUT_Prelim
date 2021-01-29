@@ -40,8 +40,7 @@ begintemplate IMG
 		
 		RaAll= 200
 		nash=10
-		insert cadyn 
-		gcabar_cadyn = 2.35e-3 
+		insert cadyn gcabar_cadyn = 2.35e-3 
 		eca = 120
 		insert leak el_leak= -84 glbar_leak = 6e-5 Ra=RaAll cm=2.0 
 		insert hd ghdbar_hd=8e-4  78.72884325

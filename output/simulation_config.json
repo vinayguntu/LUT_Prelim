@@ -67,8 +67,8 @@
     }
   },
   "network": "./circuit_config.json",
-  "config_path": "/Users/latimerb/LUT_Prelim/simulation_config.json",
-  "config_dir": "/Users/latimerb/LUT_Prelim",
+  "config_path": "/home/mjc6r9/repos/test_LUT/LUT_Prelim/jsons/simulation_config.json",
+  "config_dir": "/home/mjc6r9/repos/test_LUT/LUT_Prelim/jsons",
   "components": {
     "point_neuron_models_dir": "./biophys_components/point_neuron_templates",
     "biophysical_neuron_models_dir": "./biophys_components/biophysical_neuron_templates",

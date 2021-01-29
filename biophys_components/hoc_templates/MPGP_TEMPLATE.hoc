@@ -40,8 +40,7 @@ begintemplate MPGP
 		
 		RaAll= 200
 		nash=10
-		insert cadyn 
-		gcabar_cadyn = 0 
+		insert cadyn gcabar_cadyn = 0 
 		eca = 120
 		insert leak el_leak= -45 glbar_leak = 0.00016 Ra=RaAll cm=0.65	 
 		insert hd ghdbar_hd=0.0001

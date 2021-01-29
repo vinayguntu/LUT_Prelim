@@ -40,8 +40,7 @@ begintemplate INM
 		
 		RaAll= 200
 		nash=10
-		insert cadyn 
-		gcabar_cadyn = 0.004
+		insert cadyn gcabar_cadyn = 0.004
 		eca = 120
 		insert leak el_leak= -60 glbar_leak = 0.00012 Ra=RaAll cm=2.5
 		insert hd ghdbar_hd=0

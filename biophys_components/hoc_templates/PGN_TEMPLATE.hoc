@@ -40,8 +40,7 @@ begintemplate PGN
 		
 		RaAll= 200
 		nash=10
-		insert cadyn 
-		gcabar_cadyn = 0.005
+		insert cadyn gcabar_cadyn = 0.005
 		eca = 120
 		insert leak el_leak= -51 glbar_leak = 4.5e-5 Ra=RaAll cm=0.9
 		insert hd ghdbar_hd=0
