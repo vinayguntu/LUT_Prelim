@@ -58,7 +58,7 @@ class FeedbackLoop(SimulatorMod):
         # next block
         if firing_rate != 0.0:
             psg = PoissonSpikeGenerator()
-            psg.add(node_ids=[0], firing_rate=firing_rate, times=(next_block_tstart, next_block_tstop))
+            psg.add(node_ids=[0], firing_rate=firing_rate, times=(next_block_tstart/1000.0, next_block_tstop/1000.0))
             if psg.n_spikes() <= 0:
                 io.log_info('     _activate_hln: firing rate {} did not produce any spikes'.format(firing_rate))
             else:
