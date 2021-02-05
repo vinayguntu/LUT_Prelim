@@ -1,665 +1,621 @@
-2021-02-02 17:42:27,520 [INFO] Created log file
-2021-02-02 17:42:27,666 [INFO] Building cells.
-2021-02-02 17:42:27,856 [INFO] Building recurrent connections
-2021-02-02 17:42:29,323 [INFO] Building virtual cell stimulations for Blad_spikes
-2021-02-02 17:42:29,481 [INFO] Building virtual cell stimulations for EUS_spikes
-2021-02-02 17:42:29,652 [INFO] Building virtual cell stimulations for PAG_spikes
-2021-02-02 17:42:30,163 [INFO] Found 10 PAG neurons
-2021-02-02 17:42:30,267 [INFO] Running simulation for 60500.000 ms with the time step 0.100 ms
-2021-02-02 17:42:30,268 [INFO] Starting timestep: 0 at t_sim: 0.000 ms
-2021-02-02 17:42:30,268 [INFO] Block save every 2000 steps
-2021-02-02 17:42:33,823 [INFO]     step:2000 t_sim:200.00 ms
-2021-02-02 17:42:33,832 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:42:36,757 [INFO]     step:4000 t_sim:400.00 ms
-2021-02-02 17:42:36,765 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:42:39,667 [INFO]     step:6000 t_sim:600.00 ms
-2021-02-02 17:42:39,676 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:42:42,825 [INFO]     step:8000 t_sim:800.00 ms
-2021-02-02 17:42:42,832 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:42:46,393 [INFO]     step:10000 t_sim:1000.00 ms
-2021-02-02 17:42:46,409 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:42:49,789 [INFO]     step:12000 t_sim:1200.00 ms
-2021-02-02 17:42:49,798 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:42:52,873 [INFO]     step:14000 t_sim:1400.00 ms
-2021-02-02 17:42:52,883 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:42:56,444 [INFO]     step:16000 t_sim:1600.00 ms
-2021-02-02 17:42:56,456 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:00,148 [INFO]     step:18000 t_sim:1800.00 ms
-2021-02-02 17:43:00,160 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:03,658 [INFO]     step:20000 t_sim:2000.00 ms
-2021-02-02 17:43:03,673 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:06,793 [INFO]     step:22000 t_sim:2200.00 ms
-2021-02-02 17:43:06,803 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:09,799 [INFO]     step:24000 t_sim:2400.00 ms
-2021-02-02 17:43:09,810 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:12,955 [INFO]     step:26000 t_sim:2600.00 ms
-2021-02-02 17:43:12,965 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:16,051 [INFO]     step:28000 t_sim:2800.00 ms
-2021-02-02 17:43:16,059 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:19,157 [INFO]     step:30000 t_sim:3000.00 ms
-2021-02-02 17:43:19,170 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:22,381 [INFO]     step:32000 t_sim:3200.00 ms
-2021-02-02 17:43:22,391 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:25,523 [INFO]     step:34000 t_sim:3400.00 ms
-2021-02-02 17:43:25,533 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:28,652 [INFO]     step:36000 t_sim:3600.00 ms
-2021-02-02 17:43:28,675 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:32,375 [INFO]     step:38000 t_sim:3800.00 ms
-2021-02-02 17:43:32,387 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:36,112 [INFO]     step:40000 t_sim:4000.00 ms
-2021-02-02 17:43:36,124 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:39,672 [INFO]     step:42000 t_sim:4200.00 ms
-2021-02-02 17:43:39,682 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:43,277 [INFO]     step:44000 t_sim:4400.00 ms
-2021-02-02 17:43:43,290 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:46,475 [INFO]     step:46000 t_sim:4600.00 ms
-2021-02-02 17:43:46,484 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:49,785 [INFO]     step:48000 t_sim:4800.00 ms
-2021-02-02 17:43:49,799 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:53,201 [INFO]     step:50000 t_sim:5000.00 ms
-2021-02-02 17:43:53,211 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:43:56,797 [INFO]     step:52000 t_sim:5200.00 ms
-2021-02-02 17:43:56,811 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:00,210 [INFO]     step:54000 t_sim:5400.00 ms
-2021-02-02 17:44:00,220 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:03,635 [INFO]     step:56000 t_sim:5600.00 ms
-2021-02-02 17:44:03,644 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:07,135 [INFO]     step:58000 t_sim:5800.00 ms
-2021-02-02 17:44:07,148 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:10,501 [INFO]     step:60000 t_sim:6000.00 ms
-2021-02-02 17:44:10,510 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:13,643 [INFO]     step:62000 t_sim:6200.00 ms
-2021-02-02 17:44:13,654 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:17,568 [INFO]     step:64000 t_sim:6400.00 ms
-2021-02-02 17:44:17,580 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:21,499 [INFO]     step:66000 t_sim:6600.00 ms
-2021-02-02 17:44:21,509 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:25,396 [INFO]     step:68000 t_sim:6800.00 ms
-2021-02-02 17:44:25,411 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:29,351 [INFO]     step:70000 t_sim:7000.00 ms
-2021-02-02 17:44:29,363 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:33,148 [INFO]     step:72000 t_sim:7200.00 ms
-2021-02-02 17:44:33,162 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:36,433 [INFO]     step:74000 t_sim:7400.00 ms
-2021-02-02 17:44:36,442 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:39,936 [INFO]     step:76000 t_sim:7600.00 ms
-2021-02-02 17:44:39,958 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:43,511 [INFO]     step:78000 t_sim:7800.00 ms
-2021-02-02 17:44:43,520 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:47,071 [INFO]     step:80000 t_sim:8000.00 ms
-2021-02-02 17:44:47,085 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:50,820 [INFO]     step:82000 t_sim:8200.00 ms
-2021-02-02 17:44:50,833 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:54,552 [INFO]     step:84000 t_sim:8400.00 ms
-2021-02-02 17:44:54,561 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:44:58,277 [INFO]     step:86000 t_sim:8600.00 ms
-2021-02-02 17:44:58,289 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:02,174 [INFO]     step:88000 t_sim:8800.00 ms
-2021-02-02 17:45:02,190 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:05,710 [INFO]     step:90000 t_sim:9000.00 ms
-2021-02-02 17:45:05,724 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:08,858 [INFO]     step:92000 t_sim:9200.00 ms
-2021-02-02 17:45:08,865 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:12,174 [INFO]     step:94000 t_sim:9400.00 ms
-2021-02-02 17:45:12,182 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:15,407 [INFO]     step:96000 t_sim:9600.00 ms
-2021-02-02 17:45:15,418 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:18,654 [INFO]     step:98000 t_sim:9800.00 ms
-2021-02-02 17:45:18,662 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:21,872 [INFO]     step:100000 t_sim:10000.00 ms
-2021-02-02 17:45:21,884 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:25,123 [INFO]     step:102000 t_sim:10200.00 ms
-2021-02-02 17:45:25,132 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:28,307 [INFO]     step:104000 t_sim:10400.00 ms
-2021-02-02 17:45:28,318 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:31,569 [INFO]     step:106000 t_sim:10600.00 ms
-2021-02-02 17:45:31,579 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:35,013 [INFO]     step:108000 t_sim:10800.00 ms
-2021-02-02 17:45:35,021 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:38,347 [INFO]     step:110000 t_sim:11000.00 ms
-2021-02-02 17:45:38,357 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:41,686 [INFO]     step:112000 t_sim:11200.00 ms
-2021-02-02 17:45:41,695 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:45,074 [INFO]     step:114000 t_sim:11400.00 ms
-2021-02-02 17:45:45,086 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:48,496 [INFO]     step:116000 t_sim:11600.00 ms
-2021-02-02 17:45:48,505 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:51,893 [INFO]     step:118000 t_sim:11800.00 ms
-2021-02-02 17:45:51,900 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:55,602 [INFO]     step:120000 t_sim:12000.00 ms
-2021-02-02 17:45:55,617 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:45:59,066 [INFO]     step:122000 t_sim:12200.00 ms
-2021-02-02 17:45:59,076 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:02,432 [INFO]     step:124000 t_sim:12400.00 ms
-2021-02-02 17:46:02,449 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:06,101 [INFO]     step:126000 t_sim:12600.00 ms
-2021-02-02 17:46:06,111 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:09,547 [INFO]     step:128000 t_sim:12800.00 ms
-2021-02-02 17:46:09,561 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:12,960 [INFO]     step:130000 t_sim:13000.00 ms
-2021-02-02 17:46:12,970 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:16,337 [INFO]     step:132000 t_sim:13200.00 ms
-2021-02-02 17:46:16,346 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:19,691 [INFO]     step:134000 t_sim:13400.00 ms
-2021-02-02 17:46:19,704 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:23,033 [INFO]     step:136000 t_sim:13600.00 ms
-2021-02-02 17:46:23,043 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:26,375 [INFO]     step:138000 t_sim:13800.00 ms
-2021-02-02 17:46:26,387 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:29,756 [INFO]     step:140000 t_sim:14000.00 ms
-2021-02-02 17:46:29,773 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:33,280 [INFO]     step:142000 t_sim:14200.00 ms
-2021-02-02 17:46:33,296 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:37,088 [INFO]     step:144000 t_sim:14400.00 ms
-2021-02-02 17:46:37,099 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:40,933 [INFO]     step:146000 t_sim:14600.00 ms
-2021-02-02 17:46:40,943 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:44,540 [INFO]     step:148000 t_sim:14800.00 ms
-2021-02-02 17:46:44,554 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:48,627 [INFO]     step:150000 t_sim:15000.00 ms
-2021-02-02 17:46:48,639 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:52,037 [INFO]     step:152000 t_sim:15200.00 ms
-2021-02-02 17:46:52,051 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:55,455 [INFO]     step:154000 t_sim:15400.00 ms
-2021-02-02 17:46:55,466 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:46:58,842 [INFO]     step:156000 t_sim:15600.00 ms
-2021-02-02 17:46:58,856 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:02,282 [INFO]     step:158000 t_sim:15800.00 ms
-2021-02-02 17:47:02,298 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:06,054 [INFO]     step:160000 t_sim:16000.00 ms
-2021-02-02 17:47:06,066 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:09,359 [INFO]     step:162000 t_sim:16200.00 ms
-2021-02-02 17:47:09,380 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:12,762 [INFO]     step:164000 t_sim:16400.00 ms
-2021-02-02 17:47:12,773 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:16,230 [INFO]     step:166000 t_sim:16600.00 ms
-2021-02-02 17:47:16,245 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:20,192 [INFO]     step:168000 t_sim:16800.00 ms
-2021-02-02 17:47:20,203 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:24,148 [INFO]     step:170000 t_sim:17000.00 ms
-2021-02-02 17:47:24,159 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:27,434 [INFO]     step:172000 t_sim:17200.00 ms
-2021-02-02 17:47:27,450 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:31,419 [INFO]     step:174000 t_sim:17400.00 ms
-2021-02-02 17:47:31,432 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:35,347 [INFO]     step:176000 t_sim:17600.00 ms
-2021-02-02 17:47:35,359 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:38,877 [INFO]     step:178000 t_sim:17800.00 ms
-2021-02-02 17:47:38,887 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:42,573 [INFO]     step:180000 t_sim:18000.00 ms
-2021-02-02 17:47:42,595 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:46,283 [INFO]     step:182000 t_sim:18200.00 ms
-2021-02-02 17:47:46,295 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:50,286 [INFO]     step:184000 t_sim:18400.00 ms
-2021-02-02 17:47:50,296 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:54,257 [INFO]     step:186000 t_sim:18600.00 ms
-2021-02-02 17:47:54,273 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:47:58,157 [INFO]     step:188000 t_sim:18800.00 ms
-2021-02-02 17:47:58,167 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:48:01,610 [INFO]     step:190000 t_sim:19000.00 ms
-2021-02-02 17:48:01,628 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:48:05,797 [INFO]     step:192000 t_sim:19200.00 ms
-2021-02-02 17:48:05,809 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:48:09,768 [INFO]     step:194000 t_sim:19400.00 ms
-2021-02-02 17:48:09,780 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:48:13,724 [INFO]     step:196000 t_sim:19600.00 ms
-2021-02-02 17:48:13,732 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:48:17,723 [INFO]     step:198000 t_sim:19800.00 ms
-2021-02-02 17:48:17,732 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:48:21,640 [INFO]     step:200000 t_sim:20000.00 ms
-2021-02-02 17:48:21,654 [INFO]      _activate_hln: firing rate 2.3988092815547466 did not produce any spikes
-2021-02-02 17:48:25,522 [INFO]     step:202000 t_sim:20200.00 ms
-2021-02-02 17:48:25,531 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:48:29,391 [INFO]     step:204000 t_sim:20400.00 ms
-2021-02-02 17:48:29,405 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:48:33,243 [INFO]     step:206000 t_sim:20600.00 ms
-2021-02-02 17:48:33,253 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:48:37,226 [INFO]     step:208000 t_sim:20800.00 ms
-2021-02-02 17:48:37,239 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:48:41,072 [INFO]     step:210000 t_sim:21000.00 ms
-2021-02-02 17:48:41,082 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:48:45,013 [INFO]     step:212000 t_sim:21200.00 ms
-2021-02-02 17:48:45,022 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:48:48,966 [INFO]     step:214000 t_sim:21400.00 ms
-2021-02-02 17:48:48,978 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:48:52,902 [INFO]     step:216000 t_sim:21600.00 ms
-2021-02-02 17:48:52,912 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:48:56,809 [INFO]     step:218000 t_sim:21800.00 ms
-2021-02-02 17:48:56,821 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:00,354 [INFO]     step:220000 t_sim:22000.00 ms
-2021-02-02 17:49:00,365 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:03,826 [INFO]     step:222000 t_sim:22200.00 ms
-2021-02-02 17:49:03,834 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:07,710 [INFO]     step:224000 t_sim:22400.00 ms
-2021-02-02 17:49:07,725 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:11,138 [INFO]     step:226000 t_sim:22600.00 ms
-2021-02-02 17:49:11,148 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:15,338 [INFO]     step:228000 t_sim:22800.00 ms
-2021-02-02 17:49:15,354 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:19,399 [INFO]     step:230000 t_sim:23000.00 ms
-2021-02-02 17:49:19,410 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:23,677 [INFO]     step:232000 t_sim:23200.00 ms
-2021-02-02 17:49:23,692 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:27,502 [INFO]     step:234000 t_sim:23400.00 ms
-2021-02-02 17:49:27,512 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:31,046 [INFO]     step:236000 t_sim:23600.00 ms
-2021-02-02 17:49:31,057 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:34,813 [INFO]     step:238000 t_sim:23800.00 ms
-2021-02-02 17:49:34,826 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:38,311 [INFO]     step:240000 t_sim:24000.00 ms
-2021-02-02 17:49:38,320 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:41,614 [INFO]     step:242000 t_sim:24200.00 ms
-2021-02-02 17:49:41,625 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:44,945 [INFO]     step:244000 t_sim:24400.00 ms
-2021-02-02 17:49:44,953 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:48,292 [INFO]     step:246000 t_sim:24600.00 ms
-2021-02-02 17:49:48,303 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:51,620 [INFO]     step:248000 t_sim:24800.00 ms
-2021-02-02 17:49:51,628 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:55,043 [INFO]     step:250000 t_sim:25000.00 ms
-2021-02-02 17:49:55,051 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:49:58,397 [INFO]     step:252000 t_sim:25200.00 ms
-2021-02-02 17:49:58,409 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:01,738 [INFO]     step:254000 t_sim:25400.00 ms
-2021-02-02 17:50:01,746 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:05,143 [INFO]     step:256000 t_sim:25600.00 ms
-2021-02-02 17:50:05,155 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:08,666 [INFO]     step:258000 t_sim:25800.00 ms
-2021-02-02 17:50:08,676 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:12,041 [INFO]     step:260000 t_sim:26000.00 ms
-2021-02-02 17:50:12,052 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:15,405 [INFO]     step:262000 t_sim:26200.00 ms
-2021-02-02 17:50:15,414 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:18,730 [INFO]     step:264000 t_sim:26400.00 ms
-2021-02-02 17:50:18,738 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:22,080 [INFO]     step:266000 t_sim:26600.00 ms
-2021-02-02 17:50:22,091 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:25,446 [INFO]     step:268000 t_sim:26800.00 ms
-2021-02-02 17:50:25,455 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:28,873 [INFO]     step:270000 t_sim:27000.00 ms
-2021-02-02 17:50:28,885 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:32,220 [INFO]     step:272000 t_sim:27200.00 ms
-2021-02-02 17:50:32,229 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:35,660 [INFO]     step:274000 t_sim:27400.00 ms
-2021-02-02 17:50:35,670 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:39,300 [INFO]     step:276000 t_sim:27600.00 ms
-2021-02-02 17:50:39,313 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:42,762 [INFO]     step:278000 t_sim:27800.00 ms
-2021-02-02 17:50:42,773 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:46,216 [INFO]     step:280000 t_sim:28000.00 ms
-2021-02-02 17:50:46,230 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:49,662 [INFO]     step:282000 t_sim:28200.00 ms
-2021-02-02 17:50:49,672 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:53,133 [INFO]     step:284000 t_sim:28400.00 ms
-2021-02-02 17:50:53,146 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:50:56,604 [INFO]     step:286000 t_sim:28600.00 ms
-2021-02-02 17:50:56,614 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:00,074 [INFO]     step:288000 t_sim:28800.00 ms
-2021-02-02 17:51:00,084 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:03,467 [INFO]     step:290000 t_sim:29000.00 ms
-2021-02-02 17:51:03,481 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:07,028 [INFO]     step:292000 t_sim:29200.00 ms
-2021-02-02 17:51:07,040 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:10,549 [INFO]     step:294000 t_sim:29400.00 ms
-2021-02-02 17:51:10,563 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:14,001 [INFO]     step:296000 t_sim:29600.00 ms
-2021-02-02 17:51:14,012 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:17,332 [INFO]     step:298000 t_sim:29800.00 ms
-2021-02-02 17:51:17,345 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:20,640 [INFO]     step:300000 t_sim:30000.00 ms
-2021-02-02 17:51:20,651 [INFO]      _activate_hln: firing rate 2.7908835004335613 did not produce any spikes
-2021-02-02 17:51:23,888 [INFO]     step:302000 t_sim:30200.00 ms
-2021-02-02 17:51:23,898 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:27,331 [INFO]     step:304000 t_sim:30400.00 ms
-2021-02-02 17:51:27,345 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:30,914 [INFO]     step:306000 t_sim:30600.00 ms
-2021-02-02 17:51:30,924 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:34,158 [INFO]     step:308000 t_sim:30800.00 ms
-2021-02-02 17:51:34,171 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:37,590 [INFO]     step:310000 t_sim:31000.00 ms
-2021-02-02 17:51:37,601 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:40,981 [INFO]     step:312000 t_sim:31200.00 ms
-2021-02-02 17:51:40,996 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:44,217 [INFO]     step:314000 t_sim:31400.00 ms
-2021-02-02 17:51:44,226 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:47,488 [INFO]     step:316000 t_sim:31600.00 ms
-2021-02-02 17:51:47,496 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:50,770 [INFO]     step:318000 t_sim:31800.00 ms
-2021-02-02 17:51:50,781 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:54,110 [INFO]     step:320000 t_sim:32000.00 ms
-2021-02-02 17:51:54,120 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:51:57,388 [INFO]     step:322000 t_sim:32200.00 ms
-2021-02-02 17:51:57,405 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:00,697 [INFO]     step:324000 t_sim:32400.00 ms
-2021-02-02 17:52:00,707 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:04,204 [INFO]     step:326000 t_sim:32600.00 ms
-2021-02-02 17:52:04,213 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:07,612 [INFO]     step:328000 t_sim:32800.00 ms
-2021-02-02 17:52:07,626 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:11,396 [INFO]     step:330000 t_sim:33000.00 ms
-2021-02-02 17:52:11,407 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:15,376 [INFO]     step:332000 t_sim:33200.00 ms
-2021-02-02 17:52:15,389 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:19,078 [INFO]     step:334000 t_sim:33400.00 ms
-2021-02-02 17:52:19,088 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:22,408 [INFO]     step:336000 t_sim:33600.00 ms
-2021-02-02 17:52:22,420 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:25,729 [INFO]     step:338000 t_sim:33800.00 ms
-2021-02-02 17:52:25,738 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:29,060 [INFO]     step:340000 t_sim:34000.00 ms
-2021-02-02 17:52:29,070 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:32,456 [INFO]     step:342000 t_sim:34200.00 ms
-2021-02-02 17:52:32,469 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:35,859 [INFO]     step:344000 t_sim:34400.00 ms
-2021-02-02 17:52:35,869 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:39,693 [INFO]     step:346000 t_sim:34600.00 ms
-2021-02-02 17:52:39,707 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:43,445 [INFO]     step:348000 t_sim:34800.00 ms
-2021-02-02 17:52:43,455 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:46,905 [INFO]     step:350000 t_sim:35000.00 ms
-2021-02-02 17:52:46,917 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:50,545 [INFO]     step:352000 t_sim:35200.00 ms
-2021-02-02 17:52:50,555 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:53,957 [INFO]     step:354000 t_sim:35400.00 ms
-2021-02-02 17:52:53,967 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:52:57,355 [INFO]     step:356000 t_sim:35600.00 ms
-2021-02-02 17:52:57,369 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:00,787 [INFO]     step:358000 t_sim:35800.00 ms
-2021-02-02 17:53:00,797 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:04,173 [INFO]     step:360000 t_sim:36000.00 ms
-2021-02-02 17:53:04,187 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:07,652 [INFO]     step:362000 t_sim:36200.00 ms
-2021-02-02 17:53:07,664 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:11,298 [INFO]     step:364000 t_sim:36400.00 ms
-2021-02-02 17:53:11,310 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:14,851 [INFO]     step:366000 t_sim:36600.00 ms
-2021-02-02 17:53:14,860 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:18,710 [INFO]     step:368000 t_sim:36800.00 ms
-2021-02-02 17:53:18,718 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:22,324 [INFO]     step:370000 t_sim:37000.00 ms
-2021-02-02 17:53:22,339 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:26,273 [INFO]     step:372000 t_sim:37200.00 ms
-2021-02-02 17:53:26,283 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:29,992 [INFO]     step:374000 t_sim:37400.00 ms
-2021-02-02 17:53:30,006 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:33,731 [INFO]     step:376000 t_sim:37600.00 ms
-2021-02-02 17:53:33,740 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:37,201 [INFO]     step:378000 t_sim:37800.00 ms
-2021-02-02 17:53:37,210 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:40,864 [INFO]     step:380000 t_sim:38000.00 ms
-2021-02-02 17:53:40,876 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:44,310 [INFO]     step:382000 t_sim:38200.00 ms
-2021-02-02 17:53:44,319 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:47,790 [INFO]     step:384000 t_sim:38400.00 ms
-2021-02-02 17:53:47,801 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:51,290 [INFO]     step:386000 t_sim:38600.00 ms
-2021-02-02 17:53:51,299 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:54,801 [INFO]     step:388000 t_sim:38800.00 ms
-2021-02-02 17:53:54,813 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:53:58,306 [INFO]     step:390000 t_sim:39000.00 ms
-2021-02-02 17:53:58,315 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:01,816 [INFO]     step:392000 t_sim:39200.00 ms
-2021-02-02 17:54:01,824 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:05,292 [INFO]     step:394000 t_sim:39400.00 ms
-2021-02-02 17:54:05,303 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:08,876 [INFO]     step:396000 t_sim:39600.00 ms
-2021-02-02 17:54:08,886 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:12,393 [INFO]     step:398000 t_sim:39800.00 ms
-2021-02-02 17:54:12,405 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:15,761 [INFO]     step:400000 t_sim:40000.00 ms
-2021-02-02 17:54:15,771 [INFO]      _activate_hln: firing rate 3.1978624233256596 did not produce any spikes
-2021-02-02 17:54:19,162 [INFO]     step:402000 t_sim:40200.00 ms
-2021-02-02 17:54:19,174 [INFO]      _activate_hln: firing rate 1.0611774628262953 did not produce any spikes
-2021-02-02 17:54:22,532 [INFO]     step:404000 t_sim:40400.00 ms
-2021-02-02 17:54:22,541 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:26,221 [INFO]     step:406000 t_sim:40600.00 ms
-2021-02-02 17:54:26,229 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:29,537 [INFO]     step:408000 t_sim:40800.00 ms
-2021-02-02 17:54:29,548 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:32,813 [INFO]     step:410000 t_sim:41000.00 ms
-2021-02-02 17:54:32,821 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:36,092 [INFO]     step:412000 t_sim:41200.00 ms
-2021-02-02 17:54:36,104 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:39,501 [INFO]     step:414000 t_sim:41400.00 ms
-2021-02-02 17:54:39,510 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:42,897 [INFO]     step:416000 t_sim:41600.00 ms
-2021-02-02 17:54:42,908 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:46,176 [INFO]     step:418000 t_sim:41800.00 ms
-2021-02-02 17:54:46,184 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:49,485 [INFO]     step:420000 t_sim:42000.00 ms
-2021-02-02 17:54:49,493 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:52,802 [INFO]     step:422000 t_sim:42200.00 ms
-2021-02-02 17:54:52,813 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:56,186 [INFO]     step:424000 t_sim:42400.00 ms
-2021-02-02 17:54:56,195 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:54:59,627 [INFO]     step:426000 t_sim:42600.00 ms
-2021-02-02 17:54:59,638 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:03,056 [INFO]     step:428000 t_sim:42800.00 ms
-2021-02-02 17:55:03,064 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:06,755 [INFO]     step:430000 t_sim:43000.00 ms
-2021-02-02 17:55:06,765 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:10,478 [INFO]     step:432000 t_sim:43200.00 ms
-2021-02-02 17:55:10,494 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:13,996 [INFO]     step:434000 t_sim:43400.00 ms
-2021-02-02 17:55:14,007 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:17,485 [INFO]     step:436000 t_sim:43600.00 ms
-2021-02-02 17:55:17,500 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:20,962 [INFO]     step:438000 t_sim:43800.00 ms
-2021-02-02 17:55:20,972 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:24,603 [INFO]     step:440000 t_sim:44000.00 ms
-2021-02-02 17:55:24,617 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:28,082 [INFO]     step:442000 t_sim:44200.00 ms
-2021-02-02 17:55:28,090 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:31,712 [INFO]     step:444000 t_sim:44400.00 ms
-2021-02-02 17:55:31,731 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:35,254 [INFO]     step:446000 t_sim:44600.00 ms
-2021-02-02 17:55:35,268 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:38,708 [INFO]     step:448000 t_sim:44800.00 ms
-2021-02-02 17:55:38,718 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:42,445 [INFO]     step:450000 t_sim:45000.00 ms
-2021-02-02 17:55:42,460 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:46,142 [INFO]     step:452000 t_sim:45200.00 ms
-2021-02-02 17:55:46,153 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:49,564 [INFO]     step:454000 t_sim:45400.00 ms
-2021-02-02 17:55:49,577 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:53,008 [INFO]     step:456000 t_sim:45600.00 ms
-2021-02-02 17:55:53,017 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:56,564 [INFO]     step:458000 t_sim:45800.00 ms
-2021-02-02 17:55:56,574 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:55:59,881 [INFO]     step:460000 t_sim:46000.00 ms
-2021-02-02 17:55:59,894 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:03,442 [INFO]     step:462000 t_sim:46200.00 ms
-2021-02-02 17:56:03,452 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:06,855 [INFO]     step:464000 t_sim:46400.00 ms
-2021-02-02 17:56:06,865 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:10,465 [INFO]     step:466000 t_sim:46600.00 ms
-2021-02-02 17:56:10,476 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:14,514 [INFO]     step:468000 t_sim:46800.00 ms
-2021-02-02 17:56:14,528 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:18,367 [INFO]     step:470000 t_sim:47000.00 ms
-2021-02-02 17:56:18,379 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:21,985 [INFO]     step:472000 t_sim:47200.00 ms
-2021-02-02 17:56:21,995 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:25,358 [INFO]     step:474000 t_sim:47400.00 ms
-2021-02-02 17:56:25,371 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:28,925 [INFO]     step:476000 t_sim:47600.00 ms
-2021-02-02 17:56:28,934 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:32,323 [INFO]     step:478000 t_sim:47800.00 ms
-2021-02-02 17:56:32,338 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:35,879 [INFO]     step:480000 t_sim:48000.00 ms
-2021-02-02 17:56:35,890 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:39,159 [INFO]     step:482000 t_sim:48200.00 ms
-2021-02-02 17:56:39,167 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:42,903 [INFO]     step:484000 t_sim:48400.00 ms
-2021-02-02 17:56:42,918 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:46,550 [INFO]     step:486000 t_sim:48600.00 ms
-2021-02-02 17:56:46,559 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:50,469 [INFO]     step:488000 t_sim:48800.00 ms
-2021-02-02 17:56:50,486 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:53,797 [INFO]     step:490000 t_sim:49000.00 ms
-2021-02-02 17:56:53,805 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:56:57,382 [INFO]     step:492000 t_sim:49200.00 ms
-2021-02-02 17:56:57,398 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:57:01,160 [INFO]     step:494000 t_sim:49400.00 ms
-2021-02-02 17:57:01,169 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:57:04,872 [INFO]     step:496000 t_sim:49600.00 ms
-2021-02-02 17:57:04,885 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:57:08,402 [INFO]     step:498000 t_sim:49800.00 ms
-2021-02-02 17:57:08,418 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:57:12,030 [INFO]     step:500000 t_sim:50000.00 ms
-2021-02-02 17:57:12,042 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:57:15,366 [INFO]     step:502000 t_sim:50200.00 ms
-2021-02-02 17:57:15,380 [INFO]      _activate_hln: firing rate 1.3912943727298455 did not produce any spikes
-2021-02-02 17:57:18,966 [INFO]     step:504000 t_sim:50400.00 ms
-2021-02-02 17:57:18,979 [INFO]      _activate_hln: firing rate 9.23172940736618 did not produce any spikes
-2021-02-02 17:57:18,979 [INFO]       updating pag input
-2021-02-02 17:57:18,979 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:57:22,893 [INFO]     step:506000 t_sim:50600.00 ms
-2021-02-02 17:57:22,910 [INFO]      _activate_hln: firing rate 18.575254272930426 did not produce any spikes
-2021-02-02 17:57:22,910 [INFO]       updating pag input
-2021-02-02 17:57:22,910 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:57:26,921 [INFO]     step:508000 t_sim:50800.00 ms
-2021-02-02 17:57:26,932 [INFO]      _activate_hln: firing rate 9.253152879499474 did not produce any spikes
-2021-02-02 17:57:26,932 [INFO]       updating pag input
-2021-02-02 17:57:26,933 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:57:30,177 [INFO]     step:510000 t_sim:51000.00 ms
-2021-02-02 17:57:30,184 [INFO]      _activate_hln: firing rate 6.31993774497332 did not produce any spikes
-2021-02-02 17:57:30,184 [INFO]       updating pag input
-2021-02-02 17:57:30,185 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:57:33,669 [INFO]     step:512000 t_sim:51200.00 ms
-2021-02-02 17:57:33,684 [INFO]      _activate_hln: firing rate 12.373386876669061 did not produce any spikes
-2021-02-02 17:57:33,685 [INFO]       updating pag input
-2021-02-02 17:57:33,685 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:57:37,101 [INFO]     step:514000 t_sim:51400.00 ms
-2021-02-02 17:57:37,112 [INFO]      _activate_hln: firing rate 9.285889230239574 did not produce any spikes
-2021-02-02 17:57:37,112 [INFO]       updating pag input
-2021-02-02 17:57:37,112 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:57:40,593 [INFO]     step:516000 t_sim:51600.00 ms
-2021-02-02 17:57:40,609 [INFO]      _activate_hln: firing rate 9.295526885840278 did not produce any spikes
-2021-02-02 17:57:40,609 [INFO]       updating pag input
-2021-02-02 17:57:40,609 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:57:44,337 [INFO]     step:518000 t_sim:51800.00 ms
-2021-02-02 17:57:44,349 [INFO]      _activate_hln: firing rate 12.406561236321972 did not produce any spikes
-2021-02-02 17:57:44,349 [INFO]       updating pag input
-2021-02-02 17:57:44,349 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:57:47,601 [INFO]     step:520000 t_sim:52000.00 ms
-2021-02-02 17:57:47,611 [INFO]      _activate_hln: firing rate 9.316736697412786 did not produce any spikes
-2021-02-02 17:57:47,611 [INFO]       updating pag input
-2021-02-02 17:57:47,611 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:57:51,196 [INFO]     step:522000 t_sim:52200.00 ms
-2021-02-02 17:57:51,208 [INFO]      _activate_hln: firing rate 12.428534499820923 did not produce any spikes
-2021-02-02 17:57:51,208 [INFO]       updating pag input
-2021-02-02 17:57:51,208 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:57:54,553 [INFO]     step:524000 t_sim:52400.00 ms
-2021-02-02 17:57:54,564 [INFO]      _activate_hln: firing rate 12.439296906862598 did not produce any spikes
-2021-02-02 17:57:54,564 [INFO]       updating pag input
-2021-02-02 17:57:54,564 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:57:58,367 [INFO]     step:526000 t_sim:52600.00 ms
-2021-02-02 17:57:58,383 [INFO]      _activate_hln: firing rate 12.450301717127905 did not produce any spikes
-2021-02-02 17:57:58,383 [INFO]       updating pag input
-2021-02-02 17:57:58,383 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:58:02,295 [INFO]     step:528000 t_sim:52800.00 ms
-2021-02-02 17:58:02,307 [INFO]      _activate_hln: firing rate 9.35901080806741 did not produce any spikes
-2021-02-02 17:58:02,308 [INFO]       updating pag input
-2021-02-02 17:58:02,308 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:58:06,152 [INFO]     step:530000 t_sim:53000.00 ms
-2021-02-02 17:58:06,167 [INFO]      _activate_hln: firing rate 12.473549747561473 did not produce any spikes
-2021-02-02 17:58:06,167 [INFO]       updating pag input
-2021-02-02 17:58:06,167 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:58:09,837 [INFO]     step:532000 t_sim:53200.00 ms
-2021-02-02 17:58:09,851 [INFO]      _activate_hln: firing rate 15.627181494832524 did not produce any spikes
-2021-02-02 17:58:09,851 [INFO]       updating pag input
-2021-02-02 17:58:09,851 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:58:13,948 [INFO]     step:534000 t_sim:53400.00 ms
-2021-02-02 17:58:13,960 [INFO]      _activate_hln: firing rate 9.391076982273749 did not produce any spikes
-2021-02-02 17:58:13,960 [INFO]       updating pag input
-2021-02-02 17:58:13,960 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:58:17,325 [INFO]     step:536000 t_sim:53600.00 ms
-2021-02-02 17:58:17,339 [INFO]      _activate_hln: firing rate 15.649159834508332 did not produce any spikes
-2021-02-02 17:58:17,339 [INFO]       updating pag input
-2021-02-02 17:58:17,339 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:58:20,976 [INFO]     step:538000 t_sim:53800.00 ms
-2021-02-02 17:58:20,987 [INFO]      _activate_hln: firing rate 12.516366645240776 did not produce any spikes
-2021-02-02 17:58:20,987 [INFO]       updating pag input
-2021-02-02 17:58:20,987 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:58:24,707 [INFO]     step:540000 t_sim:54000.00 ms
-2021-02-02 17:58:24,722 [INFO]      _activate_hln: firing rate 6.468552139678957 did not produce any spikes
-2021-02-02 17:58:24,722 [INFO]       updating pag input
-2021-02-02 17:58:24,722 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:58:28,111 [INFO]     step:542000 t_sim:54200.00 ms
-2021-02-02 17:58:28,123 [INFO]      _activate_hln: firing rate 9.433513041316875 did not produce any spikes
-2021-02-02 17:58:28,123 [INFO]       updating pag input
-2021-02-02 17:58:28,123 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:58:31,562 [INFO]     step:544000 t_sim:54400.00 ms
-2021-02-02 17:58:31,576 [INFO]      _activate_hln: firing rate 12.549391476009609 did not produce any spikes
-2021-02-02 17:58:31,576 [INFO]       updating pag input
-2021-02-02 17:58:31,577 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:58:35,402 [INFO]     step:546000 t_sim:54600.00 ms
-2021-02-02 17:58:35,414 [INFO]      _activate_hln: firing rate 9.454710990693764 did not produce any spikes
-2021-02-02 17:58:35,414 [INFO]       updating pag input
-2021-02-02 17:58:35,414 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:58:39,386 [INFO]     step:548000 t_sim:54800.00 ms
-2021-02-02 17:58:39,397 [INFO]      _activate_hln: firing rate 12.57120047280772 did not produce any spikes
-2021-02-02 17:58:39,397 [INFO]       updating pag input
-2021-02-02 17:58:39,397 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:58:43,513 [INFO]     step:550000 t_sim:55000.00 ms
-2021-02-02 17:58:43,529 [INFO]      _activate_hln: firing rate 6.516616110949354 did not produce any spikes
-2021-02-02 17:58:43,529 [INFO]       updating pag input
-2021-02-02 17:58:43,529 [INFO]      no psg spikes generated by Poisson distritubtion
-2021-02-02 17:58:47,444 [INFO]     step:552000 t_sim:55200.00 ms
-2021-02-02 17:58:47,455 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:58:50,889 [INFO]     step:554000 t_sim:55400.00 ms
-2021-02-02 17:58:50,902 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:58:54,366 [INFO]     step:556000 t_sim:55600.00 ms
-2021-02-02 17:58:54,375 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:58:58,447 [INFO]     step:558000 t_sim:55800.00 ms
-2021-02-02 17:58:58,461 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:59:02,535 [INFO]     step:560000 t_sim:56000.00 ms
-2021-02-02 17:59:02,546 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:59:06,209 [INFO]     step:562000 t_sim:56200.00 ms
-2021-02-02 17:59:06,218 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:59:09,979 [INFO]     step:564000 t_sim:56400.00 ms
-2021-02-02 17:59:09,994 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:59:14,112 [INFO]     step:566000 t_sim:56600.00 ms
-2021-02-02 17:59:14,123 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:59:17,677 [INFO]     step:568000 t_sim:56800.00 ms
-2021-02-02 17:59:17,690 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:59:21,500 [INFO]     step:570000 t_sim:57000.00 ms
-2021-02-02 17:59:21,510 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:59:25,465 [INFO]     step:572000 t_sim:57200.00 ms
-2021-02-02 17:59:25,480 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:59:29,518 [INFO]     step:574000 t_sim:57400.00 ms
-2021-02-02 17:59:29,526 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:59:33,256 [INFO]     step:576000 t_sim:57600.00 ms
-2021-02-02 17:59:33,270 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:59:37,864 [INFO]     step:578000 t_sim:57800.00 ms
-2021-02-02 17:59:37,878 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:59:42,364 [INFO]     step:580000 t_sim:58000.00 ms
-2021-02-02 17:59:42,373 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:59:46,409 [INFO]     step:582000 t_sim:58200.00 ms
-2021-02-02 17:59:46,424 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:59:50,435 [INFO]     step:584000 t_sim:58400.00 ms
-2021-02-02 17:59:50,445 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:59:54,404 [INFO]     step:586000 t_sim:58600.00 ms
-2021-02-02 17:59:54,414 [INFO]      _activate_hln: firing rate 0
-2021-02-02 17:59:58,311 [INFO]     step:588000 t_sim:58800.00 ms
-2021-02-02 17:59:58,323 [INFO]      _activate_hln: firing rate 0
-2021-02-02 18:00:01,899 [INFO]     step:590000 t_sim:59000.00 ms
-2021-02-02 18:00:01,908 [INFO]      _activate_hln: firing rate 0
-2021-02-02 18:00:05,553 [INFO]     step:592000 t_sim:59200.00 ms
-2021-02-02 18:00:05,565 [INFO]      _activate_hln: firing rate 0
-2021-02-02 18:00:09,091 [INFO]     step:594000 t_sim:59400.00 ms
-2021-02-02 18:00:09,098 [INFO]      _activate_hln: firing rate 0
-2021-02-02 18:00:13,052 [INFO]     step:596000 t_sim:59600.00 ms
-2021-02-02 18:00:13,065 [INFO]      _activate_hln: firing rate 0
-2021-02-02 18:00:17,009 [INFO]     step:598000 t_sim:59800.00 ms
-2021-02-02 18:00:17,018 [INFO]      _activate_hln: firing rate 0
-2021-02-02 18:00:20,499 [INFO]     step:600000 t_sim:60000.00 ms
-2021-02-02 18:00:20,506 [INFO]      _activate_hln: firing rate 0
-2021-02-02 18:00:23,941 [INFO]     step:602000 t_sim:60200.00 ms
-2021-02-02 18:00:23,952 [INFO]      _activate_hln: firing rate 0
-2021-02-02 18:00:27,389 [INFO]     step:604000 t_sim:60400.00 ms
-2021-02-02 18:00:27,397 [INFO]      _activate_hln: firing rate 0
-2021-02-02 18:00:29,112 [INFO]     step:605000 t_sim:60500.00 ms
-2021-02-02 18:00:29,118 [INFO]      _activate_hln: firing rate 0
-2021-02-02 18:00:33,839 [INFO] Simulation completed in 18.0 minutes, 3.571 seconds 
+2021-02-05 21:48:41,234 [INFO] Created log file
+2021-02-05 21:48:41,377 [INFO] Building cells.
+2021-02-05 21:48:41,562 [INFO] Building recurrent connections
+2021-02-05 21:48:42,495 [INFO] Building virtual cell stimulations for Blad_spikes
+2021-02-05 21:48:42,627 [INFO] Building virtual cell stimulations for EUS_spikes
+2021-02-05 21:48:42,738 [INFO] Building virtual cell stimulations for PAG_spikes
+2021-02-05 21:48:43,042 [INFO] Found 10 PAG neurons
+2021-02-05 21:48:43,107 [INFO] Running simulation for 60500.000 ms with the time step 0.100 ms
+2021-02-05 21:48:43,107 [INFO] Starting timestep: 0 at t_sim: 0.000 ms
+2021-02-05 21:48:43,107 [INFO] Block save every 2000 steps
+2021-02-05 21:48:46,086 [INFO]     step:2000 t_sim:200.00 ms
+2021-02-05 21:48:46,095 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:48:49,009 [INFO]     step:4000 t_sim:400.00 ms
+2021-02-05 21:48:49,019 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:48:51,927 [INFO]     step:6000 t_sim:600.00 ms
+2021-02-05 21:48:51,941 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:48:55,221 [INFO]     step:8000 t_sim:800.00 ms
+2021-02-05 21:48:55,231 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:48:58,504 [INFO]     step:10000 t_sim:1000.00 ms
+2021-02-05 21:48:58,519 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:01,541 [INFO]     step:12000 t_sim:1200.00 ms
+2021-02-05 21:49:01,552 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:04,352 [INFO]     step:14000 t_sim:1400.00 ms
+2021-02-05 21:49:04,361 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:07,444 [INFO]     step:16000 t_sim:1600.00 ms
+2021-02-05 21:49:07,456 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:10,322 [INFO]     step:18000 t_sim:1800.00 ms
+2021-02-05 21:49:10,332 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:13,237 [INFO]     step:20000 t_sim:2000.00 ms
+2021-02-05 21:49:13,247 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:16,095 [INFO]     step:22000 t_sim:2200.00 ms
+2021-02-05 21:49:16,103 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:19,118 [INFO]     step:24000 t_sim:2400.00 ms
+2021-02-05 21:49:19,131 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:22,572 [INFO]     step:26000 t_sim:2600.00 ms
+2021-02-05 21:49:22,581 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:26,045 [INFO]     step:28000 t_sim:2800.00 ms
+2021-02-05 21:49:26,053 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:29,508 [INFO]     step:30000 t_sim:3000.00 ms
+2021-02-05 21:49:29,522 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:32,739 [INFO]     step:32000 t_sim:3200.00 ms
+2021-02-05 21:49:32,750 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:36,168 [INFO]     step:34000 t_sim:3400.00 ms
+2021-02-05 21:49:36,184 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:39,280 [INFO]     step:36000 t_sim:3600.00 ms
+2021-02-05 21:49:39,288 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:42,562 [INFO]     step:38000 t_sim:3800.00 ms
+2021-02-05 21:49:42,586 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:45,857 [INFO]     step:40000 t_sim:4000.00 ms
+2021-02-05 21:49:45,866 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:49,006 [INFO]     step:42000 t_sim:4200.00 ms
+2021-02-05 21:49:49,017 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:52,164 [INFO]     step:44000 t_sim:4400.00 ms
+2021-02-05 21:49:52,178 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:55,468 [INFO]     step:46000 t_sim:4600.00 ms
+2021-02-05 21:49:55,479 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:49:59,245 [INFO]     step:48000 t_sim:4800.00 ms
+2021-02-05 21:49:59,257 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:03,006 [INFO]     step:50000 t_sim:5000.00 ms
+2021-02-05 21:50:03,017 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:06,778 [INFO]     step:52000 t_sim:5200.00 ms
+2021-02-05 21:50:06,791 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:10,481 [INFO]     step:54000 t_sim:5400.00 ms
+2021-02-05 21:50:10,490 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:14,136 [INFO]     step:56000 t_sim:5600.00 ms
+2021-02-05 21:50:14,145 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:17,796 [INFO]     step:58000 t_sim:5800.00 ms
+2021-02-05 21:50:17,808 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:21,507 [INFO]     step:60000 t_sim:6000.00 ms
+2021-02-05 21:50:21,517 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:25,259 [INFO]     step:62000 t_sim:6200.00 ms
+2021-02-05 21:50:25,274 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:29,155 [INFO]     step:64000 t_sim:6400.00 ms
+2021-02-05 21:50:29,165 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:32,327 [INFO]     step:66000 t_sim:6600.00 ms
+2021-02-05 21:50:32,336 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:35,518 [INFO]     step:68000 t_sim:6800.00 ms
+2021-02-05 21:50:35,532 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:38,676 [INFO]     step:70000 t_sim:7000.00 ms
+2021-02-05 21:50:38,684 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:42,077 [INFO]     step:72000 t_sim:7200.00 ms
+2021-02-05 21:50:42,091 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:45,257 [INFO]     step:74000 t_sim:7400.00 ms
+2021-02-05 21:50:45,265 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:48,298 [INFO]     step:76000 t_sim:7600.00 ms
+2021-02-05 21:50:48,309 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:51,581 [INFO]     step:78000 t_sim:7800.00 ms
+2021-02-05 21:50:51,590 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:55,430 [INFO]     step:80000 t_sim:8000.00 ms
+2021-02-05 21:50:55,440 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:50:58,797 [INFO]     step:82000 t_sim:8200.00 ms
+2021-02-05 21:50:58,811 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:01,899 [INFO]     step:84000 t_sim:8400.00 ms
+2021-02-05 21:51:01,907 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:04,937 [INFO]     step:86000 t_sim:8600.00 ms
+2021-02-05 21:51:04,947 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:07,983 [INFO]     step:88000 t_sim:8800.00 ms
+2021-02-05 21:51:07,991 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:11,638 [INFO]     step:90000 t_sim:9000.00 ms
+2021-02-05 21:51:11,651 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:15,246 [INFO]     step:92000 t_sim:9200.00 ms
+2021-02-05 21:51:15,255 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:18,871 [INFO]     step:94000 t_sim:9400.00 ms
+2021-02-05 21:51:18,879 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:22,472 [INFO]     step:96000 t_sim:9600.00 ms
+2021-02-05 21:51:22,483 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:25,929 [INFO]     step:98000 t_sim:9800.00 ms
+2021-02-05 21:51:25,941 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:29,546 [INFO]     step:100000 t_sim:10000.00 ms
+2021-02-05 21:51:29,561 [INFO]      _activate_hln: firing rate 0.18376836886680437 did not produce any spikes
+2021-02-05 21:51:32,769 [INFO]     step:102000 t_sim:10200.00 ms
+2021-02-05 21:51:32,779 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:35,955 [INFO]     step:104000 t_sim:10400.00 ms
+2021-02-05 21:51:35,969 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:39,243 [INFO]     step:106000 t_sim:10600.00 ms
+2021-02-05 21:51:39,254 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:42,542 [INFO]     step:108000 t_sim:10800.00 ms
+2021-02-05 21:51:42,551 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:45,758 [INFO]     step:110000 t_sim:11000.00 ms
+2021-02-05 21:51:45,771 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:48,938 [INFO]     step:112000 t_sim:11200.00 ms
+2021-02-05 21:51:48,947 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:52,278 [INFO]     step:114000 t_sim:11400.00 ms
+2021-02-05 21:51:52,290 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:55,634 [INFO]     step:116000 t_sim:11600.00 ms
+2021-02-05 21:51:55,644 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:51:59,449 [INFO]     step:118000 t_sim:11800.00 ms
+2021-02-05 21:51:59,459 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:03,090 [INFO]     step:120000 t_sim:12000.00 ms
+2021-02-05 21:52:03,103 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:06,636 [INFO]     step:122000 t_sim:12200.00 ms
+2021-02-05 21:52:06,647 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:10,132 [INFO]     step:124000 t_sim:12400.00 ms
+2021-02-05 21:52:10,143 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:13,473 [INFO]     step:126000 t_sim:12600.00 ms
+2021-02-05 21:52:13,482 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:16,880 [INFO]     step:128000 t_sim:12800.00 ms
+2021-02-05 21:52:16,893 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:20,432 [INFO]     step:130000 t_sim:13000.00 ms
+2021-02-05 21:52:20,440 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:23,822 [INFO]     step:132000 t_sim:13200.00 ms
+2021-02-05 21:52:23,829 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:27,267 [INFO]     step:134000 t_sim:13400.00 ms
+2021-02-05 21:52:27,283 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:31,147 [INFO]     step:136000 t_sim:13600.00 ms
+2021-02-05 21:52:31,157 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:34,689 [INFO]     step:138000 t_sim:13800.00 ms
+2021-02-05 21:52:34,702 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:37,861 [INFO]     step:140000 t_sim:14000.00 ms
+2021-02-05 21:52:37,870 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:41,470 [INFO]     step:142000 t_sim:14200.00 ms
+2021-02-05 21:52:41,482 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:45,185 [INFO]     step:144000 t_sim:14400.00 ms
+2021-02-05 21:52:45,192 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:48,927 [INFO]     step:146000 t_sim:14600.00 ms
+2021-02-05 21:52:48,933 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:52,658 [INFO]     step:148000 t_sim:14800.00 ms
+2021-02-05 21:52:52,667 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:52:56,383 [INFO]     step:150000 t_sim:15000.00 ms
+2021-02-05 21:52:56,393 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:00,322 [INFO]     step:152000 t_sim:15200.00 ms
+2021-02-05 21:53:00,336 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:04,105 [INFO]     step:154000 t_sim:15400.00 ms
+2021-02-05 21:53:04,114 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:07,854 [INFO]     step:156000 t_sim:15600.00 ms
+2021-02-05 21:53:07,866 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:11,699 [INFO]     step:158000 t_sim:15800.00 ms
+2021-02-05 21:53:11,710 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:15,483 [INFO]     step:160000 t_sim:16000.00 ms
+2021-02-05 21:53:15,493 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:19,285 [INFO]     step:162000 t_sim:16200.00 ms
+2021-02-05 21:53:19,300 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:23,217 [INFO]     step:164000 t_sim:16400.00 ms
+2021-02-05 21:53:23,227 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:27,150 [INFO]     step:166000 t_sim:16600.00 ms
+2021-02-05 21:53:27,164 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:31,009 [INFO]     step:168000 t_sim:16800.00 ms
+2021-02-05 21:53:31,023 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:34,926 [INFO]     step:170000 t_sim:17000.00 ms
+2021-02-05 21:53:34,937 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:38,904 [INFO]     step:172000 t_sim:17200.00 ms
+2021-02-05 21:53:38,916 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:42,213 [INFO]     step:174000 t_sim:17400.00 ms
+2021-02-05 21:53:42,222 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:45,934 [INFO]     step:176000 t_sim:17600.00 ms
+2021-02-05 21:53:45,947 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:49,354 [INFO]     step:178000 t_sim:17800.00 ms
+2021-02-05 21:53:49,364 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:52,603 [INFO]     step:180000 t_sim:18000.00 ms
+2021-02-05 21:53:52,616 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:55,847 [INFO]     step:182000 t_sim:18200.00 ms
+2021-02-05 21:53:55,856 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:53:59,514 [INFO]     step:184000 t_sim:18400.00 ms
+2021-02-05 21:53:59,524 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:02,774 [INFO]     step:186000 t_sim:18600.00 ms
+2021-02-05 21:54:02,786 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:05,978 [INFO]     step:188000 t_sim:18800.00 ms
+2021-02-05 21:54:05,988 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:09,242 [INFO]     step:190000 t_sim:19000.00 ms
+2021-02-05 21:54:09,255 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:12,474 [INFO]     step:192000 t_sim:19200.00 ms
+2021-02-05 21:54:12,485 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:15,727 [INFO]     step:194000 t_sim:19400.00 ms
+2021-02-05 21:54:15,740 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:18,993 [INFO]     step:196000 t_sim:19600.00 ms
+2021-02-05 21:54:19,003 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:22,256 [INFO]     step:198000 t_sim:19800.00 ms
+2021-02-05 21:54:22,265 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:25,418 [INFO]     step:200000 t_sim:20000.00 ms
+2021-02-05 21:54:25,432 [INFO]      _activate_hln: firing rate 0.4537214482649077 did not produce any spikes
+2021-02-05 21:54:28,580 [INFO]     step:202000 t_sim:20200.00 ms
+2021-02-05 21:54:28,592 [INFO]      _activate_hln: firing rate 4.857093867034461 did not produce any spikes
+2021-02-05 21:54:31,907 [INFO]     step:204000 t_sim:20400.00 ms
+2021-02-05 21:54:31,921 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:35,224 [INFO]     step:206000 t_sim:20600.00 ms
+2021-02-05 21:54:35,234 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:38,530 [INFO]     step:208000 t_sim:20800.00 ms
+2021-02-05 21:54:38,543 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:41,617 [INFO]     step:210000 t_sim:21000.00 ms
+2021-02-05 21:54:41,627 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:45,194 [INFO]     step:212000 t_sim:21200.00 ms
+2021-02-05 21:54:45,205 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:48,724 [INFO]     step:214000 t_sim:21400.00 ms
+2021-02-05 21:54:48,737 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:52,218 [INFO]     step:216000 t_sim:21600.00 ms
+2021-02-05 21:54:52,228 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:55,523 [INFO]     step:218000 t_sim:21800.00 ms
+2021-02-05 21:54:55,537 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:54:58,942 [INFO]     step:220000 t_sim:22000.00 ms
+2021-02-05 21:54:58,951 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:02,752 [INFO]     step:222000 t_sim:22200.00 ms
+2021-02-05 21:55:02,763 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:06,159 [INFO]     step:224000 t_sim:22400.00 ms
+2021-02-05 21:55:06,172 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:09,397 [INFO]     step:226000 t_sim:22600.00 ms
+2021-02-05 21:55:09,406 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:12,635 [INFO]     step:228000 t_sim:22800.00 ms
+2021-02-05 21:55:12,648 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:15,852 [INFO]     step:230000 t_sim:23000.00 ms
+2021-02-05 21:55:15,861 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:19,060 [INFO]     step:232000 t_sim:23200.00 ms
+2021-02-05 21:55:19,073 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:22,298 [INFO]     step:234000 t_sim:23400.00 ms
+2021-02-05 21:55:22,307 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:25,554 [INFO]     step:236000 t_sim:23600.00 ms
+2021-02-05 21:55:25,563 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:28,804 [INFO]     step:238000 t_sim:23800.00 ms
+2021-02-05 21:55:28,817 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:32,391 [INFO]     step:240000 t_sim:24000.00 ms
+2021-02-05 21:55:32,401 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:35,626 [INFO]     step:242000 t_sim:24200.00 ms
+2021-02-05 21:55:35,637 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:38,842 [INFO]     step:244000 t_sim:24400.00 ms
+2021-02-05 21:55:38,850 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:42,078 [INFO]     step:246000 t_sim:24600.00 ms
+2021-02-05 21:55:42,090 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:45,350 [INFO]     step:248000 t_sim:24800.00 ms
+2021-02-05 21:55:45,359 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:48,605 [INFO]     step:250000 t_sim:25000.00 ms
+2021-02-05 21:55:48,613 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:51,808 [INFO]     step:252000 t_sim:25200.00 ms
+2021-02-05 21:55:51,819 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:55,000 [INFO]     step:254000 t_sim:25400.00 ms
+2021-02-05 21:55:55,009 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:55:58,218 [INFO]     step:256000 t_sim:25600.00 ms
+2021-02-05 21:55:58,229 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:01,789 [INFO]     step:258000 t_sim:25800.00 ms
+2021-02-05 21:56:01,799 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:05,656 [INFO]     step:260000 t_sim:26000.00 ms
+2021-02-05 21:56:05,670 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:09,211 [INFO]     step:262000 t_sim:26200.00 ms
+2021-02-05 21:56:09,223 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:13,028 [INFO]     step:264000 t_sim:26400.00 ms
+2021-02-05 21:56:13,038 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:16,845 [INFO]     step:266000 t_sim:26600.00 ms
+2021-02-05 21:56:16,857 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:20,662 [INFO]     step:268000 t_sim:26800.00 ms
+2021-02-05 21:56:20,671 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:24,485 [INFO]     step:270000 t_sim:27000.00 ms
+2021-02-05 21:56:24,498 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:28,304 [INFO]     step:272000 t_sim:27200.00 ms
+2021-02-05 21:56:28,314 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:32,311 [INFO]     step:274000 t_sim:27400.00 ms
+2021-02-05 21:56:32,322 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:36,017 [INFO]     step:276000 t_sim:27600.00 ms
+2021-02-05 21:56:36,030 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:39,861 [INFO]     step:278000 t_sim:27800.00 ms
+2021-02-05 21:56:39,871 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:43,633 [INFO]     step:280000 t_sim:28000.00 ms
+2021-02-05 21:56:43,644 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:47,410 [INFO]     step:282000 t_sim:28200.00 ms
+2021-02-05 21:56:47,420 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:51,237 [INFO]     step:284000 t_sim:28400.00 ms
+2021-02-05 21:56:51,249 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:55,122 [INFO]     step:286000 t_sim:28600.00 ms
+2021-02-05 21:56:55,132 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:56:58,875 [INFO]     step:288000 t_sim:28800.00 ms
+2021-02-05 21:56:58,884 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:02,871 [INFO]     step:290000 t_sim:29000.00 ms
+2021-02-05 21:57:02,884 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:06,496 [INFO]     step:292000 t_sim:29200.00 ms
+2021-02-05 21:57:06,505 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:09,852 [INFO]     step:294000 t_sim:29400.00 ms
+2021-02-05 21:57:09,865 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:13,065 [INFO]     step:296000 t_sim:29600.00 ms
+2021-02-05 21:57:13,074 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:16,391 [INFO]     step:298000 t_sim:29800.00 ms
+2021-02-05 21:57:16,404 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:19,562 [INFO]     step:300000 t_sim:30000.00 ms
+2021-02-05 21:57:19,574 [INFO]      _activate_hln: firing rate 2.7898041090712162 did not produce any spikes
+2021-02-05 21:57:22,970 [INFO]     step:302000 t_sim:30200.00 ms
+2021-02-05 21:57:22,978 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:26,166 [INFO]     step:304000 t_sim:30400.00 ms
+2021-02-05 21:57:26,179 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:29,226 [INFO]     step:306000 t_sim:30600.00 ms
+2021-02-05 21:57:29,234 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:32,529 [INFO]     step:308000 t_sim:30800.00 ms
+2021-02-05 21:57:32,545 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:36,030 [INFO]     step:310000 t_sim:31000.00 ms
+2021-02-05 21:57:36,041 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:39,663 [INFO]     step:312000 t_sim:31200.00 ms
+2021-02-05 21:57:39,677 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:42,763 [INFO]     step:314000 t_sim:31400.00 ms
+2021-02-05 21:57:42,771 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:46,390 [INFO]     step:316000 t_sim:31600.00 ms
+2021-02-05 21:57:46,401 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:50,424 [INFO]     step:318000 t_sim:31800.00 ms
+2021-02-05 21:57:50,438 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:54,084 [INFO]     step:320000 t_sim:32000.00 ms
+2021-02-05 21:57:54,095 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:57:57,358 [INFO]     step:322000 t_sim:32200.00 ms
+2021-02-05 21:57:57,372 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:00,677 [INFO]     step:324000 t_sim:32400.00 ms
+2021-02-05 21:58:00,688 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:04,408 [INFO]     step:326000 t_sim:32600.00 ms
+2021-02-05 21:58:04,420 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:08,073 [INFO]     step:328000 t_sim:32800.00 ms
+2021-02-05 21:58:08,087 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:11,260 [INFO]     step:330000 t_sim:33000.00 ms
+2021-02-05 21:58:11,270 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:14,512 [INFO]     step:332000 t_sim:33200.00 ms
+2021-02-05 21:58:14,524 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:17,805 [INFO]     step:334000 t_sim:33400.00 ms
+2021-02-05 21:58:17,815 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:21,053 [INFO]     step:336000 t_sim:33600.00 ms
+2021-02-05 21:58:21,067 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:24,201 [INFO]     step:338000 t_sim:33800.00 ms
+2021-02-05 21:58:24,209 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:27,483 [INFO]     step:340000 t_sim:34000.00 ms
+2021-02-05 21:58:27,491 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:30,982 [INFO]     step:342000 t_sim:34200.00 ms
+2021-02-05 21:58:31,000 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:34,682 [INFO]     step:344000 t_sim:34400.00 ms
+2021-02-05 21:58:34,693 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:38,597 [INFO]     step:346000 t_sim:34600.00 ms
+2021-02-05 21:58:38,610 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:42,574 [INFO]     step:348000 t_sim:34800.00 ms
+2021-02-05 21:58:42,584 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:46,618 [INFO]     step:350000 t_sim:35000.00 ms
+2021-02-05 21:58:46,632 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:50,296 [INFO]     step:352000 t_sim:35200.00 ms
+2021-02-05 21:58:50,307 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:53,526 [INFO]     step:354000 t_sim:35400.00 ms
+2021-02-05 21:58:53,535 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:58:56,705 [INFO]     step:356000 t_sim:35600.00 ms
+2021-02-05 21:58:56,714 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:00,096 [INFO]     step:358000 t_sim:35800.00 ms
+2021-02-05 21:59:00,104 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:03,522 [INFO]     step:360000 t_sim:36000.00 ms
+2021-02-05 21:59:03,538 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:07,036 [INFO]     step:362000 t_sim:36200.00 ms
+2021-02-05 21:59:07,047 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:10,687 [INFO]     step:364000 t_sim:36400.00 ms
+2021-02-05 21:59:10,701 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:14,037 [INFO]     step:366000 t_sim:36600.00 ms
+2021-02-05 21:59:14,047 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:18,273 [INFO]     step:368000 t_sim:36800.00 ms
+2021-02-05 21:59:18,284 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:22,163 [INFO]     step:370000 t_sim:37000.00 ms
+2021-02-05 21:59:22,190 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:25,533 [INFO]     step:372000 t_sim:37200.00 ms
+2021-02-05 21:59:25,543 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:28,801 [INFO]     step:374000 t_sim:37400.00 ms
+2021-02-05 21:59:28,814 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:32,099 [INFO]     step:376000 t_sim:37600.00 ms
+2021-02-05 21:59:32,110 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:35,696 [INFO]     step:378000 t_sim:37800.00 ms
+2021-02-05 21:59:35,706 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:38,962 [INFO]     step:380000 t_sim:38000.00 ms
+2021-02-05 21:59:38,975 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:42,212 [INFO]     step:382000 t_sim:38200.00 ms
+2021-02-05 21:59:42,221 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:45,428 [INFO]     step:384000 t_sim:38400.00 ms
+2021-02-05 21:59:45,440 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:48,642 [INFO]     step:386000 t_sim:38600.00 ms
+2021-02-05 21:59:48,651 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:51,860 [INFO]     step:388000 t_sim:38800.00 ms
+2021-02-05 21:59:51,873 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:55,091 [INFO]     step:390000 t_sim:39000.00 ms
+2021-02-05 21:59:55,100 [INFO]      _activate_hln: firing rate 0
+2021-02-05 21:59:58,310 [INFO]     step:392000 t_sim:39200.00 ms
+2021-02-05 21:59:58,319 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:01,578 [INFO]     step:394000 t_sim:39400.00 ms
+2021-02-05 22:00:01,592 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:05,513 [INFO]     step:396000 t_sim:39600.00 ms
+2021-02-05 22:00:05,523 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:09,060 [INFO]     step:398000 t_sim:39800.00 ms
+2021-02-05 22:00:09,073 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:12,467 [INFO]     step:400000 t_sim:40000.00 ms
+2021-02-05 22:00:12,480 [INFO]      _activate_hln: firing rate 3.1967653005100587 did not produce any spikes
+2021-02-05 22:00:16,307 [INFO]     step:402000 t_sim:40200.00 ms
+2021-02-05 22:00:16,322 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:20,011 [INFO]     step:404000 t_sim:40400.00 ms
+2021-02-05 22:00:20,022 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:23,766 [INFO]     step:406000 t_sim:40600.00 ms
+2021-02-05 22:00:23,776 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:26,908 [INFO]     step:408000 t_sim:40800.00 ms
+2021-02-05 22:00:26,921 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:30,185 [INFO]     step:410000 t_sim:41000.00 ms
+2021-02-05 22:00:30,195 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:33,435 [INFO]     step:412000 t_sim:41200.00 ms
+2021-02-05 22:00:33,452 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:36,844 [INFO]     step:414000 t_sim:41400.00 ms
+2021-02-05 22:00:36,854 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:40,063 [INFO]     step:416000 t_sim:41600.00 ms
+2021-02-05 22:00:40,075 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:43,296 [INFO]     step:418000 t_sim:41800.00 ms
+2021-02-05 22:00:43,305 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:46,638 [INFO]     step:420000 t_sim:42000.00 ms
+2021-02-05 22:00:46,648 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:49,867 [INFO]     step:422000 t_sim:42200.00 ms
+2021-02-05 22:00:49,880 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:53,117 [INFO]     step:424000 t_sim:42400.00 ms
+2021-02-05 22:00:53,126 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:56,405 [INFO]     step:426000 t_sim:42600.00 ms
+2021-02-05 22:00:56,418 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:00:59,675 [INFO]     step:428000 t_sim:42800.00 ms
+2021-02-05 22:00:59,684 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:03,028 [INFO]     step:430000 t_sim:43000.00 ms
+2021-02-05 22:01:03,038 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:06,684 [INFO]     step:432000 t_sim:43200.00 ms
+2021-02-05 22:01:06,711 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:10,273 [INFO]     step:434000 t_sim:43400.00 ms
+2021-02-05 22:01:10,294 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:13,932 [INFO]     step:436000 t_sim:43600.00 ms
+2021-02-05 22:01:13,944 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:17,421 [INFO]     step:438000 t_sim:43800.00 ms
+2021-02-05 22:01:17,431 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:21,022 [INFO]     step:440000 t_sim:44000.00 ms
+2021-02-05 22:01:21,043 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:24,365 [INFO]     step:442000 t_sim:44200.00 ms
+2021-02-05 22:01:24,377 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:27,735 [INFO]     step:444000 t_sim:44400.00 ms
+2021-02-05 22:01:27,744 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:30,938 [INFO]     step:446000 t_sim:44600.00 ms
+2021-02-05 22:01:30,950 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:34,192 [INFO]     step:448000 t_sim:44800.00 ms
+2021-02-05 22:01:34,204 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:37,844 [INFO]     step:450000 t_sim:45000.00 ms
+2021-02-05 22:01:37,858 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:41,276 [INFO]     step:452000 t_sim:45200.00 ms
+2021-02-05 22:01:41,287 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:44,792 [INFO]     step:454000 t_sim:45400.00 ms
+2021-02-05 22:01:44,804 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:48,143 [INFO]     step:456000 t_sim:45600.00 ms
+2021-02-05 22:01:48,152 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:51,481 [INFO]     step:458000 t_sim:45800.00 ms
+2021-02-05 22:01:51,489 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:54,812 [INFO]     step:460000 t_sim:46000.00 ms
+2021-02-05 22:01:54,829 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:01:58,690 [INFO]     step:462000 t_sim:46200.00 ms
+2021-02-05 22:01:58,700 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:01,852 [INFO]     step:464000 t_sim:46400.00 ms
+2021-02-05 22:02:01,865 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:05,098 [INFO]     step:466000 t_sim:46600.00 ms
+2021-02-05 22:02:05,109 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:08,672 [INFO]     step:468000 t_sim:46800.00 ms
+2021-02-05 22:02:08,686 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:11,922 [INFO]     step:470000 t_sim:47000.00 ms
+2021-02-05 22:02:11,931 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:15,348 [INFO]     step:472000 t_sim:47200.00 ms
+2021-02-05 22:02:15,355 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:18,771 [INFO]     step:474000 t_sim:47400.00 ms
+2021-02-05 22:02:18,785 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:22,000 [INFO]     step:476000 t_sim:47600.00 ms
+2021-02-05 22:02:22,010 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:25,281 [INFO]     step:478000 t_sim:47800.00 ms
+2021-02-05 22:02:25,293 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:28,453 [INFO]     step:480000 t_sim:48000.00 ms
+2021-02-05 22:02:28,462 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:31,737 [INFO]     step:482000 t_sim:48200.00 ms
+2021-02-05 22:02:31,748 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:35,303 [INFO]     step:484000 t_sim:48400.00 ms
+2021-02-05 22:02:35,319 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:38,948 [INFO]     step:486000 t_sim:48600.00 ms
+2021-02-05 22:02:38,957 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:42,167 [INFO]     step:488000 t_sim:48800.00 ms
+2021-02-05 22:02:42,178 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:45,457 [INFO]     step:490000 t_sim:49000.00 ms
+2021-02-05 22:02:45,466 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:48,742 [INFO]     step:492000 t_sim:49200.00 ms
+2021-02-05 22:02:48,755 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:52,070 [INFO]     step:494000 t_sim:49400.00 ms
+2021-02-05 22:02:52,079 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:55,714 [INFO]     step:496000 t_sim:49600.00 ms
+2021-02-05 22:02:55,725 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:02:59,590 [INFO]     step:498000 t_sim:49800.00 ms
+2021-02-05 22:02:59,603 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:03:03,482 [INFO]     step:500000 t_sim:50000.00 ms
+2021-02-05 22:03:03,495 [INFO]      _activate_hln: firing rate 1.3841238342876547 did not produce any spikes
+2021-02-05 22:03:07,366 [INFO]     step:502000 t_sim:50200.00 ms
+2021-02-05 22:03:07,388 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:03:10,824 [INFO]     step:504000 t_sim:50400.00 ms
+2021-02-05 22:03:10,843 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:03:14,661 [INFO]     step:506000 t_sim:50600.00 ms
+2021-02-05 22:03:14,673 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:03:18,503 [INFO]     step:508000 t_sim:50800.00 ms
+2021-02-05 22:03:18,513 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:03:22,352 [INFO]     step:510000 t_sim:51000.00 ms
+2021-02-05 22:03:22,361 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:03:26,215 [INFO]     step:512000 t_sim:51200.00 ms
+2021-02-05 22:03:26,228 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:03:30,112 [INFO]     step:514000 t_sim:51400.00 ms
+2021-02-05 22:03:30,122 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:03:33,837 [INFO]     step:516000 t_sim:51600.00 ms
+2021-02-05 22:03:33,851 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:03:37,897 [INFO]     step:518000 t_sim:51800.00 ms
+2021-02-05 22:03:37,907 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:03:41,299 [INFO]     step:520000 t_sim:52000.00 ms
+2021-02-05 22:03:41,311 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:03:44,764 [INFO]     step:522000 t_sim:52200.00 ms
+2021-02-05 22:03:44,776 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:03:48,647 [INFO]     step:524000 t_sim:52400.00 ms
+2021-02-05 22:03:48,655 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:03:52,079 [INFO]     step:526000 t_sim:52600.00 ms
+2021-02-05 22:03:52,093 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:03:55,733 [INFO]     step:528000 t_sim:52800.00 ms
+2021-02-05 22:03:55,743 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:03:59,803 [INFO]     step:530000 t_sim:53000.00 ms
+2021-02-05 22:03:59,816 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:03,942 [INFO]     step:532000 t_sim:53200.00 ms
+2021-02-05 22:04:03,953 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:08,260 [INFO]     step:534000 t_sim:53400.00 ms
+2021-02-05 22:04:08,269 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:12,056 [INFO]     step:536000 t_sim:53600.00 ms
+2021-02-05 22:04:12,069 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:15,799 [INFO]     step:538000 t_sim:53800.00 ms
+2021-02-05 22:04:15,807 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:19,384 [INFO]     step:540000 t_sim:54000.00 ms
+2021-02-05 22:04:19,396 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:23,023 [INFO]     step:542000 t_sim:54200.00 ms
+2021-02-05 22:04:23,032 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:26,459 [INFO]     step:544000 t_sim:54400.00 ms
+2021-02-05 22:04:26,473 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:29,991 [INFO]     step:546000 t_sim:54600.00 ms
+2021-02-05 22:04:30,001 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:33,618 [INFO]     step:548000 t_sim:54800.00 ms
+2021-02-05 22:04:33,628 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:37,347 [INFO]     step:550000 t_sim:55000.00 ms
+2021-02-05 22:04:37,360 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:41,185 [INFO]     step:552000 t_sim:55200.00 ms
+2021-02-05 22:04:41,198 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:45,170 [INFO]     step:554000 t_sim:55400.00 ms
+2021-02-05 22:04:45,183 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:48,601 [INFO]     step:556000 t_sim:55600.00 ms
+2021-02-05 22:04:48,620 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:52,788 [INFO]     step:558000 t_sim:55800.00 ms
+2021-02-05 22:04:52,801 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:56,388 [INFO]     step:560000 t_sim:56000.00 ms
+2021-02-05 22:04:56,398 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:04:59,920 [INFO]     step:562000 t_sim:56200.00 ms
+2021-02-05 22:04:59,929 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:03,455 [INFO]     step:564000 t_sim:56400.00 ms
+2021-02-05 22:05:03,467 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:07,026 [INFO]     step:566000 t_sim:56600.00 ms
+2021-02-05 22:05:07,036 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:10,752 [INFO]     step:568000 t_sim:56800.00 ms
+2021-02-05 22:05:10,765 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:14,300 [INFO]     step:570000 t_sim:57000.00 ms
+2021-02-05 22:05:14,310 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:17,835 [INFO]     step:572000 t_sim:57200.00 ms
+2021-02-05 22:05:17,847 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:21,398 [INFO]     step:574000 t_sim:57400.00 ms
+2021-02-05 22:05:21,408 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:24,950 [INFO]     step:576000 t_sim:57600.00 ms
+2021-02-05 22:05:24,959 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:28,516 [INFO]     step:578000 t_sim:57800.00 ms
+2021-02-05 22:05:28,528 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:32,056 [INFO]     step:580000 t_sim:58000.00 ms
+2021-02-05 22:05:32,066 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:35,563 [INFO]     step:582000 t_sim:58200.00 ms
+2021-02-05 22:05:35,575 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:39,230 [INFO]     step:584000 t_sim:58400.00 ms
+2021-02-05 22:05:39,241 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:42,722 [INFO]     step:586000 t_sim:58600.00 ms
+2021-02-05 22:05:42,731 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:46,227 [INFO]     step:588000 t_sim:58800.00 ms
+2021-02-05 22:05:46,238 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:49,719 [INFO]     step:590000 t_sim:59000.00 ms
+2021-02-05 22:05:49,728 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:53,236 [INFO]     step:592000 t_sim:59200.00 ms
+2021-02-05 22:05:53,248 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:05:56,748 [INFO]     step:594000 t_sim:59400.00 ms
+2021-02-05 22:05:56,757 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:06:00,743 [INFO]     step:596000 t_sim:59600.00 ms
+2021-02-05 22:06:00,756 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:06:04,833 [INFO]     step:598000 t_sim:59800.00 ms
+2021-02-05 22:06:04,843 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:06:08,695 [INFO]     step:600000 t_sim:60000.00 ms
+2021-02-05 22:06:08,708 [INFO]      _activate_hln: firing rate 6.764836543777246 did not produce any spikes
+2021-02-05 22:06:08,708 [INFO]       updating pag input
+2021-02-05 22:06:08,708 [INFO]      no psg spikes generated by Poisson distritubtion
+2021-02-05 22:06:12,369 [INFO]     step:602000 t_sim:60200.00 ms
+2021-02-05 22:06:12,385 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:06:12,386 [INFO]       updating pag input
+2021-02-05 22:06:12,386 [INFO]      no psg spikes generated by Poisson distritubtion
+2021-02-05 22:06:15,725 [INFO]     step:604000 t_sim:60400.00 ms
+2021-02-05 22:06:15,734 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:06:17,275 [INFO]     step:605000 t_sim:60500.00 ms
+2021-02-05 22:06:17,281 [INFO]      _activate_hln: firing rate 0
+2021-02-05 22:06:20,410 [INFO] Simulation completed in 17.0 minutes, 37.3 seconds 
