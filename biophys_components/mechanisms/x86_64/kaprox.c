@@ -294,7 +294,7 @@ extern void _cvode_abstol( Symbol**, double*, int);
  	hoc_register_cvode(_mechtype, _ode_count, _ode_map, _ode_spec, _ode_matsol);
  	hoc_register_tolerance(_mechtype, _hoc_state_tol, &_atollist);
  	hoc_register_var(hoc_scdoub, hoc_vdoub, hoc_intfunc);
- 	ivoc_help("help ?1 kap /Users/latimerb/LUT_Prelim/biophys_components/mechanisms/x86_64/kaprox.mod\n");
+ 	ivoc_help("help ?1 kap /home/mjc598/fork/LUT_Prelim/biophys_components/mechanisms/x86_64/kaprox.mod\n");
  hoc_register_limits(_mechtype, _hoc_parm_limits);
  hoc_register_units(_mechtype, _hoc_parm_units);
  }
@@ -645,7 +645,7 @@ _first = 0;
 #endif
 
 #if NMODL_TEXT
-static const char* nmodl_filename = "/Users/latimerb/LUT_Prelim/biophys_components/mechanisms/modfiles/kaprox.mod";
+static const char* nmodl_filename = "/home/mjc598/fork/LUT_Prelim/biophys_components/mechanisms/modfiles/kaprox.mod";
 static const char* nmodl_file_text = 
   "TITLE K-A channel from Klee Ficker and Heinemann\n"
   ": modified to account for Dax A Current --- M.Migliore Jun 1997\n"

@@ -164,7 +164,7 @@ extern void _cvode_abstol( Symbol**, double*, int);
 #endif
   hoc_register_prop_size(_mechtype, 5, 0);
  	hoc_register_var(hoc_scdoub, hoc_vdoub, hoc_intfunc);
- 	ivoc_help("help ?1 leak /Users/latimerb/LUT_Prelim/biophys_components/mechanisms/x86_64/leak.mod\n");
+ 	ivoc_help("help ?1 leak /home/mjc598/fork/LUT_Prelim/biophys_components/mechanisms/x86_64/leak.mod\n");
  hoc_register_limits(_mechtype, _hoc_parm_limits);
  hoc_register_units(_mechtype, _hoc_parm_units);
  }
@@ -292,7 +292,7 @@ _first = 0;
 #endif
 
 #if NMODL_TEXT
-static const char* nmodl_filename = "/Users/latimerb/LUT_Prelim/biophys_components/mechanisms/modfiles/leak.mod";
+static const char* nmodl_filename = "/home/mjc598/fork/LUT_Prelim/biophys_components/mechanisms/modfiles/leak.mod";
 static const char* nmodl_file_text = 
   ": passive leak current\n"
   "\n"

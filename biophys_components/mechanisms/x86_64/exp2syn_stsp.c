@@ -271,7 +271,7 @@ extern void _cvode_abstol( Symbol**, double*, int);
  pnt_receive[_mechtype] = _net_receive;
  pnt_receive_size[_mechtype] = 1;
  	hoc_register_var(hoc_scdoub, hoc_vdoub, hoc_intfunc);
- 	ivoc_help("help ?1 Exp2Syn1_STSP /Users/latimerb/LUT_Prelim/biophys_components/mechanisms/x86_64/exp2syn_stsp.mod\n");
+ 	ivoc_help("help ?1 Exp2Syn1_STSP /home/mjc598/fork/LUT_Prelim/biophys_components/mechanisms/x86_64/exp2syn_stsp.mod\n");
  hoc_register_limits(_mechtype, _hoc_parm_limits);
  hoc_register_units(_mechtype, _hoc_parm_units);
  }
@@ -525,7 +525,7 @@ _first = 0;
 #endif
 
 #if NMODL_TEXT
-static const char* nmodl_filename = "/Users/latimerb/LUT_Prelim/biophys_components/mechanisms/modfiles/exp2syn_stsp.mod";
+static const char* nmodl_filename = "/home/mjc598/fork/LUT_Prelim/biophys_components/mechanisms/modfiles/exp2syn_stsp.mod";
 static const char* nmodl_file_text = 
   ": exp2syn1_stsp.mod\n"
   "\n"

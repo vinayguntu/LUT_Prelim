@@ -1,1 +1,1 @@
-../modfiles/exp2syn_stsp.mod
+../modfiles//exp2syn_stsp.mod

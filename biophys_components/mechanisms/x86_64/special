@@ -1,17 +1,13 @@
 #!/bin/sh
 if test "x${NRNHOME}" = "x" ; then
-    NRNHOME="/Applications/NEURON-7.8"
-fi
-if test "${NEURONHOME}" = "" ; then
-    NEURONHOME=${NRNHOME}/share/nrn
-    export NEURONHOME
+	NRNHOME="/usr/neurotools/nrn/neuron_install/nrn"
 fi
 if test "x${NRNBIN}" = "x" ; then
-    NRNBIN="/Applications/NEURON-7.8/bin"
+	NRNBIN="/usr/neurotools/nrn/neuron_install/nrn/x86_64/bin/"
 fi
 if test "" = "yes" ; then
-    NRNIV="${NRNBIN}/nrniv.app/Contents/MacOS/nrniv"
+	NRNIV="${NRNBIN}nrniv.app/Contents/MacOS/nrniv"
 else
-    NRNIV="${NRNBIN}/nrniv"
+	NRNIV="${NRNBIN}nrniv"
 fi
-"${NRNIV}" -dll "/Users/latimerb/LUT_Prelim/biophys_components/mechanisms/x86_64/.libs/libnrnmech.so" "$@"
+"${NRNIV}" -dll "/home/mjc598/fork/LUT_Prelim/biophys_components/mechanisms/x86_64/.libs/libnrnmech.so" "$@"
