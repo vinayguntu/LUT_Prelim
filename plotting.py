@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def plot_figure(ba_means, ba_stdevs, pgn_means, pgn_stdevs, eus_means, eus_stdevs,
-                inmm_means, inmm_stdevs, inmp_means, inmp_stdevs, fbmod):
+                inmm_means, inmm_stdevs, inmp_means, inmp_stdevs, plotting_dict):
 
     # Only plot one point each 1000 samples
     plt_ba_means = []
@@ -59,14 +59,14 @@ def plot_figure(ba_means, ba_stdevs, pgn_means, pgn_stdevs, eus_means, eus_stdev
     color = 'tab:red'
     ax1_1.set_xlabel('Time (t) [ms]')
 	# ax1_1.set_ylabel('Bladder Volume (V) [ml]', color=color)
-    ax1_1.plot(fbmod.times, fbmod.b_vols, color=color)
+    ax1_1.plot(plotting_dict['times'], plotting_dict['b_vols'], color=color)
     ax1_1.tick_params(axis='y', labelcolor=color)
 
     ax2_1 = ax1_1.twinx()  # instantiate a second axes that shares the same x-axis
 
     color = 'tab:blue'
     ax2_1.set_ylabel('Bladder Pressure (P) [cm H20]', color=color)  # we already handled the x-label with ax1
-    ax2_1.plot(fbmod.times, fbmod.b_pres, color=color)
+    ax2_1.plot(plotting_dict['times'], plotting_dict['b_pres'], color=color)
     ax2_1.tick_params(axis='y', labelcolor=color)
 
     fig1.tight_layout()  # otherwise the right y-label is slightly clipped
@@ -89,16 +89,16 @@ def plot_figure(ba_means, ba_stdevs, pgn_means, pgn_stdevs, eus_means, eus_stdev
 
     plt.show()
 
-def plotting_calculator(spike_trains, sim, window_size, arange1, arange2, arange3=0, multiplier=1):
+def plotting_calculator(plotting_dict, window_size, arange1, arange2, arange3=0, multiplier=1):
     # Plot PGN firing rate
-    means = np.zeros(sim.n_steps)
-    stdevs = np.zeros(sim.n_steps)
-    fr_conv = np.zeros((arange2,sim.n_steps))
+    means = np.zeros(plotting_dict['n_steps'])
+    stdevs = np.zeros(plotting_dict['n_steps'])
+    fr_conv = np.zeros((arange2,plotting_dict['n_steps']))
 
     for gid in np.arange(arange1, arange3 + arange2):
-        spikes = np.zeros(sim.n_steps, dtype=np.int)
-        if len(spike_trains.get_times(gid)) > 0:
-            spikes[(spike_trains.get_times(gid)/sim.dt).astype(np.int)] = 1
+        spikes = np.zeros(plotting_dict['n_steps'], dtype=np.int)
+        if len(plotting_dict['spike_trains'].get_times(gid)) > 0:
+            spikes[(plotting_dict['spike_trains'].get_times(gid)/plotting_dict['dt']).astype(np.int)] = 1
         window = np.ones(window_size)
 
         frs = np.convolve(spikes, window)
