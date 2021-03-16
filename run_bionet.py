@@ -13,7 +13,7 @@ from feedback_loop import FeedbackLoop
 from plotting import plot_figure, plotting_calculator
 # Import the synaptic depression/facilitation model
 import synapses
-import json
+import pickle
 
 """
 Basic Logging features, disable faulthandler if you don't want stacktraces printed
@@ -87,16 +87,22 @@ def run(config_file):
     plotting_dict['b_vols'] = fbmod.b_vols
     plotting_dict['b_pres'] = fbmod.b_pres
 
-    json_f = json.dumps(plotting_dict)
-    f = open("output/plotting.json", "w")
-    f.write(json_f)
+    f = open("output/plotting.pkl", "wb")
+    pickle.dump(plotting_dict,f)
     f.close()
     
     bionet.nrn.quit_execution()
 
 def build_plots():
-    f = open("output/plotting.json")
-    plotting_dict = json.load(f)
+    objects = []
+    with (open("output/plotting.pkl", "rb")) as openfile:
+        while True:
+            try:
+                objects.append(pickle.load(openfile))
+            except EOFError:
+                break
+
+    plotting_dict = objects[0]
     
     #plotting
     ba_means, ba_stdevs = plotting_calculator(plotting_dict, 60000, 0, numBladaff, multiplier=2)
