@@ -1,5 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
+from bmtk.utils.reports.spike_trains import SpikeTrains
 
 def plot_figure(ba_means, ba_stdevs, pgn_means, pgn_stdevs, eus_means, eus_stdevs,
                 inmm_means, inmm_stdevs, inmp_means, inmp_stdevs, plotting_dict):
@@ -91,14 +93,16 @@ def plot_figure(ba_means, ba_stdevs, pgn_means, pgn_stdevs, eus_means, eus_stdev
 
 def plotting_calculator(plotting_dict, window_size, arange1, arange2, arange3=0, multiplier=1):
     # Plot PGN firing rate
+    # spikes_df = pd.read_csv('output/spikes.csv', sep=' ')
+    spike_trains = SpikeTrains.from_sonata('output/spikes.h5')
     means = np.zeros(plotting_dict['n_steps'])
     stdevs = np.zeros(plotting_dict['n_steps'])
     fr_conv = np.zeros((arange2,plotting_dict['n_steps']))
 
     for gid in np.arange(arange1, arange3 + arange2):
         spikes = np.zeros(plotting_dict['n_steps'], dtype=np.int)
-        if len(plotting_dict['spike_trains'].get_times(gid)) > 0:
-            spikes[(plotting_dict['spike_trains'].get_times(gid)/plotting_dict['dt']).astype(np.int)] = 1
+        if len(spike_trains.get_times(gid)) > 0:
+            spikes[(spike_trains.get_times(gid)/plotting_dict['dt']).astype(np.int)] = 1
         window = np.ones(window_size)
 
         frs = np.convolve(spikes, window)

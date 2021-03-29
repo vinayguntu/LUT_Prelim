@@ -74,7 +74,7 @@ def run(config_file):
     sim.run()
 
     spikes_df = pd.read_csv('output/spikes.csv', sep=' ')
-    spike_trains = SpikeTrains.from_sonata('output/spikes.h5')
+    # spike_trains = SpikeTrains.from_sonata('output/spikes.h5')
 
     print(spikes_df['node_ids'].unique())
     print(spikes_df[(spikes_df['node_ids'] >= 50) & (spikes_df['node_ids'] < 75)])
@@ -82,7 +82,7 @@ def run(config_file):
     plotting_dict = {}
     plotting_dict['n_steps'] = sim.n_steps
     plotting_dict['dt'] = sim.dt
-    plotting_dict['spike_trains'] = spike_trains
+    # plotting_dict['spike_trains'] = spike_trains
     plotting_dict['times'] = fbmod.times
     plotting_dict['b_vols'] = fbmod.b_vols
     plotting_dict['b_pres'] = fbmod.b_pres
