@@ -13,6 +13,7 @@ from feedback_loop import FeedbackLoop
 from plotting import plot_figure, plotting_calculator
 # Import the synaptic depression/facilitation model
 import synapses
+import pickle
 
 """
 Basic Logging features, disable faulthandler if you don't want stacktraces printed
@@ -73,24 +74,49 @@ def run(config_file):
     sim.run()
 
     spikes_df = pd.read_csv('output/spikes.csv', sep=' ')
-    spike_trains = SpikeTrains.from_sonata('output/spikes.h5')
+    # spike_trains = SpikeTrains.from_sonata('output/spikes.h5')
 
     print(spikes_df['node_ids'].unique())
     print(spikes_df[(spikes_df['node_ids'] >= 50) & (spikes_df['node_ids'] < 75)])
+
+    plotting_dict = {}
+    plotting_dict['n_steps'] = sim.n_steps
+    plotting_dict['dt'] = sim.dt
+    # plotting_dict['spike_trains'] = spike_trains
+    plotting_dict['times'] = fbmod.times
+    plotting_dict['b_vols'] = fbmod.b_vols
+    plotting_dict['b_pres'] = fbmod.b_pres
+
+    f = open("output/plotting.pkl", "wb")
+    pickle.dump(plotting_dict,f)
+    f.close()
+    
+    bionet.nrn.quit_execution()
+
+def build_plots():
+    objects = []
+    with (open("output/plotting.pkl", "rb")) as openfile:
+        while True:
+            try:
+                objects.append(pickle.load(openfile))
+            except EOFError:
+                break
+
+    plotting_dict = objects[0]
     
     #plotting
-    ba_means, ba_stdevs = plotting_calculator(spike_trains, sim, 60000, 0, numBladaff, multiplier=2)
-    pgn_means, pgn_stdevs = plotting_calculator(spike_trains, sim, 60000, PGN_gids, numPGN, PGN_gids, multiplier=2)
-    eus_means, eus_stdevs = plotting_calculator(spike_trains, sim, 60000, EUSmn_gids, numEUSmn, EUSmn_gids, multiplier=2)
-    inmm_means, inmm_stdevs = plotting_calculator(spike_trains, sim, 10000, INmminus_gids, numINmminus, INmminus_gids)
-    inmp_means, inmp_stdevs = plotting_calculator(spike_trains, sim, 10000, PAG_gids, numINmplus, PAG_gids)
+    ba_means, ba_stdevs = plotting_calculator(plotting_dict, 60000, 0, numBladaff, multiplier=2)
+    pgn_means, pgn_stdevs = plotting_calculator(plotting_dict, 60000, PGN_gids, numPGN, PGN_gids, multiplier=2)
+    eus_means, eus_stdevs = plotting_calculator(plotting_dict, 60000, EUSmn_gids, numEUSmn, EUSmn_gids, multiplier=2)
+    inmm_means, inmm_stdevs = plotting_calculator(plotting_dict, 10000, INmminus_gids, numINmminus, INmminus_gids)
+    inmp_means, inmp_stdevs = plotting_calculator(plotting_dict, 10000, PAG_gids, numINmplus, PAG_gids)
 
-    plot_figure(ba_means, ba_stdevs, pgn_means, pgn_stdevs, eus_means, eus_stdevs, inmm_means, inmm_stdevs, inmp_means, inmp_stdevs, fbmod)
+    plot_figure(ba_means, ba_stdevs, pgn_means, pgn_stdevs, eus_means, eus_stdevs, inmm_means, inmm_stdevs, inmp_means, inmp_stdevs, plotting_dict)
 
-    bionet.nrn.quit_execution()
 
 if __name__ == '__main__':
     if __file__ != sys.argv[-1]:
         run(sys.argv[-1])
+        build_plots()
     else:
         run('config.json')
