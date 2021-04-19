@@ -260,7 +260,7 @@ if __name__ == '__main__':
   output_file = 'EUS_spikes.csv'
   input_dir = './'
 
-  hz = [0.01, 0.01, 0.01]  # Using 1.0 Hz as basal firing rate of pudendal (EUS) afferent
+  hz = [0.1, 0.1, 0.1]  # Using 1.0 Hz as basal firing rate of pudendal (EUS) afferent
               # (Habler et al. 1993)
               # Using high PAG firing rate of 15.0 Hz as high firing rate 
               # (Blok et al. 2000)

@@ -1,0 +1,273 @@
+
+./CaDynamics.c: ../modfiles//CaDynamics.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) CaDynamics.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./CaDynamics.o: ./CaDynamics.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./cadyn.c: ../modfiles//cadyn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) cadyn.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./cadyn.o: ./cadyn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ca_HVA.c: ../modfiles//Ca_HVA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) Ca_HVA.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./Ca_HVA.o: ./Ca_HVA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ca_LVA.c: ../modfiles//Ca_LVA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) Ca_LVA.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./Ca_LVA.o: ./Ca_LVA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./capool.c: ../modfiles//capool.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) capool.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./capool.o: ./capool.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./cas.c: ../modfiles//cas.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) cas.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./cas.o: ./cas.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./cat.c: ../modfiles//cat.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) cat.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./cat.o: ./cat.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./currentclamp.c: ../modfiles//currentclamp.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) currentclamp.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./currentclamp.o: ./currentclamp.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./exp2syn_stsp.c: ../modfiles//exp2syn_stsp.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) exp2syn_stsp.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./exp2syn_stsp.o: ./exp2syn_stsp.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./h.c: ../modfiles//h.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) h.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./h.o: ./h.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ih.c: ../modfiles//Ih.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) Ih.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./Ih.o: ./Ih.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Im.c: ../modfiles//Im.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) Im.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./Im.o: ./Im.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Im_v2.c: ../modfiles//Im_v2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) Im_v2.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./Im_v2.o: ./Im_v2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./ka.c: ../modfiles//ka.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) ka.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./ka.o: ./ka.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./kaprox.c: ../modfiles//kaprox.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) kaprox.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./kaprox.o: ./kaprox.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./kca.c: ../modfiles//kca.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) kca.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./kca.o: ./kca.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Kd.c: ../modfiles//Kd.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) Kd.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./Kd.o: ./Kd.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./kdrca1.c: ../modfiles//kdrca1.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) kdrca1.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./kdrca1.o: ./kdrca1.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./K_P.c: ../modfiles//K_P.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) K_P.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./K_P.o: ./K_P.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./K_T.c: ../modfiles//K_T.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) K_T.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./K_T.o: ./K_T.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Kv2like.c: ../modfiles//Kv2like.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) Kv2like.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./Kv2like.o: ./Kv2like.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Kv3_1.c: ../modfiles//Kv3_1.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) Kv3_1.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./Kv3_1.o: ./Kv3_1.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./leak.c: ../modfiles//leak.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) leak.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./leak.o: ./leak.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./na3.c: ../modfiles//na3.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) na3.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./na3.o: ./na3.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Nap.c: ../modfiles//Nap.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) Nap.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./Nap.o: ./Nap.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./NaTa.c: ../modfiles//NaTa.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) NaTa.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./NaTa.o: ./NaTa.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./NaTs.c: ../modfiles//NaTs.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) NaTs.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./NaTs.o: ./NaTs.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./NaV.c: ../modfiles//NaV.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) NaV.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./NaV.o: ./NaV.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./netstimNEWh.c: ../modfiles//netstimNEWh.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) netstimNEWh.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./netstimNEWh.o: ./netstimNEWh.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./netstimNEWp.c: ../modfiles//netstimNEWp.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) netstimNEWp.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./netstimNEWp.o: ./netstimNEWp.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./netstimNEWpud.c: ../modfiles//netstimNEWpud.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) netstimNEWpud.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./netstimNEWpud.o: ./netstimNEWpud.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./sahp.c: ../modfiles//sahp.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) sahp.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./sahp.o: ./sahp.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./SK.c: ../modfiles//SK.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) SK.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./SK.o: ./SK.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./vecevent.c: ../modfiles//vecevent.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd "../modfiles"; MODLUNIT=$(NRNUNITS) $(NOCMODL) vecevent.mod -o "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/x86_64")
+
+./vecevent.o: ./vecevent.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
