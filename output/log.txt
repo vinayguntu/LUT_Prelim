@@ -1,616 +1,1474 @@
-2021-04-19 10:54:59,651 [INFO] Created log file
-2021-04-19 10:54:59,762 [INFO] Building cells.
-2021-04-19 10:54:59,827 [INFO] Building recurrent connections
-2021-04-19 10:55:00,987 [INFO] Building virtual cell stimulations for Blad_spikes
-2021-04-19 10:55:01,067 [INFO] Building virtual cell stimulations for EUS_spikes
-2021-04-19 10:55:01,142 [INFO] Building virtual cell stimulations for PAG_spikes
-2021-04-19 10:55:01,369 [INFO] Found 10 PAG neurons
-2021-04-19 10:55:01,410 [INFO] Running simulation for 60500.000 ms with the time step 0.100 ms
-2021-04-19 10:55:01,410 [INFO] Starting timestep: 0 at t_sim: 0.000 ms
-2021-04-19 10:55:01,411 [INFO] Block save every 2000 steps
-2021-04-19 10:55:05,377 [INFO]     step:2000 t_sim:200.00 ms
-2021-04-19 10:55:05,388 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:55:09,344 [INFO]     step:4000 t_sim:400.00 ms
-2021-04-19 10:55:09,351 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:55:13,337 [INFO]     step:6000 t_sim:600.00 ms
-2021-04-19 10:55:13,347 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:55:17,346 [INFO]     step:8000 t_sim:800.00 ms
-2021-04-19 10:55:17,353 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:55:21,361 [INFO]     step:10000 t_sim:1000.00 ms
-2021-04-19 10:55:21,373 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:55:25,409 [INFO]     step:12000 t_sim:1200.00 ms
-2021-04-19 10:55:25,416 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:55:29,428 [INFO]     step:14000 t_sim:1400.00 ms
-2021-04-19 10:55:29,435 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:55:33,435 [INFO]     step:16000 t_sim:1600.00 ms
-2021-04-19 10:55:33,445 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:55:37,522 [INFO]     step:18000 t_sim:1800.00 ms
-2021-04-19 10:55:37,528 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:55:41,519 [INFO]     step:20000 t_sim:2000.00 ms
-2021-04-19 10:55:41,530 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:55:45,553 [INFO]     step:22000 t_sim:2200.00 ms
-2021-04-19 10:55:45,562 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:55:49,644 [INFO]     step:24000 t_sim:2400.00 ms
-2021-04-19 10:55:49,654 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:55:53,592 [INFO]     step:26000 t_sim:2600.00 ms
-2021-04-19 10:55:53,599 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:55:57,560 [INFO]     step:28000 t_sim:2800.00 ms
-2021-04-19 10:55:57,568 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:56:01,521 [INFO]     step:30000 t_sim:3000.00 ms
-2021-04-19 10:56:01,530 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:56:05,505 [INFO]     step:32000 t_sim:3200.00 ms
-2021-04-19 10:56:05,512 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:56:09,473 [INFO]     step:34000 t_sim:3400.00 ms
-2021-04-19 10:56:09,482 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:56:13,415 [INFO]     step:36000 t_sim:3600.00 ms
-2021-04-19 10:56:13,421 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:56:17,405 [INFO]     step:38000 t_sim:3800.00 ms
-2021-04-19 10:56:17,414 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:56:21,562 [INFO]     step:40000 t_sim:4000.00 ms
-2021-04-19 10:56:21,570 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:56:25,562 [INFO]     step:42000 t_sim:4200.00 ms
-2021-04-19 10:56:25,569 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:56:29,485 [INFO]     step:44000 t_sim:4400.00 ms
-2021-04-19 10:56:29,497 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:56:33,538 [INFO]     step:46000 t_sim:4600.00 ms
-2021-04-19 10:56:33,544 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:56:37,666 [INFO]     step:48000 t_sim:4800.00 ms
-2021-04-19 10:56:37,676 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:56:41,549 [INFO]     step:50000 t_sim:5000.00 ms
-2021-04-19 10:56:41,556 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:56:45,516 [INFO]     step:52000 t_sim:5200.00 ms
-2021-04-19 10:56:45,526 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:56:49,509 [INFO]     step:54000 t_sim:5400.00 ms
-2021-04-19 10:56:49,517 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:56:53,450 [INFO]     step:56000 t_sim:5600.00 ms
-2021-04-19 10:56:53,456 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:56:57,423 [INFO]     step:58000 t_sim:5800.00 ms
-2021-04-19 10:56:57,433 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:57:01,380 [INFO]     step:60000 t_sim:6000.00 ms
-2021-04-19 10:57:01,388 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:57:05,311 [INFO]     step:62000 t_sim:6200.00 ms
-2021-04-19 10:57:05,321 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:57:09,270 [INFO]     step:64000 t_sim:6400.00 ms
-2021-04-19 10:57:09,277 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:57:13,305 [INFO]     step:66000 t_sim:6600.00 ms
-2021-04-19 10:57:13,312 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:57:17,305 [INFO]     step:68000 t_sim:6800.00 ms
-2021-04-19 10:57:17,314 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:57:21,301 [INFO]     step:70000 t_sim:7000.00 ms
-2021-04-19 10:57:21,308 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:57:25,265 [INFO]     step:72000 t_sim:7200.00 ms
-2021-04-19 10:57:25,274 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:57:29,253 [INFO]     step:74000 t_sim:7400.00 ms
-2021-04-19 10:57:29,259 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:57:33,238 [INFO]     step:76000 t_sim:7600.00 ms
-2021-04-19 10:57:33,247 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:57:37,319 [INFO]     step:78000 t_sim:7800.00 ms
-2021-04-19 10:57:37,326 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:57:41,307 [INFO]     step:80000 t_sim:8000.00 ms
-2021-04-19 10:57:41,314 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:57:45,282 [INFO]     step:82000 t_sim:8200.00 ms
-2021-04-19 10:57:45,291 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:57:49,241 [INFO]     step:84000 t_sim:8400.00 ms
-2021-04-19 10:57:49,248 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:57:53,182 [INFO]     step:86000 t_sim:8600.00 ms
-2021-04-19 10:57:53,191 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:57:57,151 [INFO]     step:88000 t_sim:8800.00 ms
-2021-04-19 10:57:57,158 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:58:01,115 [INFO]     step:90000 t_sim:9000.00 ms
-2021-04-19 10:58:01,126 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:58:04,983 [INFO]     step:92000 t_sim:9200.00 ms
-2021-04-19 10:58:05,008 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:58:09,056 [INFO]     step:94000 t_sim:9400.00 ms
-2021-04-19 10:58:09,063 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:58:13,033 [INFO]     step:96000 t_sim:9600.00 ms
-2021-04-19 10:58:13,043 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:58:17,065 [INFO]     step:98000 t_sim:9800.00 ms
-2021-04-19 10:58:17,072 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:58:21,035 [INFO]     step:100000 t_sim:10000.00 ms
-2021-04-19 10:58:21,046 [INFO]      _activate_hln: firing rate 2.0237821376747682 did not produce any spikes
-2021-04-19 10:58:25,079 [INFO]     step:102000 t_sim:10200.00 ms
-2021-04-19 10:58:25,088 [INFO]      _activate_hln: firing rate 0.6750627213479072 did not produce any spikes
-2021-04-19 10:58:29,161 [INFO]     step:104000 t_sim:10400.00 ms
-2021-04-19 10:58:29,170 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:58:33,224 [INFO]     step:106000 t_sim:10600.00 ms
-2021-04-19 10:58:33,230 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:58:37,241 [INFO]     step:108000 t_sim:10800.00 ms
-2021-04-19 10:58:37,247 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:58:41,336 [INFO]     step:110000 t_sim:11000.00 ms
-2021-04-19 10:58:41,346 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:58:45,381 [INFO]     step:112000 t_sim:11200.00 ms
-2021-04-19 10:58:45,388 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:58:49,450 [INFO]     step:114000 t_sim:11400.00 ms
-2021-04-19 10:58:49,460 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:58:53,491 [INFO]     step:116000 t_sim:11600.00 ms
-2021-04-19 10:58:53,498 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:58:57,531 [INFO]     step:118000 t_sim:11800.00 ms
-2021-04-19 10:58:57,538 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:59:01,677 [INFO]     step:120000 t_sim:12000.00 ms
-2021-04-19 10:59:01,688 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:59:05,795 [INFO]     step:122000 t_sim:12200.00 ms
-2021-04-19 10:59:05,803 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:59:09,820 [INFO]     step:124000 t_sim:12400.00 ms
-2021-04-19 10:59:09,829 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:59:13,898 [INFO]     step:126000 t_sim:12600.00 ms
-2021-04-19 10:59:13,905 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:59:18,082 [INFO]     step:128000 t_sim:12800.00 ms
-2021-04-19 10:59:18,092 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:59:22,198 [INFO]     step:130000 t_sim:13000.00 ms
-2021-04-19 10:59:22,206 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:59:26,318 [INFO]     step:132000 t_sim:13200.00 ms
-2021-04-19 10:59:26,326 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:59:30,375 [INFO]     step:134000 t_sim:13400.00 ms
-2021-04-19 10:59:30,385 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:59:34,507 [INFO]     step:136000 t_sim:13600.00 ms
-2021-04-19 10:59:34,514 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:59:38,576 [INFO]     step:138000 t_sim:13800.00 ms
-2021-04-19 10:59:38,585 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:59:42,595 [INFO]     step:140000 t_sim:14000.00 ms
-2021-04-19 10:59:42,602 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:59:46,662 [INFO]     step:142000 t_sim:14200.00 ms
-2021-04-19 10:59:46,671 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:59:50,675 [INFO]     step:144000 t_sim:14400.00 ms
-2021-04-19 10:59:50,681 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:59:54,699 [INFO]     step:146000 t_sim:14600.00 ms
-2021-04-19 10:59:54,706 [INFO]      _activate_hln: firing rate 0
-2021-04-19 10:59:58,716 [INFO]     step:148000 t_sim:14800.00 ms
-2021-04-19 10:59:58,724 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:00:02,841 [INFO]     step:150000 t_sim:15000.00 ms
-2021-04-19 11:00:02,848 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:00:06,917 [INFO]     step:152000 t_sim:15200.00 ms
-2021-04-19 11:00:06,928 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:00:10,932 [INFO]     step:154000 t_sim:15400.00 ms
-2021-04-19 11:00:10,938 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:00:14,924 [INFO]     step:156000 t_sim:15600.00 ms
-2021-04-19 11:00:14,934 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:00:18,923 [INFO]     step:158000 t_sim:15800.00 ms
-2021-04-19 11:00:18,930 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:00:22,950 [INFO]     step:160000 t_sim:16000.00 ms
-2021-04-19 11:00:22,957 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:00:26,900 [INFO]     step:162000 t_sim:16200.00 ms
-2021-04-19 11:00:26,910 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:00:30,964 [INFO]     step:164000 t_sim:16400.00 ms
-2021-04-19 11:00:30,970 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:00:34,959 [INFO]     step:166000 t_sim:16600.00 ms
-2021-04-19 11:00:34,970 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:00:39,067 [INFO]     step:168000 t_sim:16800.00 ms
-2021-04-19 11:00:39,073 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:00:43,130 [INFO]     step:170000 t_sim:17000.00 ms
-2021-04-19 11:00:43,137 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:00:47,230 [INFO]     step:172000 t_sim:17200.00 ms
-2021-04-19 11:00:47,241 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:00:51,350 [INFO]     step:174000 t_sim:17400.00 ms
-2021-04-19 11:00:51,357 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:00:55,463 [INFO]     step:176000 t_sim:17600.00 ms
-2021-04-19 11:00:55,473 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:00:59,426 [INFO]     step:178000 t_sim:17800.00 ms
-2021-04-19 11:00:59,432 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:01:03,549 [INFO]     step:180000 t_sim:18000.00 ms
-2021-04-19 11:01:03,559 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:01:07,601 [INFO]     step:182000 t_sim:18200.00 ms
-2021-04-19 11:01:07,608 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:01:11,647 [INFO]     step:184000 t_sim:18400.00 ms
-2021-04-19 11:01:11,654 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:01:15,717 [INFO]     step:186000 t_sim:18600.00 ms
-2021-04-19 11:01:15,727 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:01:19,800 [INFO]     step:188000 t_sim:18800.00 ms
-2021-04-19 11:01:19,807 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:01:23,863 [INFO]     step:190000 t_sim:19000.00 ms
-2021-04-19 11:01:23,873 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:01:28,034 [INFO]     step:192000 t_sim:19200.00 ms
-2021-04-19 11:01:28,058 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:01:32,128 [INFO]     step:194000 t_sim:19400.00 ms
-2021-04-19 11:01:32,138 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:01:36,234 [INFO]     step:196000 t_sim:19600.00 ms
-2021-04-19 11:01:36,241 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:01:40,341 [INFO]     step:198000 t_sim:19800.00 ms
-2021-04-19 11:01:40,347 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:01:44,376 [INFO]     step:200000 t_sim:20000.00 ms
-2021-04-19 11:01:44,387 [INFO]      _activate_hln: firing rate 0.4538564272964756 did not produce any spikes
-2021-04-19 11:01:48,379 [INFO]     step:202000 t_sim:20200.00 ms
-2021-04-19 11:01:48,387 [INFO]      _activate_hln: firing rate 0.4592368347388094 did not produce any spikes
-2021-04-19 11:01:52,388 [INFO]     step:204000 t_sim:20400.00 ms
-2021-04-19 11:01:52,398 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:01:56,416 [INFO]     step:206000 t_sim:20600.00 ms
-2021-04-19 11:01:56,423 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:02:00,455 [INFO]     step:208000 t_sim:20800.00 ms
-2021-04-19 11:02:00,465 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:02:04,463 [INFO]     step:210000 t_sim:21000.00 ms
-2021-04-19 11:02:04,471 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:02:08,496 [INFO]     step:212000 t_sim:21200.00 ms
-2021-04-19 11:02:08,504 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:02:12,634 [INFO]     step:214000 t_sim:21400.00 ms
-2021-04-19 11:02:12,643 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:02:16,753 [INFO]     step:216000 t_sim:21600.00 ms
-2021-04-19 11:02:16,759 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:02:20,886 [INFO]     step:218000 t_sim:21800.00 ms
-2021-04-19 11:02:20,896 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:02:25,014 [INFO]     step:220000 t_sim:22000.00 ms
-2021-04-19 11:02:25,022 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:02:29,153 [INFO]     step:222000 t_sim:22200.00 ms
-2021-04-19 11:02:29,160 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:02:33,294 [INFO]     step:224000 t_sim:22400.00 ms
-2021-04-19 11:02:33,304 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:02:37,421 [INFO]     step:226000 t_sim:22600.00 ms
-2021-04-19 11:02:37,428 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:02:41,554 [INFO]     step:228000 t_sim:22800.00 ms
-2021-04-19 11:02:41,564 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:02:45,627 [INFO]     step:230000 t_sim:23000.00 ms
-2021-04-19 11:02:45,634 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:02:49,757 [INFO]     step:232000 t_sim:23200.00 ms
-2021-04-19 11:02:49,767 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:02:53,853 [INFO]     step:234000 t_sim:23400.00 ms
-2021-04-19 11:02:53,860 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:02:57,969 [INFO]     step:236000 t_sim:23600.00 ms
-2021-04-19 11:02:57,976 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:03:02,079 [INFO]     step:238000 t_sim:23800.00 ms
-2021-04-19 11:03:02,089 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:03:06,160 [INFO]     step:240000 t_sim:24000.00 ms
-2021-04-19 11:03:06,167 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:03:10,248 [INFO]     step:242000 t_sim:24200.00 ms
-2021-04-19 11:03:10,258 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:03:14,295 [INFO]     step:244000 t_sim:24400.00 ms
-2021-04-19 11:03:14,302 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:03:18,405 [INFO]     step:246000 t_sim:24600.00 ms
-2021-04-19 11:03:18,414 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:03:22,500 [INFO]     step:248000 t_sim:24800.00 ms
-2021-04-19 11:03:22,507 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:03:26,704 [INFO]     step:250000 t_sim:25000.00 ms
-2021-04-19 11:03:26,726 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:03:30,759 [INFO]     step:252000 t_sim:25200.00 ms
-2021-04-19 11:03:30,769 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:03:34,844 [INFO]     step:254000 t_sim:25400.00 ms
-2021-04-19 11:03:34,851 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:03:38,872 [INFO]     step:256000 t_sim:25600.00 ms
-2021-04-19 11:03:38,881 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:03:42,944 [INFO]     step:258000 t_sim:25800.00 ms
-2021-04-19 11:03:42,951 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:03:47,065 [INFO]     step:260000 t_sim:26000.00 ms
-2021-04-19 11:03:47,075 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:03:51,186 [INFO]     step:262000 t_sim:26200.00 ms
-2021-04-19 11:03:51,194 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:03:55,262 [INFO]     step:264000 t_sim:26400.00 ms
-2021-04-19 11:03:55,269 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:03:59,360 [INFO]     step:266000 t_sim:26600.00 ms
-2021-04-19 11:03:59,370 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:04:03,499 [INFO]     step:268000 t_sim:26800.00 ms
-2021-04-19 11:04:03,506 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:04:07,587 [INFO]     step:270000 t_sim:27000.00 ms
-2021-04-19 11:04:07,597 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:04:11,670 [INFO]     step:272000 t_sim:27200.00 ms
-2021-04-19 11:04:11,677 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:04:15,717 [INFO]     step:274000 t_sim:27400.00 ms
-2021-04-19 11:04:15,723 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:04:19,796 [INFO]     step:276000 t_sim:27600.00 ms
-2021-04-19 11:04:19,806 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:04:23,873 [INFO]     step:278000 t_sim:27800.00 ms
-2021-04-19 11:04:23,880 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:04:27,902 [INFO]     step:280000 t_sim:28000.00 ms
-2021-04-19 11:04:27,912 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:04:31,997 [INFO]     step:282000 t_sim:28200.00 ms
-2021-04-19 11:04:32,004 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:04:36,037 [INFO]     step:284000 t_sim:28400.00 ms
-2021-04-19 11:04:36,050 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:04:40,112 [INFO]     step:286000 t_sim:28600.00 ms
-2021-04-19 11:04:40,118 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:04:44,206 [INFO]     step:288000 t_sim:28800.00 ms
-2021-04-19 11:04:44,213 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:04:48,303 [INFO]     step:290000 t_sim:29000.00 ms
-2021-04-19 11:04:48,312 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:04:52,407 [INFO]     step:292000 t_sim:29200.00 ms
-2021-04-19 11:04:52,414 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:04:56,520 [INFO]     step:294000 t_sim:29400.00 ms
-2021-04-19 11:04:56,531 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:05:00,625 [INFO]     step:296000 t_sim:29600.00 ms
-2021-04-19 11:05:00,632 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:05:04,656 [INFO]     step:298000 t_sim:29800.00 ms
-2021-04-19 11:05:04,665 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:05:08,725 [INFO]     step:300000 t_sim:30000.00 ms
-2021-04-19 11:05:12,966 [INFO]     step:302000 t_sim:30200.00 ms
-2021-04-19 11:05:12,973 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:05:16,984 [INFO]     step:304000 t_sim:30400.00 ms
-2021-04-19 11:05:16,993 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:05:20,986 [INFO]     step:306000 t_sim:30600.00 ms
-2021-04-19 11:05:20,993 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:05:25,067 [INFO]     step:308000 t_sim:30800.00 ms
-2021-04-19 11:05:25,077 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:05:29,081 [INFO]     step:310000 t_sim:31000.00 ms
-2021-04-19 11:05:29,089 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:05:33,101 [INFO]     step:312000 t_sim:31200.00 ms
-2021-04-19 11:05:33,110 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:05:37,108 [INFO]     step:314000 t_sim:31400.00 ms
-2021-04-19 11:05:37,115 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:05:41,178 [INFO]     step:316000 t_sim:31600.00 ms
-2021-04-19 11:05:41,186 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:05:45,226 [INFO]     step:318000 t_sim:31800.00 ms
-2021-04-19 11:05:45,237 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:05:49,277 [INFO]     step:320000 t_sim:32000.00 ms
-2021-04-19 11:05:49,284 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:05:53,352 [INFO]     step:322000 t_sim:32200.00 ms
-2021-04-19 11:05:53,363 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:05:57,452 [INFO]     step:324000 t_sim:32400.00 ms
-2021-04-19 11:05:57,471 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:06:01,665 [INFO]     step:326000 t_sim:32600.00 ms
-2021-04-19 11:06:01,671 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:06:05,780 [INFO]     step:328000 t_sim:32800.00 ms
-2021-04-19 11:06:05,790 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:06:09,865 [INFO]     step:330000 t_sim:33000.00 ms
-2021-04-19 11:06:09,873 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:06:13,907 [INFO]     step:332000 t_sim:33200.00 ms
-2021-04-19 11:06:13,918 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:06:17,936 [INFO]     step:334000 t_sim:33400.00 ms
-2021-04-19 11:06:17,943 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:06:21,989 [INFO]     step:336000 t_sim:33600.00 ms
-2021-04-19 11:06:21,999 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:06:26,041 [INFO]     step:338000 t_sim:33800.00 ms
-2021-04-19 11:06:26,048 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:06:30,115 [INFO]     step:340000 t_sim:34000.00 ms
-2021-04-19 11:06:30,123 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:06:34,203 [INFO]     step:342000 t_sim:34200.00 ms
-2021-04-19 11:06:34,214 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:06:38,241 [INFO]     step:344000 t_sim:34400.00 ms
-2021-04-19 11:06:38,247 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:06:42,270 [INFO]     step:346000 t_sim:34600.00 ms
-2021-04-19 11:06:42,279 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:06:46,349 [INFO]     step:348000 t_sim:34800.00 ms
-2021-04-19 11:06:46,356 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:06:50,442 [INFO]     step:350000 t_sim:35000.00 ms
-2021-04-19 11:06:50,453 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:06:54,565 [INFO]     step:352000 t_sim:35200.00 ms
-2021-04-19 11:06:54,573 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:06:58,671 [INFO]     step:354000 t_sim:35400.00 ms
-2021-04-19 11:06:58,678 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:07:02,783 [INFO]     step:356000 t_sim:35600.00 ms
-2021-04-19 11:07:02,793 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:07:06,946 [INFO]     step:358000 t_sim:35800.00 ms
-2021-04-19 11:07:06,954 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:07:11,070 [INFO]     step:360000 t_sim:36000.00 ms
-2021-04-19 11:07:11,081 [INFO]      _activate_hln: firing rate 0.9280768580721643 did not produce any spikes
-2021-04-19 11:07:15,185 [INFO]     step:362000 t_sim:36200.00 ms
-2021-04-19 11:07:15,193 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:07:19,290 [INFO]     step:364000 t_sim:36400.00 ms
-2021-04-19 11:07:19,300 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:07:23,398 [INFO]     step:366000 t_sim:36600.00 ms
-2021-04-19 11:07:23,405 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:07:27,481 [INFO]     step:368000 t_sim:36800.00 ms
-2021-04-19 11:07:27,489 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:07:31,581 [INFO]     step:370000 t_sim:37000.00 ms
-2021-04-19 11:07:31,591 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:07:35,675 [INFO]     step:372000 t_sim:37200.00 ms
-2021-04-19 11:07:35,682 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:07:39,753 [INFO]     step:374000 t_sim:37400.00 ms
-2021-04-19 11:07:39,763 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:07:43,842 [INFO]     step:376000 t_sim:37600.00 ms
-2021-04-19 11:07:43,849 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:07:47,959 [INFO]     step:378000 t_sim:37800.00 ms
-2021-04-19 11:07:47,967 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:07:52,092 [INFO]     step:380000 t_sim:38000.00 ms
-2021-04-19 11:07:52,103 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:07:56,125 [INFO]     step:382000 t_sim:38200.00 ms
-2021-04-19 11:07:56,132 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:08:00,212 [INFO]     step:384000 t_sim:38400.00 ms
-2021-04-19 11:08:00,222 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:08:04,323 [INFO]     step:386000 t_sim:38600.00 ms
-2021-04-19 11:08:04,330 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:08:08,463 [INFO]     step:388000 t_sim:38800.00 ms
-2021-04-19 11:08:08,474 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:08:12,472 [INFO]     step:390000 t_sim:39000.00 ms
-2021-04-19 11:08:12,480 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:08:16,525 [INFO]     step:392000 t_sim:39200.00 ms
-2021-04-19 11:08:16,533 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:08:20,636 [INFO]     step:394000 t_sim:39400.00 ms
-2021-04-19 11:08:20,645 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:08:24,710 [INFO]     step:396000 t_sim:39600.00 ms
-2021-04-19 11:08:24,716 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:08:28,739 [INFO]     step:398000 t_sim:39800.00 ms
-2021-04-19 11:08:28,749 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:08:32,760 [INFO]     step:400000 t_sim:40000.00 ms
-2021-04-19 11:08:32,768 [INFO]      _activate_hln: firing rate 3.9333933827202827 did not produce any spikes
-2021-04-19 11:08:36,732 [INFO]     step:402000 t_sim:40200.00 ms
-2021-04-19 11:08:36,741 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:08:40,778 [INFO]     step:404000 t_sim:40400.00 ms
-2021-04-19 11:08:40,786 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:08:44,800 [INFO]     step:406000 t_sim:40600.00 ms
-2021-04-19 11:08:44,807 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:08:48,931 [INFO]     step:408000 t_sim:40800.00 ms
-2021-04-19 11:08:48,941 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:08:52,952 [INFO]     step:410000 t_sim:41000.00 ms
-2021-04-19 11:08:52,960 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:08:56,960 [INFO]     step:412000 t_sim:41200.00 ms
-2021-04-19 11:08:56,970 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:09:01,058 [INFO]     step:414000 t_sim:41400.00 ms
-2021-04-19 11:09:01,064 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:09:05,119 [INFO]     step:416000 t_sim:41600.00 ms
-2021-04-19 11:09:05,129 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:09:09,199 [INFO]     step:418000 t_sim:41800.00 ms
-2021-04-19 11:09:09,206 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:09:13,205 [INFO]     step:420000 t_sim:42000.00 ms
-2021-04-19 11:09:13,212 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:09:17,233 [INFO]     step:422000 t_sim:42200.00 ms
-2021-04-19 11:09:17,243 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:09:21,268 [INFO]     step:424000 t_sim:42400.00 ms
-2021-04-19 11:09:21,274 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:09:25,309 [INFO]     step:426000 t_sim:42600.00 ms
-2021-04-19 11:09:25,318 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:09:29,316 [INFO]     step:428000 t_sim:42800.00 ms
-2021-04-19 11:09:29,324 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:09:33,364 [INFO]     step:430000 t_sim:43000.00 ms
-2021-04-19 11:09:33,371 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:09:37,393 [INFO]     step:432000 t_sim:43200.00 ms
-2021-04-19 11:09:37,404 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:09:41,430 [INFO]     step:434000 t_sim:43400.00 ms
-2021-04-19 11:09:41,437 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:09:45,484 [INFO]     step:436000 t_sim:43600.00 ms
-2021-04-19 11:09:45,493 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:09:49,510 [INFO]     step:438000 t_sim:43800.00 ms
-2021-04-19 11:09:49,518 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:09:53,555 [INFO]     step:440000 t_sim:44000.00 ms
-2021-04-19 11:09:53,565 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:09:57,606 [INFO]     step:442000 t_sim:44200.00 ms
-2021-04-19 11:09:57,613 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:10:01,651 [INFO]     step:444000 t_sim:44400.00 ms
-2021-04-19 11:10:01,658 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:10:05,693 [INFO]     step:446000 t_sim:44600.00 ms
-2021-04-19 11:10:05,702 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:10:09,719 [INFO]     step:448000 t_sim:44800.00 ms
-2021-04-19 11:10:09,726 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:10:13,756 [INFO]     step:450000 t_sim:45000.00 ms
-2021-04-19 11:10:13,783 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:10:17,792 [INFO]     step:452000 t_sim:45200.00 ms
-2021-04-19 11:10:17,798 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:10:21,758 [INFO]     step:454000 t_sim:45400.00 ms
-2021-04-19 11:10:21,768 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:10:25,719 [INFO]     step:456000 t_sim:45600.00 ms
-2021-04-19 11:10:25,725 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:10:29,809 [INFO]     step:458000 t_sim:45800.00 ms
-2021-04-19 11:10:29,816 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:10:33,772 [INFO]     step:460000 t_sim:46000.00 ms
-2021-04-19 11:10:33,783 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:10:37,863 [INFO]     step:462000 t_sim:46200.00 ms
-2021-04-19 11:10:37,869 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:10:41,954 [INFO]     step:464000 t_sim:46400.00 ms
-2021-04-19 11:10:41,964 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:10:46,048 [INFO]     step:466000 t_sim:46600.00 ms
-2021-04-19 11:10:46,055 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:10:50,132 [INFO]     step:468000 t_sim:46800.00 ms
-2021-04-19 11:10:50,141 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:10:54,153 [INFO]     step:470000 t_sim:47000.00 ms
-2021-04-19 11:10:54,161 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:10:58,176 [INFO]     step:472000 t_sim:47200.00 ms
-2021-04-19 11:10:58,183 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:11:02,193 [INFO]     step:474000 t_sim:47400.00 ms
-2021-04-19 11:11:02,203 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:11:06,216 [INFO]     step:476000 t_sim:47600.00 ms
-2021-04-19 11:11:06,223 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:11:10,292 [INFO]     step:478000 t_sim:47800.00 ms
-2021-04-19 11:11:10,302 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:11:14,323 [INFO]     step:480000 t_sim:48000.00 ms
-2021-04-19 11:11:14,330 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:11:18,393 [INFO]     step:482000 t_sim:48200.00 ms
-2021-04-19 11:11:18,400 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:11:22,453 [INFO]     step:484000 t_sim:48400.00 ms
-2021-04-19 11:11:22,464 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:11:26,538 [INFO]     step:486000 t_sim:48600.00 ms
-2021-04-19 11:11:26,544 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:11:30,508 [INFO]     step:488000 t_sim:48800.00 ms
-2021-04-19 11:11:30,518 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:11:34,520 [INFO]     step:490000 t_sim:49000.00 ms
-2021-04-19 11:11:34,527 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:11:38,619 [INFO]     step:492000 t_sim:49200.00 ms
-2021-04-19 11:11:38,630 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:11:42,659 [INFO]     step:494000 t_sim:49400.00 ms
-2021-04-19 11:11:42,666 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:11:46,821 [INFO]     step:496000 t_sim:49600.00 ms
-2021-04-19 11:11:46,829 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:11:50,822 [INFO]     step:498000 t_sim:49800.00 ms
-2021-04-19 11:11:50,832 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:11:54,901 [INFO]     step:500000 t_sim:50000.00 ms
-2021-04-19 11:11:54,909 [INFO]      _activate_hln: firing rate 3.6161516734631007 did not produce any spikes
-2021-04-19 11:11:58,984 [INFO]     step:502000 t_sim:50200.00 ms
-2021-04-19 11:11:58,994 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:12:03,046 [INFO]     step:504000 t_sim:50400.00 ms
-2021-04-19 11:12:03,052 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:12:07,059 [INFO]     step:506000 t_sim:50600.00 ms
-2021-04-19 11:12:07,069 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:12:11,110 [INFO]     step:508000 t_sim:50800.00 ms
-2021-04-19 11:12:11,117 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:12:15,240 [INFO]     step:510000 t_sim:51000.00 ms
-2021-04-19 11:12:15,247 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:12:19,288 [INFO]     step:512000 t_sim:51200.00 ms
-2021-04-19 11:12:19,297 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:12:23,333 [INFO]     step:514000 t_sim:51400.00 ms
-2021-04-19 11:12:23,340 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:12:27,349 [INFO]     step:516000 t_sim:51600.00 ms
-2021-04-19 11:12:27,359 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:12:31,398 [INFO]     step:518000 t_sim:51800.00 ms
-2021-04-19 11:12:31,404 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:12:35,532 [INFO]     step:520000 t_sim:52000.00 ms
-2021-04-19 11:12:35,543 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:12:39,671 [INFO]     step:522000 t_sim:52200.00 ms
-2021-04-19 11:12:39,678 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:12:43,757 [INFO]     step:524000 t_sim:52400.00 ms
-2021-04-19 11:12:43,764 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:12:47,849 [INFO]     step:526000 t_sim:52600.00 ms
-2021-04-19 11:12:47,860 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:12:51,946 [INFO]     step:528000 t_sim:52800.00 ms
-2021-04-19 11:12:51,953 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:12:56,032 [INFO]     step:530000 t_sim:53000.00 ms
-2021-04-19 11:12:56,043 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:13:00,116 [INFO]     step:532000 t_sim:53200.00 ms
-2021-04-19 11:13:00,123 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:13:04,148 [INFO]     step:534000 t_sim:53400.00 ms
-2021-04-19 11:13:04,155 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:13:08,221 [INFO]     step:536000 t_sim:53600.00 ms
-2021-04-19 11:13:08,231 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:13:12,309 [INFO]     step:538000 t_sim:53800.00 ms
-2021-04-19 11:13:12,315 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:13:16,354 [INFO]     step:540000 t_sim:54000.00 ms
-2021-04-19 11:13:16,364 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:13:20,421 [INFO]     step:542000 t_sim:54200.00 ms
-2021-04-19 11:13:20,428 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:13:24,563 [INFO]     step:544000 t_sim:54400.00 ms
-2021-04-19 11:13:24,574 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:13:28,700 [INFO]     step:546000 t_sim:54600.00 ms
-2021-04-19 11:13:28,707 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:13:32,763 [INFO]     step:548000 t_sim:54800.00 ms
-2021-04-19 11:13:32,769 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:13:36,850 [INFO]     step:550000 t_sim:55000.00 ms
-2021-04-19 11:13:36,860 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:13:40,995 [INFO]     step:552000 t_sim:55200.00 ms
-2021-04-19 11:13:41,002 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:13:45,100 [INFO]     step:554000 t_sim:55400.00 ms
-2021-04-19 11:13:45,110 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:13:49,155 [INFO]     step:556000 t_sim:55600.00 ms
-2021-04-19 11:13:49,162 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:13:53,241 [INFO]     step:558000 t_sim:55800.00 ms
-2021-04-19 11:13:53,250 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:13:57,336 [INFO]     step:560000 t_sim:56000.00 ms
-2021-04-19 11:13:57,343 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:14:01,422 [INFO]     step:562000 t_sim:56200.00 ms
-2021-04-19 11:14:01,429 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:14:05,510 [INFO]     step:564000 t_sim:56400.00 ms
-2021-04-19 11:14:05,520 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:14:09,623 [INFO]     step:566000 t_sim:56600.00 ms
-2021-04-19 11:14:09,630 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:14:13,699 [INFO]     step:568000 t_sim:56800.00 ms
-2021-04-19 11:14:13,709 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:14:17,836 [INFO]     step:570000 t_sim:57000.00 ms
-2021-04-19 11:14:17,844 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:14:21,960 [INFO]     step:572000 t_sim:57200.00 ms
-2021-04-19 11:14:21,970 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:14:26,032 [INFO]     step:574000 t_sim:57400.00 ms
-2021-04-19 11:14:26,039 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:14:30,057 [INFO]     step:576000 t_sim:57600.00 ms
-2021-04-19 11:14:30,063 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:14:34,144 [INFO]     step:578000 t_sim:57800.00 ms
-2021-04-19 11:14:34,154 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:14:38,229 [INFO]     step:580000 t_sim:58000.00 ms
-2021-04-19 11:14:38,236 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:14:42,305 [INFO]     step:582000 t_sim:58200.00 ms
-2021-04-19 11:14:42,316 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:14:46,386 [INFO]     step:584000 t_sim:58400.00 ms
-2021-04-19 11:14:46,393 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:14:50,481 [INFO]     step:586000 t_sim:58600.00 ms
-2021-04-19 11:14:50,488 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:14:54,588 [INFO]     step:588000 t_sim:58800.00 ms
-2021-04-19 11:14:54,597 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:14:58,659 [INFO]     step:590000 t_sim:59000.00 ms
-2021-04-19 11:14:58,666 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:15:02,703 [INFO]     step:592000 t_sim:59200.00 ms
-2021-04-19 11:15:02,712 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:15:06,792 [INFO]     step:594000 t_sim:59400.00 ms
-2021-04-19 11:15:06,798 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:15:10,913 [INFO]     step:596000 t_sim:59600.00 ms
-2021-04-19 11:15:10,923 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:15:15,055 [INFO]     step:598000 t_sim:59800.00 ms
-2021-04-19 11:15:15,061 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:15:19,132 [INFO]     step:600000 t_sim:60000.00 ms
-2021-04-19 11:15:19,154 [INFO]      _activate_hln: firing rate 1.7319296906359796 did not produce any spikes
-2021-04-19 11:15:23,211 [INFO]     step:602000 t_sim:60200.00 ms
-2021-04-19 11:15:23,221 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:15:27,303 [INFO]     step:604000 t_sim:60400.00 ms
-2021-04-19 11:15:27,310 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:15:29,333 [INFO]     step:605000 t_sim:60500.00 ms
-2021-04-19 11:15:29,339 [INFO]      _activate_hln: firing rate 0
-2021-04-19 11:15:29,427 [INFO] Simulation completed in 20.0 minutes, 28.02 seconds 
+2021-04-22 11:13:43,455 [INFO] Created log file
+2021-04-22 11:13:43,565 [INFO] Building cells.
+2021-04-22 11:13:43,627 [INFO] Building recurrent connections
+2021-04-22 11:13:44,745 [INFO] Building virtual cell stimulations for Blad_spikes
+2021-04-22 11:13:44,823 [INFO] Building virtual cell stimulations for EUS_spikes
+2021-04-22 11:13:44,897 [INFO] Building virtual cell stimulations for PAG_spikes
+2021-04-22 11:13:45,101 [INFO] Found 10 high level neurons
+2021-04-22 11:13:45,102 [INFO] Found 10 PAG neurons
+2021-04-22 11:13:45,141 [INFO] Found 10 low level neurons
+2021-04-22 11:13:45,142 [INFO] Running simulation for 60500.000 ms with the time step 0.100 ms
+2021-04-22 11:13:45,142 [INFO] Starting timestep: 0 at t_sim: 0.000 ms
+2021-04-22 11:13:45,142 [INFO] Block save every 2000 steps
+2021-04-22 11:13:49,147 [INFO]     step:2000 t_sim:200.00 ms
+2021-04-22 11:13:49,154 [INFO] n_gids: 10
+2021-04-22 11:13:49,154 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:13:53,173 [INFO]     step:4000 t_sim:400.00 ms
+2021-04-22 11:13:53,180 [INFO] n_gids: 10
+2021-04-22 11:13:53,181 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:13:57,218 [INFO]     step:6000 t_sim:600.00 ms
+2021-04-22 11:13:57,227 [INFO] n_gids: 10
+2021-04-22 11:13:57,228 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:14:01,188 [INFO]     step:8000 t_sim:800.00 ms
+2021-04-22 11:14:01,196 [INFO] n_gids: 10
+2021-04-22 11:14:01,197 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:14:05,068 [INFO]     step:10000 t_sim:1000.00 ms
+2021-04-22 11:14:05,078 [INFO] n_gids: 10
+2021-04-22 11:14:05,078 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:14:09,104 [INFO]     step:12000 t_sim:1200.00 ms
+2021-04-22 11:14:09,111 [INFO] n_gids: 10
+2021-04-22 11:14:09,111 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:14:09,111 [INFO] Volume = 0.07 ml
+2021-04-22 11:14:09,111 [INFO] Pressure = 3.12 cm H20
+2021-04-22 11:14:09,111 [INFO] Bladder afferent firing rate = 1.147622372991484 Hz
+2021-04-22 11:14:13,143 [INFO]     step:14000 t_sim:1400.00 ms
+2021-04-22 11:14:13,150 [INFO] n_gids: 10
+2021-04-22 11:14:13,150 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:14:13,150 [INFO] Volume = 0.07 ml
+2021-04-22 11:14:13,150 [INFO] Pressure = 1.23 cm H20
+2021-04-22 11:14:13,150 [INFO] Bladder afferent firing rate = 0.6194289258566488 Hz
+2021-04-22 11:14:13,151 [INFO]      _activate_hln: firing rate 0.6194289258566488 did not produce any spikes
+2021-04-22 11:14:17,261 [INFO]     step:16000 t_sim:1600.00 ms
+2021-04-22 11:14:17,273 [INFO] n_gids: 10
+2021-04-22 11:14:17,273 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:14:21,417 [INFO]     step:18000 t_sim:1800.00 ms
+2021-04-22 11:14:21,423 [INFO] n_gids: 10
+2021-04-22 11:14:21,423 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:14:25,541 [INFO]     step:20000 t_sim:2000.00 ms
+2021-04-22 11:14:25,551 [INFO] n_gids: 10
+2021-04-22 11:14:25,551 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:14:25,551 [INFO] Volume = 0.08 ml
+2021-04-22 11:14:25,551 [INFO] Pressure = 1.26 cm H20
+2021-04-22 11:14:25,551 [INFO] Bladder afferent firing rate = 0.6326710457267798 Hz
+2021-04-22 11:14:25,551 [INFO]      _activate_hln: firing rate 0.6326710457267798 did not produce any spikes
+2021-04-22 11:14:29,598 [INFO]     step:22000 t_sim:2200.00 ms
+2021-04-22 11:14:29,606 [INFO] n_gids: 10
+2021-04-22 11:14:29,606 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:14:29,606 [INFO] Volume = 0.08 ml
+2021-04-22 11:14:29,606 [INFO] Pressure = 3.17 cm H20
+2021-04-22 11:14:29,606 [INFO] Bladder afferent firing rate = 1.1549807401724996 Hz
+2021-04-22 11:14:29,606 [INFO]      _activate_hln: firing rate 1.1549807401724996 did not produce any spikes
+2021-04-22 11:14:33,577 [INFO]     step:24000 t_sim:2400.00 ms
+2021-04-22 11:14:33,587 [INFO] n_gids: 10
+2021-04-22 11:14:33,588 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:14:37,574 [INFO]     step:26000 t_sim:2600.00 ms
+2021-04-22 11:14:37,581 [INFO] n_gids: 10
+2021-04-22 11:14:37,581 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:14:41,616 [INFO]     step:28000 t_sim:2800.00 ms
+2021-04-22 11:14:41,623 [INFO] n_gids: 10
+2021-04-22 11:14:41,623 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:14:45,654 [INFO]     step:30000 t_sim:3000.00 ms
+2021-04-22 11:14:45,663 [INFO] n_gids: 10
+2021-04-22 11:14:45,664 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:14:45,664 [INFO] Volume = 0.10 ml
+2021-04-22 11:14:45,664 [INFO] Pressure = 1.31 cm H20
+2021-04-22 11:14:45,664 [INFO] Bladder afferent firing rate = 0.6524014471046861 Hz
+2021-04-22 11:14:45,664 [INFO]      _activate_hln: firing rate 0.6524014471046861 did not produce any spikes
+2021-04-22 11:14:49,626 [INFO]     step:32000 t_sim:3200.00 ms
+2021-04-22 11:14:49,634 [INFO] n_gids: 10
+2021-04-22 11:14:49,634 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:14:49,634 [INFO] Volume = 0.10 ml
+2021-04-22 11:14:49,634 [INFO] Pressure = 1.31 cm H20
+2021-04-22 11:14:49,634 [INFO] Bladder afferent firing rate = 0.653884711459702 Hz
+2021-04-22 11:14:49,634 [INFO]      _activate_hln: firing rate 0.653884711459702 did not produce any spikes
+2021-04-22 11:14:53,645 [INFO]     step:34000 t_sim:3400.00 ms
+2021-04-22 11:14:53,654 [INFO] n_gids: 10
+2021-04-22 11:14:53,654 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:14:57,672 [INFO]     step:36000 t_sim:3600.00 ms
+2021-04-22 11:14:57,679 [INFO] n_gids: 10
+2021-04-22 11:14:57,679 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:15:01,820 [INFO]     step:38000 t_sim:3800.00 ms
+2021-04-22 11:15:01,830 [INFO] n_gids: 10
+2021-04-22 11:15:01,830 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:15:05,899 [INFO]     step:40000 t_sim:4000.00 ms
+2021-04-22 11:15:05,906 [INFO] n_gids: 10
+2021-04-22 11:15:05,907 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:15:05,907 [INFO] Volume = 0.12 ml
+2021-04-22 11:15:05,907 [INFO] Pressure = 0.31 cm H20
+2021-04-22 11:15:05,907 [INFO] Bladder afferent firing rate = 0.1791882329381908 Hz
+2021-04-22 11:15:05,907 [INFO]      _activate_hln: firing rate 0.1791882329381908 did not produce any spikes
+2021-04-22 11:15:10,057 [INFO]     step:42000 t_sim:4200.00 ms
+2021-04-22 11:15:10,065 [INFO] n_gids: 10
+2021-04-22 11:15:10,065 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:15:10,065 [INFO] Volume = 0.12 ml
+2021-04-22 11:15:10,065 [INFO] Pressure = 0.32 cm H20
+2021-04-22 11:15:10,065 [INFO] Bladder afferent firing rate = 0.18214342453444507 Hz
+2021-04-22 11:15:10,065 [INFO]      _activate_hln: firing rate 0.18214342453444507 did not produce any spikes
+2021-04-22 11:15:14,126 [INFO]     step:44000 t_sim:4400.00 ms
+2021-04-22 11:15:14,136 [INFO] n_gids: 10
+2021-04-22 11:15:14,137 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:15:18,295 [INFO]     step:46000 t_sim:4600.00 ms
+2021-04-22 11:15:18,303 [INFO] n_gids: 10
+2021-04-22 11:15:18,303 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:15:22,358 [INFO]     step:48000 t_sim:4800.00 ms
+2021-04-22 11:15:22,369 [INFO] n_gids: 10
+2021-04-22 11:15:22,369 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:15:26,374 [INFO]     step:50000 t_sim:5000.00 ms
+2021-04-22 11:15:26,383 [INFO] n_gids: 10
+2021-04-22 11:15:26,383 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:15:26,383 [INFO] Volume = 0.13 ml
+2021-04-22 11:15:26,383 [INFO] Pressure = 0.36 cm H20
+2021-04-22 11:15:26,383 [INFO] Bladder afferent firing rate = 0.20590431108217622 Hz
+2021-04-22 11:15:26,383 [INFO]      _activate_hln: firing rate 0.20590431108217622 did not produce any spikes
+2021-04-22 11:15:30,457 [INFO]     step:52000 t_sim:5200.00 ms
+2021-04-22 11:15:30,468 [INFO] n_gids: 10
+2021-04-22 11:15:30,468 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:15:30,468 [INFO] Volume = 0.13 ml
+2021-04-22 11:15:30,468 [INFO] Pressure = 0.37 cm H20
+2021-04-22 11:15:30,468 [INFO] Bladder afferent firing rate = 0.20868049832825428 Hz
+2021-04-22 11:15:30,468 [INFO]      _activate_hln: firing rate 0.20868049832825428 did not produce any spikes
+2021-04-22 11:15:34,545 [INFO]     step:54000 t_sim:5400.00 ms
+2021-04-22 11:15:34,552 [INFO] n_gids: 10
+2021-04-22 11:15:34,553 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:15:38,582 [INFO]     step:56000 t_sim:5600.00 ms
+2021-04-22 11:15:38,588 [INFO] n_gids: 10
+2021-04-22 11:15:38,589 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:15:42,674 [INFO]     step:58000 t_sim:5800.00 ms
+2021-04-22 11:15:42,684 [INFO] n_gids: 10
+2021-04-22 11:15:42,684 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:15:46,732 [INFO]     step:60000 t_sim:6000.00 ms
+2021-04-22 11:15:46,739 [INFO] n_gids: 10
+2021-04-22 11:15:46,739 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:15:46,739 [INFO] Volume = 0.15 ml
+2021-04-22 11:15:46,739 [INFO] Pressure = 1.46 cm H20
+2021-04-22 11:15:46,740 [INFO] Bladder afferent firing rate = 0.7104386139968084 Hz
+2021-04-22 11:15:46,740 [INFO]      _activate_hln: firing rate 0.7104386139968084 did not produce any spikes
+2021-04-22 11:15:51,009 [INFO]     step:62000 t_sim:6200.00 ms
+2021-04-22 11:15:51,024 [INFO] n_gids: 10
+2021-04-22 11:15:51,024 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:15:51,024 [INFO] Volume = 0.15 ml
+2021-04-22 11:15:51,024 [INFO] Pressure = 0.41 cm H20
+2021-04-22 11:15:51,024 [INFO] Bladder afferent firing rate = 0.23539359971411372 Hz
+2021-04-22 11:15:51,024 [INFO]      _activate_hln: firing rate 0.23539359971411372 did not produce any spikes
+2021-04-22 11:15:55,213 [INFO]     step:64000 t_sim:6400.00 ms
+2021-04-22 11:15:55,222 [INFO] n_gids: 10
+2021-04-22 11:15:55,223 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:15:59,336 [INFO]     step:66000 t_sim:6600.00 ms
+2021-04-22 11:15:59,344 [INFO] n_gids: 10
+2021-04-22 11:15:59,345 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:16:03,359 [INFO]     step:68000 t_sim:6800.00 ms
+2021-04-22 11:16:03,370 [INFO] n_gids: 10
+2021-04-22 11:16:03,370 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:16:07,480 [INFO]     step:70000 t_sim:7000.00 ms
+2021-04-22 11:16:07,488 [INFO] n_gids: 10
+2021-04-22 11:16:07,489 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:16:07,489 [INFO] Volume = 0.16 ml
+2021-04-22 11:16:07,489 [INFO] Pressure = 3.41 cm H20
+2021-04-22 11:16:07,489 [INFO] Bladder afferent firing rate = 1.1858950653487161 Hz
+2021-04-22 11:16:07,489 [INFO]      _activate_hln: firing rate 1.1858950653487161 did not produce any spikes
+2021-04-22 11:16:11,561 [INFO]     step:72000 t_sim:7200.00 ms
+2021-04-22 11:16:11,574 [INFO] n_gids: 10
+2021-04-22 11:16:11,574 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:16:11,575 [INFO] Volume = 0.17 ml
+2021-04-22 11:16:11,575 [INFO] Pressure = 3.42 cm H20
+2021-04-22 11:16:11,575 [INFO] Bladder afferent firing rate = 1.1867474102169915 Hz
+2021-04-22 11:16:11,575 [INFO]      _activate_hln: firing rate 1.1867474102169915 did not produce any spikes
+2021-04-22 11:16:15,673 [INFO]     step:74000 t_sim:7400.00 ms
+2021-04-22 11:16:15,681 [INFO] n_gids: 10
+2021-04-22 11:16:15,681 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:16:19,821 [INFO]     step:76000 t_sim:7600.00 ms
+2021-04-22 11:16:19,850 [INFO] n_gids: 10
+2021-04-22 11:16:19,850 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:16:24,029 [INFO]     step:78000 t_sim:7800.00 ms
+2021-04-22 11:16:24,038 [INFO] n_gids: 10
+2021-04-22 11:16:24,038 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:16:28,235 [INFO]     step:80000 t_sim:8000.00 ms
+2021-04-22 11:16:28,245 [INFO] n_gids: 10
+2021-04-22 11:16:28,245 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:16:28,245 [INFO] Volume = 0.18 ml
+2021-04-22 11:16:28,245 [INFO] Pressure = 3.46 cm H20
+2021-04-22 11:16:28,245 [INFO] Bladder afferent firing rate = 1.191232954914692 Hz
+2021-04-22 11:16:28,245 [INFO]      _activate_hln: firing rate 1.191232954914692 did not produce any spikes
+2021-04-22 11:16:32,343 [INFO]     step:82000 t_sim:8200.00 ms
+2021-04-22 11:16:32,356 [INFO] n_gids: 10
+2021-04-22 11:16:32,356 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:16:32,357 [INFO] Volume = 0.18 ml
+2021-04-22 11:16:32,357 [INFO] Pressure = 3.47 cm H20
+2021-04-22 11:16:32,357 [INFO] Bladder afferent firing rate = 1.1921237515949965 Hz
+2021-04-22 11:16:36,483 [INFO]     step:84000 t_sim:8400.00 ms
+2021-04-22 11:16:36,491 [INFO] n_gids: 10
+2021-04-22 11:16:36,491 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:16:36,491 [INFO] Volume = 0.19 ml
+2021-04-22 11:16:36,491 [INFO] Pressure = 1.58 cm H20
+2021-04-22 11:16:36,491 [INFO] Bladder afferent firing rate = 0.7555101235693154 Hz
+2021-04-22 11:16:36,492 [INFO]      _activate_hln: firing rate 0.7555101235693154 did not produce any spikes
+2021-04-22 11:16:40,587 [INFO]     step:86000 t_sim:8600.00 ms
+2021-04-22 11:16:40,598 [INFO] n_gids: 10
+2021-04-22 11:16:40,599 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:16:44,662 [INFO]     step:88000 t_sim:8800.00 ms
+2021-04-22 11:16:44,670 [INFO] n_gids: 10
+2021-04-22 11:16:44,671 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:16:48,804 [INFO]     step:90000 t_sim:9000.00 ms
+2021-04-22 11:16:48,817 [INFO] n_gids: 10
+2021-04-22 11:16:48,818 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:16:48,818 [INFO] Volume = 0.20 ml
+2021-04-22 11:16:48,818 [INFO] Pressure = 3.51 cm H20
+2021-04-22 11:16:48,818 [INFO] Bladder afferent firing rate = 1.196279545679396 Hz
+2021-04-22 11:16:48,818 [INFO]      _activate_hln: firing rate 1.196279545679396 did not produce any spikes
+2021-04-22 11:16:52,798 [INFO]     step:92000 t_sim:9200.00 ms
+2021-04-22 11:16:52,806 [INFO] n_gids: 10
+2021-04-22 11:16:52,806 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:16:52,806 [INFO] Volume = 0.20 ml
+2021-04-22 11:16:52,806 [INFO] Pressure = 3.52 cm H20
+2021-04-22 11:16:52,806 [INFO] Bladder afferent firing rate = 1.1970748943723368 Hz
+2021-04-22 11:16:52,806 [INFO]      _activate_hln: firing rate 1.1970748943723368 did not produce any spikes
+2021-04-22 11:16:56,833 [INFO]     step:94000 t_sim:9400.00 ms
+2021-04-22 11:16:56,840 [INFO] n_gids: 10
+2021-04-22 11:16:56,840 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:17:00,901 [INFO]     step:96000 t_sim:9600.00 ms
+2021-04-22 11:17:00,910 [INFO] n_gids: 10
+2021-04-22 11:17:00,910 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:17:04,876 [INFO]     step:98000 t_sim:9800.00 ms
+2021-04-22 11:17:04,883 [INFO] n_gids: 10
+2021-04-22 11:17:04,883 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:17:09,049 [INFO]     step:100000 t_sim:10000.00 ms
+2021-04-22 11:17:09,060 [INFO] n_gids: 10
+2021-04-22 11:17:09,060 [INFO] PGN firing rate = 1.00 Hz
+2021-04-22 11:17:09,060 [INFO] Volume = 0.21 ml
+2021-04-22 11:17:09,061 [INFO] Pressure = 12.33 cm H20
+2021-04-22 11:17:09,061 [INFO] Bladder afferent firing rate = 2.0237894935210097 Hz
+2021-04-22 11:17:09,061 [INFO]      _activate_hln: firing rate 2.0237894935210097 did not produce any spikes
+2021-04-22 11:17:13,162 [INFO]     step:102000 t_sim:10200.00 ms
+2021-04-22 11:17:13,171 [INFO] n_gids: 10
+2021-04-22 11:17:13,171 [INFO] PGN firing rate = 0.88 Hz
+2021-04-22 11:17:13,171 [INFO] Volume = 0.22 ml
+2021-04-22 11:17:13,171 [INFO] Pressure = 10.31 cm H20
+2021-04-22 11:17:13,171 [INFO] Bladder afferent firing rate = 0.6750686466950748 Hz
+2021-04-22 11:17:13,172 [INFO]      _activate_hln: firing rate 0.6750686466950748 did not produce any spikes
+2021-04-22 11:17:17,250 [INFO]     step:104000 t_sim:10400.00 ms
+2021-04-22 11:17:17,261 [INFO] n_gids: 10
+2021-04-22 11:17:17,261 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:17:21,239 [INFO]     step:106000 t_sim:10600.00 ms
+2021-04-22 11:17:21,246 [INFO] n_gids: 10
+2021-04-22 11:17:21,246 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:17:25,156 [INFO]     step:108000 t_sim:10800.00 ms
+2021-04-22 11:17:25,163 [INFO] n_gids: 10
+2021-04-22 11:17:25,163 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:17:29,236 [INFO]     step:110000 t_sim:11000.00 ms
+2021-04-22 11:17:29,246 [INFO] n_gids: 10
+2021-04-22 11:17:29,246 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:17:29,246 [INFO] Volume = 0.23 ml
+2021-04-22 11:17:29,246 [INFO] Pressure = 3.61 cm H20
+2021-04-22 11:17:29,246 [INFO] Bladder afferent firing rate = 1.2056554682422531 Hz
+2021-04-22 11:17:29,247 [INFO]      _activate_hln: firing rate 1.2056554682422531 did not produce any spikes
+2021-04-22 11:17:33,292 [INFO]     step:112000 t_sim:11200.00 ms
+2021-04-22 11:17:33,300 [INFO] n_gids: 10
+2021-04-22 11:17:33,300 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:17:33,300 [INFO] Volume = 0.23 ml
+2021-04-22 11:17:33,300 [INFO] Pressure = 3.62 cm H20
+2021-04-22 11:17:33,300 [INFO] Bladder afferent firing rate = 1.2063437739324743 Hz
+2021-04-22 11:17:33,301 [INFO]      _activate_hln: firing rate 1.2063437739324743 did not produce any spikes
+2021-04-22 11:17:37,498 [INFO]     step:114000 t_sim:11400.00 ms
+2021-04-22 11:17:37,508 [INFO] n_gids: 10
+2021-04-22 11:17:37,508 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:17:41,548 [INFO]     step:116000 t_sim:11600.00 ms
+2021-04-22 11:17:41,554 [INFO] n_gids: 10
+2021-04-22 11:17:41,555 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:17:45,536 [INFO]     step:118000 t_sim:11800.00 ms
+2021-04-22 11:17:45,542 [INFO] n_gids: 10
+2021-04-22 11:17:45,543 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:17:49,687 [INFO]     step:120000 t_sim:12000.00 ms
+2021-04-22 11:17:49,698 [INFO] n_gids: 10
+2021-04-22 11:17:49,698 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:17:49,698 [INFO] Volume = 0.25 ml
+2021-04-22 11:17:49,698 [INFO] Pressure = 0.71 cm H20
+2021-04-22 11:17:49,698 [INFO] Bladder afferent firing rate = 0.3858202422680356 Hz
+2021-04-22 11:17:49,698 [INFO]      _activate_hln: firing rate 0.3858202422680356 did not produce any spikes
+2021-04-22 11:17:53,786 [INFO]     step:122000 t_sim:12200.00 ms
+2021-04-22 11:17:53,793 [INFO] n_gids: 10
+2021-04-22 11:17:53,793 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:17:53,793 [INFO] Volume = 0.25 ml
+2021-04-22 11:17:53,793 [INFO] Pressure = 0.72 cm H20
+2021-04-22 11:17:53,794 [INFO] Bladder afferent firing rate = 0.3897870988072516 Hz
+2021-04-22 11:17:53,794 [INFO]      _activate_hln: firing rate 0.3897870988072516 did not produce any spikes
+2021-04-22 11:17:57,927 [INFO]     step:124000 t_sim:12400.00 ms
+2021-04-22 11:17:57,936 [INFO] n_gids: 10
+2021-04-22 11:17:57,936 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:18:01,928 [INFO]     step:126000 t_sim:12600.00 ms
+2021-04-22 11:18:01,936 [INFO] n_gids: 10
+2021-04-22 11:18:01,936 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:18:06,025 [INFO]     step:128000 t_sim:12800.00 ms
+2021-04-22 11:18:06,035 [INFO] n_gids: 10
+2021-04-22 11:18:06,035 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:18:10,085 [INFO]     step:130000 t_sim:13000.00 ms
+2021-04-22 11:18:10,093 [INFO] n_gids: 10
+2021-04-22 11:18:10,093 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:18:10,093 [INFO] Volume = 0.26 ml
+2021-04-22 11:18:10,093 [INFO] Pressure = 3.71 cm H20
+2021-04-22 11:18:10,093 [INFO] Bladder afferent firing rate = 1.2135592813325196 Hz
+2021-04-22 11:18:10,093 [INFO]      _activate_hln: firing rate 1.2135592813325196 did not produce any spikes
+2021-04-22 11:18:14,046 [INFO]     step:132000 t_sim:13200.00 ms
+2021-04-22 11:18:14,054 [INFO] n_gids: 10
+2021-04-22 11:18:14,054 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:18:14,054 [INFO] Volume = 0.27 ml
+2021-04-22 11:18:14,054 [INFO] Pressure = 3.72 cm H20
+2021-04-22 11:18:14,054 [INFO] Bladder afferent firing rate = 1.2141185645940775 Hz
+2021-04-22 11:18:14,054 [INFO]      _activate_hln: firing rate 1.2141185645940775 did not produce any spikes
+2021-04-22 11:18:18,096 [INFO]     step:134000 t_sim:13400.00 ms
+2021-04-22 11:18:18,105 [INFO] n_gids: 10
+2021-04-22 11:18:18,106 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:18:22,213 [INFO]     step:136000 t_sim:13600.00 ms
+2021-04-22 11:18:22,220 [INFO] n_gids: 10
+2021-04-22 11:18:22,221 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:18:26,271 [INFO]     step:138000 t_sim:13800.00 ms
+2021-04-22 11:18:26,280 [INFO] n_gids: 10
+2021-04-22 11:18:26,280 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:18:30,293 [INFO]     step:140000 t_sim:14000.00 ms
+2021-04-22 11:18:30,300 [INFO] n_gids: 10
+2021-04-22 11:18:30,300 [INFO] PGN firing rate = 0.67 Hz
+2021-04-22 11:18:30,300 [INFO] Volume = 0.28 ml
+2021-04-22 11:18:30,300 [INFO] Pressure = 6.70 cm H20
+2021-04-22 11:18:30,300 [INFO] Bladder afferent firing rate = 0.9048551351828138 Hz
+2021-04-22 11:18:30,300 [INFO]      _activate_hln: firing rate 0.9048551351828138 did not produce any spikes
+2021-04-22 11:18:34,305 [INFO]     step:142000 t_sim:14200.00 ms
+2021-04-22 11:18:34,315 [INFO] n_gids: 10
+2021-04-22 11:18:34,315 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:18:34,315 [INFO] Volume = 0.28 ml
+2021-04-22 11:18:34,315 [INFO] Pressure = 3.77 cm H20
+2021-04-22 11:18:34,315 [INFO] Bladder afferent firing rate = 1.2175850871397935 Hz
+2021-04-22 11:18:34,315 [INFO]      _activate_hln: firing rate 1.2175850871397935 did not produce any spikes
+2021-04-22 11:18:38,303 [INFO]     step:144000 t_sim:14400.00 ms
+2021-04-22 11:18:38,311 [INFO] n_gids: 10
+2021-04-22 11:18:38,311 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:18:42,235 [INFO]     step:146000 t_sim:14600.00 ms
+2021-04-22 11:18:42,241 [INFO] n_gids: 10
+2021-04-22 11:18:42,242 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:18:46,169 [INFO]     step:148000 t_sim:14800.00 ms
+2021-04-22 11:18:46,178 [INFO] n_gids: 10
+2021-04-22 11:18:46,178 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:18:50,129 [INFO]     step:150000 t_sim:15000.00 ms
+2021-04-22 11:18:50,136 [INFO] n_gids: 10
+2021-04-22 11:18:50,136 [INFO] PGN firing rate = 0.67 Hz
+2021-04-22 11:18:50,136 [INFO] Volume = 0.30 ml
+2021-04-22 11:18:50,136 [INFO] Pressure = 6.75 cm H20
+2021-04-22 11:18:50,136 [INFO] Bladder afferent firing rate = 0.8909366471571132 Hz
+2021-04-22 11:18:54,262 [INFO]     step:152000 t_sim:15200.00 ms
+2021-04-22 11:18:54,289 [INFO] n_gids: 10
+2021-04-22 11:18:54,289 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:18:54,289 [INFO] Volume = 0.30 ml
+2021-04-22 11:18:54,289 [INFO] Pressure = 3.82 cm H20
+2021-04-22 11:18:54,289 [INFO] Bladder afferent firing rate = 1.220928297273078 Hz
+2021-04-22 11:18:54,289 [INFO]      _activate_hln: firing rate 1.220928297273078 did not produce any spikes
+2021-04-22 11:18:58,413 [INFO]     step:154000 t_sim:15400.00 ms
+2021-04-22 11:18:58,420 [INFO] n_gids: 10
+2021-04-22 11:18:58,420 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:19:02,609 [INFO]     step:156000 t_sim:15600.00 ms
+2021-04-22 11:19:02,619 [INFO] n_gids: 10
+2021-04-22 11:19:02,619 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:19:06,631 [INFO]     step:158000 t_sim:15800.00 ms
+2021-04-22 11:19:06,638 [INFO] n_gids: 10
+2021-04-22 11:19:06,638 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:19:10,737 [INFO]     step:160000 t_sim:16000.00 ms
+2021-04-22 11:19:10,744 [INFO] n_gids: 10
+2021-04-22 11:19:10,744 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:19:10,744 [INFO] Volume = 0.31 ml
+2021-04-22 11:19:10,744 [INFO] Pressure = 3.86 cm H20
+2021-04-22 11:19:10,744 [INFO] Bladder afferent firing rate = 1.2231461475181993 Hz
+2021-04-22 11:19:10,745 [INFO]      _activate_hln: firing rate 1.2231461475181993 did not produce any spikes
+2021-04-22 11:19:14,846 [INFO]     step:162000 t_sim:16200.00 ms
+2021-04-22 11:19:14,856 [INFO] n_gids: 10
+2021-04-22 11:19:14,856 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:19:14,856 [INFO] Volume = 0.32 ml
+2021-04-22 11:19:14,856 [INFO] Pressure = 0.92 cm H20
+2021-04-22 11:19:14,856 [INFO] Bladder afferent firing rate = 0.48449900904775256 Hz
+2021-04-22 11:19:14,857 [INFO]      _activate_hln: firing rate 0.48449900904775256 did not produce any spikes
+2021-04-22 11:19:19,000 [INFO]     step:164000 t_sim:16400.00 ms
+2021-04-22 11:19:19,007 [INFO] n_gids: 10
+2021-04-22 11:19:19,007 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:19:23,100 [INFO]     step:166000 t_sim:16600.00 ms
+2021-04-22 11:19:23,110 [INFO] n_gids: 10
+2021-04-22 11:19:23,110 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:19:27,220 [INFO]     step:168000 t_sim:16800.00 ms
+2021-04-22 11:19:27,227 [INFO] n_gids: 10
+2021-04-22 11:19:27,227 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:19:31,361 [INFO]     step:170000 t_sim:17000.00 ms
+2021-04-22 11:19:31,369 [INFO] n_gids: 10
+2021-04-22 11:19:31,369 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:19:31,369 [INFO] Volume = 0.33 ml
+2021-04-22 11:19:31,369 [INFO] Pressure = 0.96 cm H20
+2021-04-22 11:19:31,369 [INFO] Bladder afferent firing rate = 0.5026940964479053 Hz
+2021-04-22 11:19:31,369 [INFO]      _activate_hln: firing rate 0.5026940964479053 did not produce any spikes
+2021-04-22 11:19:35,439 [INFO]     step:172000 t_sim:17200.00 ms
+2021-04-22 11:19:35,449 [INFO] n_gids: 10
+2021-04-22 11:19:35,450 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:19:35,450 [INFO] Volume = 0.33 ml
+2021-04-22 11:19:35,450 [INFO] Pressure = 0.96 cm H20
+2021-04-22 11:19:35,450 [INFO] Bladder afferent firing rate = 0.5065530235434508 Hz
+2021-04-22 11:19:35,450 [INFO]      _activate_hln: firing rate 0.5065530235434508 did not produce any spikes
+2021-04-22 11:19:39,751 [INFO]     step:174000 t_sim:17400.00 ms
+2021-04-22 11:19:39,759 [INFO] n_gids: 10
+2021-04-22 11:19:39,759 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:19:43,915 [INFO]     step:176000 t_sim:17600.00 ms
+2021-04-22 11:19:43,924 [INFO] n_gids: 10
+2021-04-22 11:19:43,924 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:19:48,029 [INFO]     step:178000 t_sim:17800.00 ms
+2021-04-22 11:19:48,037 [INFO] n_gids: 10
+2021-04-22 11:19:48,037 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:19:52,176 [INFO]     step:180000 t_sim:18000.00 ms
+2021-04-22 11:19:52,187 [INFO] n_gids: 10
+2021-04-22 11:19:52,187 [INFO] PGN firing rate = 0.67 Hz
+2021-04-22 11:19:52,187 [INFO] Volume = 0.35 ml
+2021-04-22 11:19:52,187 [INFO] Pressure = 6.90 cm H20
+2021-04-22 11:19:52,187 [INFO] Bladder afferent firing rate = 0.8491967545349683 Hz
+2021-04-22 11:19:52,187 [INFO]      _activate_hln: firing rate 0.8491967545349683 did not produce any spikes
+2021-04-22 11:19:56,286 [INFO]     step:182000 t_sim:18200.00 ms
+2021-04-22 11:19:56,294 [INFO] n_gids: 10
+2021-04-22 11:19:56,295 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:19:56,295 [INFO] Volume = 0.35 ml
+2021-04-22 11:19:56,295 [INFO] Pressure = 3.97 cm H20
+2021-04-22 11:19:56,295 [INFO] Bladder afferent firing rate = 1.2283446536478042 Hz
+2021-04-22 11:19:56,295 [INFO]      _activate_hln: firing rate 1.2283446536478042 did not produce any spikes
+2021-04-22 11:20:00,381 [INFO]     step:184000 t_sim:18400.00 ms
+2021-04-22 11:20:00,387 [INFO] n_gids: 10
+2021-04-22 11:20:00,387 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:20:04,529 [INFO]     step:186000 t_sim:18600.00 ms
+2021-04-22 11:20:04,539 [INFO] n_gids: 10
+2021-04-22 11:20:04,540 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:20:08,674 [INFO]     step:188000 t_sim:18800.00 ms
+2021-04-22 11:20:08,681 [INFO] n_gids: 10
+2021-04-22 11:20:08,681 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:20:12,757 [INFO]     step:190000 t_sim:19000.00 ms
+2021-04-22 11:20:12,767 [INFO] n_gids: 10
+2021-04-22 11:20:12,767 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:20:12,767 [INFO] Volume = 0.36 ml
+2021-04-22 11:20:12,767 [INFO] Pressure = 4.01 cm H20
+2021-04-22 11:20:12,768 [INFO] Bladder afferent firing rate = 1.2298920897032324 Hz
+2021-04-22 11:20:12,768 [INFO]      _activate_hln: firing rate 1.2298920897032324 did not produce any spikes
+2021-04-22 11:20:16,882 [INFO]     step:192000 t_sim:19200.00 ms
+2021-04-22 11:20:16,891 [INFO] n_gids: 10
+2021-04-22 11:20:16,891 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:20:16,891 [INFO] Volume = 0.37 ml
+2021-04-22 11:20:16,891 [INFO] Pressure = 1.06 cm H20
+2021-04-22 11:20:16,891 [INFO] Bladder afferent firing rate = 0.551173081955234 Hz
+2021-04-22 11:20:16,891 [INFO]      _activate_hln: firing rate 0.551173081955234 did not produce any spikes
+2021-04-22 11:20:20,869 [INFO]     step:194000 t_sim:19400.00 ms
+2021-04-22 11:20:20,878 [INFO] n_gids: 10
+2021-04-22 11:20:20,878 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:20:24,802 [INFO]     step:196000 t_sim:19600.00 ms
+2021-04-22 11:20:24,809 [INFO] n_gids: 10
+2021-04-22 11:20:24,810 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:20:28,819 [INFO]     step:198000 t_sim:19800.00 ms
+2021-04-22 11:20:28,825 [INFO] n_gids: 10
+2021-04-22 11:20:28,825 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:20:32,893 [INFO]     step:200000 t_sim:20000.00 ms
+2021-04-22 11:20:32,903 [INFO] n_gids: 10
+2021-04-22 11:20:32,903 [INFO] PGN firing rate = 0.83 Hz
+2021-04-22 11:20:32,903 [INFO] Volume = 0.38 ml
+2021-04-22 11:20:32,903 [INFO] Pressure = 9.92 cm H20
+2021-04-22 11:20:32,904 [INFO] Bladder afferent firing rate = 0.4538620515226883 Hz
+2021-04-22 11:20:32,904 [INFO]      _activate_hln: firing rate 0.4538620515226883 did not produce any spikes
+2021-04-22 11:20:36,804 [INFO]     step:202000 t_sim:20200.00 ms
+2021-04-22 11:20:36,812 [INFO] n_gids: 10
+2021-04-22 11:20:36,812 [INFO] PGN firing rate = 0.83 Hz
+2021-04-22 11:20:36,812 [INFO] Volume = 0.38 ml
+2021-04-22 11:20:36,812 [INFO] Pressure = 9.93 cm H20
+2021-04-22 11:20:36,812 [INFO] Bladder afferent firing rate = 0.459242466602066 Hz
+2021-04-22 11:20:36,812 [INFO]      _activate_hln: firing rate 0.459242466602066 did not produce any spikes
+2021-04-22 11:20:40,947 [INFO]     step:204000 t_sim:20400.00 ms
+2021-04-22 11:20:40,958 [INFO] n_gids: 10
+2021-04-22 11:20:40,958 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:20:40,958 [INFO] Volume = 0.39 ml
+2021-04-22 11:20:40,958 [INFO] Pressure = 2.17 cm H20
+2021-04-22 11:20:40,958 [INFO] Bladder afferent firing rate = 0.9448480686498539 Hz
+2021-04-22 11:20:40,958 [INFO]      _activate_hln: firing rate 0.9448480686498539 did not produce any spikes
+2021-04-22 11:20:45,073 [INFO]     step:206000 t_sim:20600.00 ms
+2021-04-22 11:20:45,080 [INFO] n_gids: 10
+2021-04-22 11:20:45,080 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:20:49,063 [INFO]     step:208000 t_sim:20800.00 ms
+2021-04-22 11:20:49,073 [INFO] n_gids: 10
+2021-04-22 11:20:49,074 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:20:49,074 [INFO] Volume = 0.40 ml
+2021-04-22 11:20:49,074 [INFO] Pressure = 2.20 cm H20
+2021-04-22 11:20:49,074 [INFO] Bladder afferent firing rate = 0.952977832619837 Hz
+2021-04-22 11:20:49,074 [INFO]      _activate_hln: firing rate 0.952977832619837 did not produce any spikes
+2021-04-22 11:20:53,234 [INFO]     step:210000 t_sim:21000.00 ms
+2021-04-22 11:20:53,241 [INFO] n_gids: 10
+2021-04-22 11:20:53,241 [INFO] PGN firing rate = 0.67 Hz
+2021-04-22 11:20:53,241 [INFO] Volume = 0.40 ml
+2021-04-22 11:20:53,241 [INFO] Pressure = 7.05 cm H20
+2021-04-22 11:20:53,241 [INFO] Bladder afferent firing rate = 0.8046719758349834 Hz
+2021-04-22 11:20:57,286 [INFO]     step:212000 t_sim:21200.00 ms
+2021-04-22 11:20:57,293 [INFO] n_gids: 10
+2021-04-22 11:20:57,293 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:20:57,293 [INFO] Volume = 0.40 ml
+2021-04-22 11:20:57,293 [INFO] Pressure = 1.17 cm H20
+2021-04-22 11:20:57,293 [INFO] Bladder afferent firing rate = 0.5954333179394458 Hz
+2021-04-22 11:20:57,294 [INFO]      _activate_hln: firing rate 0.5954333179394458 did not produce any spikes
+2021-04-22 11:21:01,448 [INFO]     step:214000 t_sim:21400.00 ms
+2021-04-22 11:21:01,457 [INFO] n_gids: 10
+2021-04-22 11:21:01,457 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:21:05,533 [INFO]     step:216000 t_sim:21600.00 ms
+2021-04-22 11:21:05,541 [INFO] n_gids: 10
+2021-04-22 11:21:05,541 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:21:09,637 [INFO]     step:218000 t_sim:21800.00 ms
+2021-04-22 11:21:09,647 [INFO] n_gids: 10
+2021-04-22 11:21:09,647 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:21:09,647 [INFO] Volume = 0.41 ml
+2021-04-22 11:21:09,647 [INFO] Pressure = 2.25 cm H20
+2021-04-22 11:21:09,647 [INFO] Bladder afferent firing rate = 0.9660083309716645 Hz
+2021-04-22 11:21:09,647 [INFO]      _activate_hln: firing rate 0.9660083309716645 did not produce any spikes
+2021-04-22 11:21:13,743 [INFO]     step:220000 t_sim:22000.00 ms
+2021-04-22 11:21:13,750 [INFO] n_gids: 10
+2021-04-22 11:21:13,750 [INFO] PGN firing rate = 0.67 Hz
+2021-04-22 11:21:13,750 [INFO] Volume = 0.41 ml
+2021-04-22 11:21:13,750 [INFO] Pressure = 7.10 cm H20
+2021-04-22 11:21:13,750 [INFO] Bladder afferent firing rate = 0.7892448466942605 Hz
+2021-04-22 11:21:17,787 [INFO]     step:222000 t_sim:22200.00 ms
+2021-04-22 11:21:17,794 [INFO] n_gids: 10
+2021-04-22 11:21:17,794 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:21:17,794 [INFO] Volume = 0.42 ml
+2021-04-22 11:21:17,794 [INFO] Pressure = 2.26 cm H20
+2021-04-22 11:21:17,794 [INFO] Bladder afferent firing rate = 0.969758037299606 Hz
+2021-04-22 11:21:17,794 [INFO]      _activate_hln: firing rate 0.969758037299606 did not produce any spikes
+2021-04-22 11:21:21,710 [INFO]     step:224000 t_sim:22400.00 ms
+2021-04-22 11:21:21,719 [INFO] n_gids: 10
+2021-04-22 11:21:21,719 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:21:25,653 [INFO]     step:226000 t_sim:22600.00 ms
+2021-04-22 11:21:25,659 [INFO] n_gids: 10
+2021-04-22 11:21:25,659 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:21:29,842 [INFO]     step:228000 t_sim:22800.00 ms
+2021-04-22 11:21:29,852 [INFO] n_gids: 10
+2021-04-22 11:21:29,853 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:21:29,853 [INFO] Volume = 0.43 ml
+2021-04-22 11:21:29,853 [INFO] Pressure = 2.29 cm H20
+2021-04-22 11:21:29,853 [INFO] Bladder afferent firing rate = 0.9784051472862929 Hz
+2021-04-22 11:21:29,853 [INFO]      _activate_hln: firing rate 0.9784051472862929 did not produce any spikes
+2021-04-22 11:21:33,986 [INFO]     step:230000 t_sim:23000.00 ms
+2021-04-22 11:21:33,994 [INFO] n_gids: 10
+2021-04-22 11:21:33,994 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:21:33,994 [INFO] Volume = 0.43 ml
+2021-04-22 11:21:33,994 [INFO] Pressure = 1.26 cm H20
+2021-04-22 11:21:33,994 [INFO] Bladder afferent firing rate = 0.6315333532451682 Hz
+2021-04-22 11:21:33,994 [INFO]      _activate_hln: firing rate 0.6315333532451682 did not produce any spikes
+2021-04-22 11:21:38,132 [INFO]     step:232000 t_sim:23200.00 ms
+2021-04-22 11:21:38,143 [INFO] n_gids: 10
+2021-04-22 11:21:38,143 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:21:38,143 [INFO] Volume = 0.43 ml
+2021-04-22 11:21:38,143 [INFO] Pressure = 1.27 cm H20
+2021-04-22 11:21:38,143 [INFO] Bladder afferent firing rate = 0.6359205539641277 Hz
+2021-04-22 11:21:38,143 [INFO]      _activate_hln: firing rate 0.6359205539641277 did not produce any spikes
+2021-04-22 11:21:42,238 [INFO]     step:234000 t_sim:23400.00 ms
+2021-04-22 11:21:42,244 [INFO] n_gids: 10
+2021-04-22 11:21:42,244 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:21:46,324 [INFO]     step:236000 t_sim:23600.00 ms
+2021-04-22 11:21:46,330 [INFO] n_gids: 10
+2021-04-22 11:21:46,330 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:21:50,417 [INFO]     step:238000 t_sim:23800.00 ms
+2021-04-22 11:21:50,429 [INFO] n_gids: 10
+2021-04-22 11:21:50,429 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:21:50,429 [INFO] Volume = 0.45 ml
+2021-04-22 11:21:50,429 [INFO] Pressure = 2.35 cm H20
+2021-04-22 11:21:50,429 [INFO] Bladder afferent firing rate = 0.9925154017221153 Hz
+2021-04-22 11:21:50,429 [INFO]      _activate_hln: firing rate 0.9925154017221153 did not produce any spikes
+2021-04-22 11:21:54,539 [INFO]     step:240000 t_sim:24000.00 ms
+2021-04-22 11:21:54,547 [INFO] n_gids: 10
+2021-04-22 11:21:54,547 [INFO] PGN firing rate = 0.67 Hz
+2021-04-22 11:21:54,547 [INFO] Volume = 0.45 ml
+2021-04-22 11:21:54,547 [INFO] Pressure = 7.20 cm H20
+2021-04-22 11:21:54,547 [INFO] Bladder afferent firing rate = 0.7578250041069694 Hz
+2021-04-22 11:21:54,547 [INFO]      _activate_hln: firing rate 0.7578250041069694 did not produce any spikes
+2021-04-22 11:21:58,667 [INFO]     step:242000 t_sim:24200.00 ms
+2021-04-22 11:21:58,677 [INFO] n_gids: 10
+2021-04-22 11:21:58,678 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:21:58,678 [INFO] Volume = 0.45 ml
+2021-04-22 11:21:58,678 [INFO] Pressure = 2.36 cm H20
+2021-04-22 11:21:58,678 [INFO] Bladder afferent firing rate = 0.9957166684132275 Hz
+2021-04-22 11:21:58,678 [INFO]      _activate_hln: firing rate 0.9957166684132275 did not produce any spikes
+2021-04-22 11:22:02,696 [INFO]     step:244000 t_sim:24400.00 ms
+2021-04-22 11:22:02,704 [INFO] n_gids: 10
+2021-04-22 11:22:02,704 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:22:06,807 [INFO]     step:246000 t_sim:24600.00 ms
+2021-04-22 11:22:06,816 [INFO] n_gids: 10
+2021-04-22 11:22:06,816 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:22:10,915 [INFO]     step:248000 t_sim:24800.00 ms
+2021-04-22 11:22:10,923 [INFO] n_gids: 10
+2021-04-22 11:22:10,923 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:22:15,125 [INFO]     step:250000 t_sim:25000.00 ms
+2021-04-22 11:22:15,134 [INFO] n_gids: 10
+2021-04-22 11:22:15,134 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:22:15,134 [INFO] Volume = 0.46 ml
+2021-04-22 11:22:15,135 [INFO] Pressure = 4.31 cm H20
+2021-04-22 11:22:15,135 [INFO] Bladder afferent firing rate = 1.2351761383787705 Hz
+2021-04-22 11:22:15,135 [INFO]      _activate_hln: firing rate 1.2351761383787705 did not produce any spikes
+2021-04-22 11:22:19,101 [INFO]     step:252000 t_sim:25200.00 ms
+2021-04-22 11:22:19,110 [INFO] n_gids: 10
+2021-04-22 11:22:19,110 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:22:19,110 [INFO] Volume = 0.47 ml
+2021-04-22 11:22:19,110 [INFO] Pressure = 2.41 cm H20
+2021-04-22 11:22:19,110 [INFO] Bladder afferent firing rate = 1.0076584300959708 Hz
+2021-04-22 11:22:23,166 [INFO]     step:254000 t_sim:25400.00 ms
+2021-04-22 11:22:23,173 [INFO] n_gids: 10
+2021-04-22 11:22:23,173 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:22:23,173 [INFO] Volume = 0.47 ml
+2021-04-22 11:22:23,173 [INFO] Pressure = 2.43 cm H20
+2021-04-22 11:22:23,173 [INFO] Bladder afferent firing rate = 1.0118964081466046 Hz
+2021-04-22 11:22:23,173 [INFO]      _activate_hln: firing rate 1.0118964081466046 did not produce any spikes
+2021-04-22 11:22:27,277 [INFO]     step:256000 t_sim:25600.00 ms
+2021-04-22 11:22:27,287 [INFO] n_gids: 10
+2021-04-22 11:22:27,287 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:22:31,250 [INFO]     step:258000 t_sim:25800.00 ms
+2021-04-22 11:22:31,258 [INFO] n_gids: 10
+2021-04-22 11:22:31,258 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:22:31,258 [INFO] Volume = 0.48 ml
+2021-04-22 11:22:31,258 [INFO] Pressure = 2.45 cm H20
+2021-04-22 11:22:31,258 [INFO] Bladder afferent firing rate = 1.0170332696153705 Hz
+2021-04-22 11:22:31,258 [INFO]      _activate_hln: firing rate 1.0170332696153705 did not produce any spikes
+2021-04-22 11:22:35,436 [INFO]     step:260000 t_sim:26000.00 ms
+2021-04-22 11:22:35,447 [INFO] n_gids: 10
+2021-04-22 11:22:35,447 [INFO] PGN firing rate = 0.67 Hz
+2021-04-22 11:22:35,447 [INFO] Volume = 0.48 ml
+2021-04-22 11:22:35,447 [INFO] Pressure = 7.30 cm H20
+2021-04-22 11:22:35,447 [INFO] Bladder afferent firing rate = 0.7252409729879736 Hz
+2021-04-22 11:22:35,447 [INFO]      _activate_hln: firing rate 0.7252409729879736 did not produce any spikes
+2021-04-22 11:22:39,635 [INFO]     step:262000 t_sim:26200.00 ms
+2021-04-22 11:22:39,642 [INFO] n_gids: 10
+2021-04-22 11:22:39,642 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:22:39,642 [INFO] Volume = 0.48 ml
+2021-04-22 11:22:39,642 [INFO] Pressure = 2.46 cm H20
+2021-04-22 11:22:39,642 [INFO] Bladder afferent firing rate = 1.0199057349933085 Hz
+2021-04-22 11:22:39,642 [INFO]      _activate_hln: firing rate 1.0199057349933085 did not produce any spikes
+2021-04-22 11:22:43,815 [INFO]     step:264000 t_sim:26400.00 ms
+2021-04-22 11:22:43,822 [INFO] n_gids: 10
+2021-04-22 11:22:43,822 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:22:47,996 [INFO]     step:266000 t_sim:26600.00 ms
+2021-04-22 11:22:48,005 [INFO] n_gids: 10
+2021-04-22 11:22:48,006 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:22:52,093 [INFO]     step:268000 t_sim:26800.00 ms
+2021-04-22 11:22:52,099 [INFO] n_gids: 10
+2021-04-22 11:22:52,100 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:22:56,264 [INFO]     step:270000 t_sim:27000.00 ms
+2021-04-22 11:22:56,275 [INFO] n_gids: 10
+2021-04-22 11:22:56,275 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:22:56,275 [INFO] Volume = 0.50 ml
+2021-04-22 11:22:56,275 [INFO] Pressure = 4.41 cm H20
+2021-04-22 11:22:56,275 [INFO] Bladder afferent firing rate = 1.2345073959104986 Hz
+2021-04-22 11:23:00,447 [INFO]     step:272000 t_sim:27200.00 ms
+2021-04-22 11:23:00,454 [INFO] n_gids: 10
+2021-04-22 11:23:00,454 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:23:00,454 [INFO] Volume = 0.50 ml
+2021-04-22 11:23:00,454 [INFO] Pressure = 1.46 cm H20
+2021-04-22 11:23:00,454 [INFO] Bladder afferent firing rate = 0.7138971522839166 Hz
+2021-04-22 11:23:00,454 [INFO]      _activate_hln: firing rate 0.7138971522839166 did not produce any spikes
+2021-04-22 11:23:04,596 [INFO]     step:274000 t_sim:27400.00 ms
+2021-04-22 11:23:04,603 [INFO] n_gids: 10
+2021-04-22 11:23:04,603 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:23:08,641 [INFO]     step:276000 t_sim:27600.00 ms
+2021-04-22 11:23:08,651 [INFO] n_gids: 10
+2021-04-22 11:23:08,651 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:23:12,727 [INFO]     step:278000 t_sim:27800.00 ms
+2021-04-22 11:23:12,734 [INFO] n_gids: 10
+2021-04-22 11:23:12,734 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:23:12,734 [INFO] Volume = 0.51 ml
+2021-04-22 11:23:12,734 [INFO] Pressure = 2.55 cm H20
+2021-04-22 11:23:12,735 [INFO] Bladder afferent firing rate = 1.0401753842927728 Hz
+2021-04-22 11:23:12,735 [INFO]      _activate_hln: firing rate 1.0401753842927728 did not produce any spikes
+2021-04-22 11:23:16,810 [INFO]     step:280000 t_sim:28000.00 ms
+2021-04-22 11:23:16,820 [INFO] n_gids: 10
+2021-04-22 11:23:16,820 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:23:16,820 [INFO] Volume = 0.51 ml
+2021-04-22 11:23:16,820 [INFO] Pressure = 4.46 cm H20
+2021-04-22 11:23:16,820 [INFO] Bladder afferent firing rate = 1.2337108904999816 Hz
+2021-04-22 11:23:16,820 [INFO]      _activate_hln: firing rate 1.2337108904999816 did not produce any spikes
+2021-04-22 11:23:20,834 [INFO]     step:282000 t_sim:28200.00 ms
+2021-04-22 11:23:20,841 [INFO] n_gids: 10
+2021-04-22 11:23:20,841 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:23:20,842 [INFO] Volume = 0.52 ml
+2021-04-22 11:23:20,842 [INFO] Pressure = 2.56 cm H20
+2021-04-22 11:23:20,842 [INFO] Bladder afferent firing rate = 1.0431721186821947 Hz
+2021-04-22 11:23:20,842 [INFO]      _activate_hln: firing rate 1.0431721186821947 did not produce any spikes
+2021-04-22 11:23:24,997 [INFO]     step:284000 t_sim:28400.00 ms
+2021-04-22 11:23:25,007 [INFO] n_gids: 10
+2021-04-22 11:23:25,007 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:23:29,111 [INFO]     step:286000 t_sim:28600.00 ms
+2021-04-22 11:23:29,118 [INFO] n_gids: 10
+2021-04-22 11:23:29,118 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:23:33,270 [INFO]     step:288000 t_sim:28800.00 ms
+2021-04-22 11:23:33,278 [INFO] n_gids: 10
+2021-04-22 11:23:33,278 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:23:33,278 [INFO] Volume = 0.53 ml
+2021-04-22 11:23:33,278 [INFO] Pressure = 2.60 cm H20
+2021-04-22 11:23:33,278 [INFO] Bladder afferent firing rate = 1.0514728157228521 Hz
+2021-04-22 11:23:33,278 [INFO]      _activate_hln: firing rate 1.0514728157228521 did not produce any spikes
+2021-04-22 11:23:37,406 [INFO]     step:290000 t_sim:29000.00 ms
+2021-04-22 11:23:37,416 [INFO] n_gids: 10
+2021-04-22 11:23:37,416 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:23:37,416 [INFO] Volume = 0.53 ml
+2021-04-22 11:23:37,417 [INFO] Pressure = 4.51 cm H20
+2021-04-22 11:23:37,417 [INFO] Bladder afferent firing rate = 1.2326302831032216 Hz
+2021-04-22 11:23:37,417 [INFO]      _activate_hln: firing rate 1.2326302831032216 did not produce any spikes
+2021-04-22 11:23:41,517 [INFO]     step:292000 t_sim:29200.00 ms
+2021-04-22 11:23:41,525 [INFO] n_gids: 10
+2021-04-22 11:23:41,525 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:23:41,525 [INFO] Volume = 0.53 ml
+2021-04-22 11:23:41,525 [INFO] Pressure = 1.57 cm H20
+2021-04-22 11:23:41,525 [INFO] Bladder afferent firing rate = 0.7515606311896341 Hz
+2021-04-22 11:23:41,525 [INFO]      _activate_hln: firing rate 0.7515606311896341 did not produce any spikes
+2021-04-22 11:23:45,503 [INFO]     step:294000 t_sim:29400.00 ms
+2021-04-22 11:23:45,513 [INFO] n_gids: 10
+2021-04-22 11:23:45,513 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:23:49,598 [INFO]     step:296000 t_sim:29600.00 ms
+2021-04-22 11:23:49,604 [INFO] n_gids: 10
+2021-04-22 11:23:49,604 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:23:53,460 [INFO]     step:298000 t_sim:29800.00 ms
+2021-04-22 11:23:53,470 [INFO] n_gids: 10
+2021-04-22 11:23:53,470 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:23:53,471 [INFO] Volume = 0.55 ml
+2021-04-22 11:23:53,471 [INFO] Pressure = 1.60 cm H20
+2021-04-22 11:23:53,471 [INFO] Bladder afferent firing rate = 0.7645122799506285 Hz
+2021-04-22 11:23:53,471 [INFO]      _activate_hln: firing rate 0.7645122799506285 did not produce any spikes
+2021-04-22 11:23:57,401 [INFO]     step:300000 t_sim:30000.00 ms
+2021-04-22 11:23:57,409 [INFO] n_gids: 10
+2021-04-22 11:23:57,409 [INFO] PGN firing rate = 1.00 Hz
+2021-04-22 11:23:57,409 [INFO] Volume = 0.55 ml
+2021-04-22 11:23:57,409 [INFO] Pressure = 13.33 cm H20
+2021-04-22 11:23:57,409 [INFO] Bladder afferent firing rate = 2.7918395077780964 Hz
+2021-04-22 11:23:57,409 [INFO]      _activate_hln: firing rate 2.7918395077780964 did not produce any spikes
+2021-04-22 11:24:01,473 [INFO]     step:302000 t_sim:30200.00 ms
+2021-04-22 11:24:01,480 [INFO] n_gids: 10
+2021-04-22 11:24:01,481 [INFO] PGN firing rate = 0.38 Hz
+2021-04-22 11:24:01,481 [INFO] Volume = 0.55 ml
+2021-04-22 11:24:01,481 [INFO] Pressure = 2.50 cm H20
+2021-04-22 11:24:01,481 [INFO] Bladder afferent firing rate = 1.0301312811846057 Hz
+2021-04-22 11:24:01,481 [INFO]      _activate_hln: firing rate 1.0301312811846057 did not produce any spikes
+2021-04-22 11:24:05,401 [INFO]     step:304000 t_sim:30400.00 ms
+2021-04-22 11:24:05,411 [INFO] n_gids: 10
+2021-04-22 11:24:05,412 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:24:05,412 [INFO] Volume = 0.55 ml
+2021-04-22 11:24:05,412 [INFO] Pressure = 1.62 cm H20
+2021-04-22 11:24:05,412 [INFO] Bladder afferent firing rate = 0.7726704605999368 Hz
+2021-04-22 11:24:05,412 [INFO]      _activate_hln: firing rate 0.7726704605999368 did not produce any spikes
+2021-04-22 11:24:09,385 [INFO]     step:306000 t_sim:30600.00 ms
+2021-04-22 11:24:09,392 [INFO] n_gids: 10
+2021-04-22 11:24:09,392 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:24:13,437 [INFO]     step:308000 t_sim:30800.00 ms
+2021-04-22 11:24:13,448 [INFO] n_gids: 10
+2021-04-22 11:24:13,448 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:24:13,448 [INFO] Volume = 0.56 ml
+2021-04-22 11:24:13,448 [INFO] Pressure = 2.70 cm H20
+2021-04-22 11:24:13,448 [INFO] Bladder afferent firing rate = 1.0724363268601214 Hz
+2021-04-22 11:24:13,448 [INFO]      _activate_hln: firing rate 1.0724363268601214 did not produce any spikes
+2021-04-22 11:24:17,516 [INFO]     step:310000 t_sim:31000.00 ms
+2021-04-22 11:24:17,524 [INFO] n_gids: 10
+2021-04-22 11:24:17,524 [INFO] PGN firing rate = 0.67 Hz
+2021-04-22 11:24:17,524 [INFO] Volume = 0.56 ml
+2021-04-22 11:24:17,524 [INFO] Pressure = 7.55 cm H20
+2021-04-22 11:24:17,524 [INFO] Bladder afferent firing rate = 0.6406609808917496 Hz
+2021-04-22 11:24:17,524 [INFO]      _activate_hln: firing rate 0.6406609808917496 did not produce any spikes
+2021-04-22 11:24:21,621 [INFO]     step:312000 t_sim:31200.00 ms
+2021-04-22 11:24:21,632 [INFO] n_gids: 10
+2021-04-22 11:24:21,632 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:24:21,632 [INFO] Volume = 0.57 ml
+2021-04-22 11:24:21,632 [INFO] Pressure = 1.67 cm H20
+2021-04-22 11:24:21,632 [INFO] Bladder afferent firing rate = 0.7870296239427024 Hz
+2021-04-22 11:24:25,647 [INFO]     step:314000 t_sim:31400.00 ms
+2021-04-22 11:24:25,654 [INFO] n_gids: 10
+2021-04-22 11:24:25,654 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:24:25,654 [INFO] Volume = 0.57 ml
+2021-04-22 11:24:25,654 [INFO] Pressure = 2.72 cm H20
+2021-04-22 11:24:25,654 [INFO] Bladder afferent firing rate = 1.0781646231336306 Hz
+2021-04-22 11:24:25,654 [INFO]      _activate_hln: firing rate 1.0781646231336306 did not produce any spikes
+2021-04-22 11:24:29,606 [INFO]     step:316000 t_sim:31600.00 ms
+2021-04-22 11:24:29,612 [INFO] n_gids: 10
+2021-04-22 11:24:29,612 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:24:33,690 [INFO]     step:318000 t_sim:31800.00 ms
+2021-04-22 11:24:33,707 [INFO] n_gids: 10
+2021-04-22 11:24:33,707 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:24:33,707 [INFO] Volume = 0.58 ml
+2021-04-22 11:24:33,707 [INFO] Pressure = 2.75 cm H20
+2021-04-22 11:24:33,707 [INFO] Bladder afferent firing rate = 1.082789763618508 Hz
+2021-04-22 11:24:33,708 [INFO]      _activate_hln: firing rate 1.082789763618508 did not produce any spikes
+2021-04-22 11:24:37,941 [INFO]     step:320000 t_sim:32000.00 ms
+2021-04-22 11:24:37,948 [INFO] n_gids: 10
+2021-04-22 11:24:37,948 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:24:37,948 [INFO] Volume = 0.58 ml
+2021-04-22 11:24:37,948 [INFO] Pressure = 4.66 cm H20
+2021-04-22 11:24:37,948 [INFO] Bladder afferent firing rate = 1.2274954715985196 Hz
+2021-04-22 11:24:42,609 [INFO]     step:322000 t_sim:32200.00 ms
+2021-04-22 11:24:42,620 [INFO] n_gids: 10
+2021-04-22 11:24:42,620 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:24:42,620 [INFO] Volume = 0.58 ml
+2021-04-22 11:24:42,620 [INFO] Pressure = 1.72 cm H20
+2021-04-22 11:24:42,620 [INFO] Bladder afferent firing rate = 0.8046292465612074 Hz
+2021-04-22 11:24:42,620 [INFO]      _activate_hln: firing rate 0.8046292465612074 did not produce any spikes
+2021-04-22 11:24:46,760 [INFO]     step:324000 t_sim:32400.00 ms
+2021-04-22 11:24:46,767 [INFO] n_gids: 10
+2021-04-22 11:24:46,767 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:24:50,898 [INFO]     step:326000 t_sim:32600.00 ms
+2021-04-22 11:24:50,904 [INFO] n_gids: 10
+2021-04-22 11:24:50,905 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:24:55,001 [INFO]     step:328000 t_sim:32800.00 ms
+2021-04-22 11:24:55,012 [INFO] n_gids: 10
+2021-04-22 11:24:55,012 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:24:55,012 [INFO] Volume = 0.60 ml
+2021-04-22 11:24:55,012 [INFO] Pressure = 1.75 cm H20
+2021-04-22 11:24:55,012 [INFO] Bladder afferent firing rate = 0.8160534566604022 Hz
+2021-04-22 11:24:55,012 [INFO]      _activate_hln: firing rate 0.8160534566604022 did not produce any spikes
+2021-04-22 11:24:59,076 [INFO]     step:330000 t_sim:33000.00 ms
+2021-04-22 11:24:59,083 [INFO] n_gids: 10
+2021-04-22 11:24:59,084 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:24:59,084 [INFO] Volume = 0.60 ml
+2021-04-22 11:24:59,084 [INFO] Pressure = 4.71 cm H20
+2021-04-22 11:24:59,084 [INFO] Bladder afferent firing rate = 1.2252438970902073 Hz
+2021-04-22 11:24:59,084 [INFO]      _activate_hln: firing rate 1.2252438970902073 did not produce any spikes
+2021-04-22 11:25:03,104 [INFO]     step:332000 t_sim:33200.00 ms
+2021-04-22 11:25:03,114 [INFO] n_gids: 10
+2021-04-22 11:25:03,114 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:25:03,114 [INFO] Volume = 0.60 ml
+2021-04-22 11:25:03,114 [INFO] Pressure = 1.76 cm H20
+2021-04-22 11:25:03,114 [INFO] Bladder afferent firing rate = 0.8207983781384008 Hz
+2021-04-22 11:25:03,114 [INFO]      _activate_hln: firing rate 0.8207983781384008 did not produce any spikes
+2021-04-22 11:25:07,097 [INFO]     step:334000 t_sim:33400.00 ms
+2021-04-22 11:25:07,103 [INFO] n_gids: 10
+2021-04-22 11:25:07,104 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:25:11,238 [INFO]     step:336000 t_sim:33600.00 ms
+2021-04-22 11:25:11,248 [INFO] n_gids: 10
+2021-04-22 11:25:11,248 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:25:15,270 [INFO]     step:338000 t_sim:33800.00 ms
+2021-04-22 11:25:15,277 [INFO] n_gids: 10
+2021-04-22 11:25:15,277 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:25:15,277 [INFO] Volume = 0.61 ml
+2021-04-22 11:25:15,277 [INFO] Pressure = 1.80 cm H20
+2021-04-22 11:25:15,277 [INFO] Bladder afferent firing rate = 0.8322657868315972 Hz
+2021-04-22 11:25:15,278 [INFO]      _activate_hln: firing rate 0.8322657868315972 did not produce any spikes
+2021-04-22 11:25:19,266 [INFO]     step:340000 t_sim:34000.00 ms
+2021-04-22 11:25:19,273 [INFO] n_gids: 10
+2021-04-22 11:25:19,273 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:25:19,273 [INFO] Volume = 0.61 ml
+2021-04-22 11:25:19,273 [INFO] Pressure = 4.76 cm H20
+2021-04-22 11:25:19,273 [INFO] Bladder afferent firing rate = 1.2227609709015699 Hz
+2021-04-22 11:25:19,273 [INFO]      _activate_hln: firing rate 1.2227609709015699 did not produce any spikes
+2021-04-22 11:25:23,521 [INFO]     step:342000 t_sim:34200.00 ms
+2021-04-22 11:25:23,532 [INFO] n_gids: 10
+2021-04-22 11:25:23,532 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:25:23,532 [INFO] Volume = 0.62 ml
+2021-04-22 11:25:23,532 [INFO] Pressure = 1.81 cm H20
+2021-04-22 11:25:23,532 [INFO] Bladder afferent firing rate = 0.8373394649745121 Hz
+2021-04-22 11:25:23,532 [INFO]      _activate_hln: firing rate 0.8373394649745121 did not produce any spikes
+2021-04-22 11:25:27,792 [INFO]     step:344000 t_sim:34400.00 ms
+2021-04-22 11:25:27,801 [INFO] n_gids: 10
+2021-04-22 11:25:27,801 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:25:31,963 [INFO]     step:346000 t_sim:34600.00 ms
+2021-04-22 11:25:31,978 [INFO] n_gids: 10
+2021-04-22 11:25:31,978 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:25:36,104 [INFO]     step:348000 t_sim:34800.00 ms
+2021-04-22 11:25:36,111 [INFO] n_gids: 10
+2021-04-22 11:25:36,111 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:25:36,111 [INFO] Volume = 0.63 ml
+2021-04-22 11:25:36,111 [INFO] Pressure = 4.80 cm H20
+2021-04-22 11:25:36,111 [INFO] Bladder afferent firing rate = 1.220216530336621 Hz
+2021-04-22 11:25:36,112 [INFO]      _activate_hln: firing rate 1.220216530336621 did not produce any spikes
+2021-04-22 11:25:40,216 [INFO]     step:350000 t_sim:35000.00 ms
+2021-04-22 11:25:40,245 [INFO] n_gids: 10
+2021-04-22 11:25:40,246 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:25:40,246 [INFO] Volume = 0.63 ml
+2021-04-22 11:25:40,246 [INFO] Pressure = 4.81 cm H20
+2021-04-22 11:25:40,246 [INFO] Bladder afferent firing rate = 1.2197576260254641 Hz
+2021-04-22 11:25:40,246 [INFO]      _activate_hln: firing rate 1.2197576260254641 did not produce any spikes
+2021-04-22 11:25:44,334 [INFO]     step:352000 t_sim:35200.00 ms
+2021-04-22 11:25:44,342 [INFO] n_gids: 10
+2021-04-22 11:25:44,342 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:25:44,342 [INFO] Volume = 0.63 ml
+2021-04-22 11:25:44,342 [INFO] Pressure = 2.91 cm H20
+2021-04-22 11:25:44,342 [INFO] Bladder afferent firing rate = 1.1138622099331141 Hz
+2021-04-22 11:25:44,342 [INFO]      _activate_hln: firing rate 1.1138622099331141 did not produce any spikes
+2021-04-22 11:25:48,409 [INFO]     step:354000 t_sim:35400.00 ms
+2021-04-22 11:25:48,416 [INFO] n_gids: 10
+2021-04-22 11:25:48,416 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:25:52,540 [INFO]     step:356000 t_sim:35600.00 ms
+2021-04-22 11:25:52,551 [INFO] n_gids: 10
+2021-04-22 11:25:52,551 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:25:56,655 [INFO]     step:358000 t_sim:35800.00 ms
+2021-04-22 11:25:56,662 [INFO] n_gids: 10
+2021-04-22 11:25:56,663 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:25:56,663 [INFO] Volume = 0.64 ml
+2021-04-22 11:25:56,663 [INFO] Pressure = 2.94 cm H20
+2021-04-22 11:25:56,663 [INFO] Bladder afferent firing rate = 1.1189549523555766 Hz
+2021-04-22 11:25:56,663 [INFO]      _activate_hln: firing rate 1.1189549523555766 did not produce any spikes
+2021-04-22 11:26:00,841 [INFO]     step:360000 t_sim:36000.00 ms
+2021-04-22 11:26:00,852 [INFO] n_gids: 10
+2021-04-22 11:26:00,853 [INFO] PGN firing rate = 0.83 Hz
+2021-04-22 11:26:00,853 [INFO] Volume = 0.65 ml
+2021-04-22 11:26:00,853 [INFO] Pressure = 10.72 cm H20
+2021-04-22 11:26:00,853 [INFO] Bladder afferent firing rate = 0.9280830992155016 Hz
+2021-04-22 11:26:00,853 [INFO]      _activate_hln: firing rate 0.9280830992155016 did not produce any spikes
+2021-04-22 11:26:05,110 [INFO]     step:362000 t_sim:36200.00 ms
+2021-04-22 11:26:05,120 [INFO] n_gids: 10
+2021-04-22 11:26:05,120 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:26:05,120 [INFO] Volume = 0.65 ml
+2021-04-22 11:26:05,120 [INFO] Pressure = 2.96 cm H20
+2021-04-22 11:26:05,120 [INFO] Bladder afferent firing rate = 1.1226448703878362 Hz
+2021-04-22 11:26:05,120 [INFO]      _activate_hln: firing rate 1.1226448703878362 did not produce any spikes
+2021-04-22 11:26:09,263 [INFO]     step:364000 t_sim:36400.00 ms
+2021-04-22 11:26:09,275 [INFO] n_gids: 10
+2021-04-22 11:26:09,275 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:26:13,434 [INFO]     step:366000 t_sim:36600.00 ms
+2021-04-22 11:26:13,442 [INFO] n_gids: 10
+2021-04-22 11:26:13,443 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:26:17,684 [INFO]     step:368000 t_sim:36800.00 ms
+2021-04-22 11:26:17,695 [INFO] n_gids: 10
+2021-04-22 11:26:17,695 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:26:17,695 [INFO] Volume = 0.66 ml
+2021-04-22 11:26:17,695 [INFO] Pressure = 1.95 cm H20
+2021-04-22 11:26:17,695 [INFO] Bladder afferent firing rate = 0.8800047802654998 Hz
+2021-04-22 11:26:17,696 [INFO]      _activate_hln: firing rate 0.8800047802654998 did not produce any spikes
+2021-04-22 11:26:21,837 [INFO]     step:370000 t_sim:37000.00 ms
+2021-04-22 11:26:21,850 [INFO] n_gids: 10
+2021-04-22 11:26:21,850 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:26:21,850 [INFO] Volume = 0.66 ml
+2021-04-22 11:26:21,850 [INFO] Pressure = 4.91 cm H20
+2021-04-22 11:26:21,850 [INFO] Bladder afferent firing rate = 1.213090860561459 Hz
+2021-04-22 11:26:25,847 [INFO]     step:372000 t_sim:37200.00 ms
+2021-04-22 11:26:25,856 [INFO] n_gids: 10
+2021-04-22 11:26:25,856 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:26:25,856 [INFO] Volume = 0.67 ml
+2021-04-22 11:26:25,856 [INFO] Pressure = 1.97 cm H20
+2021-04-22 11:26:25,857 [INFO] Bladder afferent firing rate = 0.885315255102379 Hz
+2021-04-22 11:26:25,857 [INFO]      _activate_hln: firing rate 0.885315255102379 did not produce any spikes
+2021-04-22 11:26:30,019 [INFO]     step:374000 t_sim:37400.00 ms
+2021-04-22 11:26:30,031 [INFO] n_gids: 10
+2021-04-22 11:26:30,031 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:26:30,031 [INFO] Volume = 0.67 ml
+2021-04-22 11:26:30,031 [INFO] Pressure = 3.02 cm H20
+2021-04-22 11:26:30,031 [INFO] Bladder afferent firing rate = 1.1318352574119839 Hz
+2021-04-22 11:26:30,031 [INFO]      _activate_hln: firing rate 1.1318352574119839 did not produce any spikes
+2021-04-22 11:26:34,214 [INFO]     step:376000 t_sim:37600.00 ms
+2021-04-22 11:26:34,224 [INFO] n_gids: 10
+2021-04-22 11:26:34,224 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:26:38,409 [INFO]     step:378000 t_sim:37800.00 ms
+2021-04-22 11:26:38,418 [INFO] n_gids: 10
+2021-04-22 11:26:38,419 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:26:38,419 [INFO] Volume = 0.68 ml
+2021-04-22 11:26:38,419 [INFO] Pressure = 4.95 cm H20
+2021-04-22 11:26:38,419 [INFO] Bladder afferent firing rate = 1.2100609595799057 Hz
+2021-04-22 11:26:38,419 [INFO]      _activate_hln: firing rate 1.2100609595799057 did not produce any spikes
+2021-04-22 11:26:42,504 [INFO]     step:380000 t_sim:38000.00 ms
+2021-04-22 11:26:42,517 [INFO] n_gids: 10
+2021-04-22 11:26:42,517 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:26:42,517 [INFO] Volume = 0.68 ml
+2021-04-22 11:26:42,517 [INFO] Pressure = 2.01 cm H20
+2021-04-22 11:26:42,517 [INFO] Bladder afferent firing rate = 0.8982616686730424 Hz
+2021-04-22 11:26:42,518 [INFO]      _activate_hln: firing rate 0.8982616686730424 did not produce any spikes
+2021-04-22 11:26:46,692 [INFO]     step:382000 t_sim:38200.00 ms
+2021-04-22 11:26:46,699 [INFO] n_gids: 10
+2021-04-22 11:26:46,699 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:26:46,700 [INFO] Volume = 0.68 ml
+2021-04-22 11:26:46,700 [INFO] Pressure = 2.01 cm H20
+2021-04-22 11:26:46,700 [INFO] Bladder afferent firing rate = 0.90013738535867 Hz
+2021-04-22 11:26:46,700 [INFO]      _activate_hln: firing rate 0.90013738535867 did not produce any spikes
+2021-04-22 11:26:50,821 [INFO]     step:384000 t_sim:38400.00 ms
+2021-04-22 11:26:50,831 [INFO] n_gids: 10
+2021-04-22 11:26:50,831 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:26:54,895 [INFO]     step:386000 t_sim:38600.00 ms
+2021-04-22 11:26:54,902 [INFO] n_gids: 10
+2021-04-22 11:26:54,902 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:26:58,961 [INFO]     step:388000 t_sim:38800.00 ms
+2021-04-22 11:26:58,970 [INFO] n_gids: 10
+2021-04-22 11:26:58,970 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:26:58,970 [INFO] Volume = 0.69 ml
+2021-04-22 11:26:58,970 [INFO] Pressure = 2.05 cm H20
+2021-04-22 11:26:58,971 [INFO] Bladder afferent firing rate = 0.9095061149474921 Hz
+2021-04-22 11:26:58,971 [INFO]      _activate_hln: firing rate 0.9095061149474921 did not produce any spikes
+2021-04-22 11:27:03,075 [INFO]     step:390000 t_sim:39000.00 ms
+2021-04-22 11:27:03,082 [INFO] n_gids: 10
+2021-04-22 11:27:03,082 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:27:03,082 [INFO] Volume = 0.70 ml
+2021-04-22 11:27:03,082 [INFO] Pressure = 5.01 cm H20
+2021-04-22 11:27:03,082 [INFO] Bladder afferent firing rate = 1.2053163563106348 Hz
+2021-04-22 11:27:03,082 [INFO]      _activate_hln: firing rate 1.2053163563106348 did not produce any spikes
+2021-04-22 11:27:07,054 [INFO]     step:392000 t_sim:39200.00 ms
+2021-04-22 11:27:07,061 [INFO] n_gids: 10
+2021-04-22 11:27:07,061 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:27:07,061 [INFO] Volume = 0.70 ml
+2021-04-22 11:27:07,061 [INFO] Pressure = 3.11 cm H20
+2021-04-22 11:27:07,061 [INFO] Bladder afferent firing rate = 1.146518194841161 Hz
+2021-04-22 11:27:07,061 [INFO]      _activate_hln: firing rate 1.146518194841161 did not produce any spikes
+2021-04-22 11:27:11,038 [INFO]     step:394000 t_sim:39400.00 ms
+2021-04-22 11:27:11,048 [INFO] n_gids: 10
+2021-04-22 11:27:11,048 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:27:15,086 [INFO]     step:396000 t_sim:39600.00 ms
+2021-04-22 11:27:15,093 [INFO] n_gids: 10
+2021-04-22 11:27:15,094 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:27:19,081 [INFO]     step:398000 t_sim:39800.00 ms
+2021-04-22 11:27:19,091 [INFO] n_gids: 10
+2021-04-22 11:27:19,091 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:27:19,091 [INFO] Volume = 0.71 ml
+2021-04-22 11:27:19,091 [INFO] Pressure = 5.05 cm H20
+2021-04-22 11:27:19,091 [INFO] Bladder afferent firing rate = 1.2018613910310156 Hz
+2021-04-22 11:27:19,092 [INFO]      _activate_hln: firing rate 1.2018613910310156 did not produce any spikes
+2021-04-22 11:27:23,051 [INFO]     step:400000 t_sim:40000.00 ms
+2021-04-22 11:27:23,059 [INFO] n_gids: 10
+2021-04-22 11:27:23,060 [INFO] PGN firing rate = 1.05 Hz
+2021-04-22 11:27:23,060 [INFO] Volume = 0.71 ml
+2021-04-22 11:27:23,060 [INFO] Pressure = 14.70 cm H20
+2021-04-22 11:27:23,060 [INFO] Bladder afferent firing rate = 3.9334020856461205 Hz
+2021-04-22 11:27:27,080 [INFO]     step:402000 t_sim:40200.00 ms
+2021-04-22 11:27:27,090 [INFO] n_gids: 10
+2021-04-22 11:27:27,090 [INFO] PGN firing rate = 0.38 Hz
+2021-04-22 11:27:27,090 [INFO] Volume = 0.72 ml
+2021-04-22 11:27:27,090 [INFO] Pressure = 3.00 cm H20
+2021-04-22 11:27:27,090 [INFO] Bladder afferent firing rate = 1.1293909250639929 Hz
+2021-04-22 11:27:27,090 [INFO]      _activate_hln: firing rate 1.1293909250639929 did not produce any spikes
+2021-04-22 11:27:31,270 [INFO]     step:404000 t_sim:40400.00 ms
+2021-04-22 11:27:31,278 [INFO] n_gids: 10
+2021-04-22 11:27:31,278 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:27:31,278 [INFO] Volume = 0.72 ml
+2021-04-22 11:27:31,278 [INFO] Pressure = 2.12 cm H20
+2021-04-22 11:27:31,278 [INFO] Bladder afferent firing rate = 0.9323227232328613 Hz
+2021-04-22 11:27:31,278 [INFO]      _activate_hln: firing rate 0.9323227232328613 did not produce any spikes
+2021-04-22 11:27:35,319 [INFO]     step:406000 t_sim:40600.00 ms
+2021-04-22 11:27:35,326 [INFO] n_gids: 10
+2021-04-22 11:27:35,326 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:27:35,326 [INFO] Volume = 0.72 ml
+2021-04-22 11:27:35,326 [INFO] Pressure = 3.18 cm H20
+2021-04-22 11:27:35,326 [INFO] Bladder afferent firing rate = 1.156486004033387 Hz
+2021-04-22 11:27:35,326 [INFO]      _activate_hln: firing rate 1.156486004033387 did not produce any spikes
+2021-04-22 11:27:39,270 [INFO]     step:408000 t_sim:40800.00 ms
+2021-04-22 11:27:39,280 [INFO] n_gids: 10
+2021-04-22 11:27:39,281 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:27:39,281 [INFO] Volume = 0.73 ml
+2021-04-22 11:27:39,281 [INFO] Pressure = 2.15 cm H20
+2021-04-22 11:27:39,281 [INFO] Bladder afferent firing rate = 0.9383330888937889 Hz
+2021-04-22 11:27:39,281 [INFO]      _activate_hln: firing rate 0.9383330888937889 did not produce any spikes
+2021-04-22 11:27:43,266 [INFO]     step:410000 t_sim:41000.00 ms
+2021-04-22 11:27:43,274 [INFO] n_gids: 10
+2021-04-22 11:27:43,274 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:27:43,274 [INFO] Volume = 0.73 ml
+2021-04-22 11:27:43,274 [INFO] Pressure = 5.11 cm H20
+2021-04-22 11:27:43,274 [INFO] Bladder afferent firing rate = 1.1963308246575526 Hz
+2021-04-22 11:27:43,274 [INFO]      _activate_hln: firing rate 1.1963308246575526 did not produce any spikes
+2021-04-22 11:27:47,388 [INFO]     step:412000 t_sim:41200.00 ms
+2021-04-22 11:27:47,397 [INFO] n_gids: 10
+2021-04-22 11:27:47,397 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:27:47,398 [INFO] Volume = 0.73 ml
+2021-04-22 11:27:47,398 [INFO] Pressure = 2.17 cm H20
+2021-04-22 11:27:47,398 [INFO] Bladder afferent firing rate = 0.9439185971225628 Hz
+2021-04-22 11:27:51,472 [INFO]     step:414000 t_sim:41400.00 ms
+2021-04-22 11:27:51,480 [INFO] n_gids: 10
+2021-04-22 11:27:51,480 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:27:51,480 [INFO] Volume = 0.74 ml
+2021-04-22 11:27:51,480 [INFO] Pressure = 3.23 cm H20
+2021-04-22 11:27:51,480 [INFO] Bladder afferent firing rate = 1.1628136471413648 Hz
+2021-04-22 11:27:51,480 [INFO]      _activate_hln: firing rate 1.1628136471413648 did not produce any spikes
+2021-04-22 11:27:55,500 [INFO]     step:416000 t_sim:41600.00 ms
+2021-04-22 11:27:55,509 [INFO] n_gids: 10
+2021-04-22 11:27:55,509 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:27:59,789 [INFO]     step:418000 t_sim:41800.00 ms
+2021-04-22 11:27:59,797 [INFO] n_gids: 10
+2021-04-22 11:27:59,798 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:27:59,798 [INFO] Volume = 0.75 ml
+2021-04-22 11:27:59,798 [INFO] Pressure = 3.24 cm H20
+2021-04-22 11:27:59,798 [INFO] Bladder afferent firing rate = 1.1652047598336273 Hz
+2021-04-22 11:27:59,798 [INFO]      _activate_hln: firing rate 1.1652047598336273 did not produce any spikes
+2021-04-22 11:28:04,112 [INFO]     step:420000 t_sim:42000.00 ms
+2021-04-22 11:28:04,119 [INFO] n_gids: 10
+2021-04-22 11:28:04,119 [INFO] PGN firing rate = 0.67 Hz
+2021-04-22 11:28:04,119 [INFO] Volume = 0.75 ml
+2021-04-22 11:28:04,119 [INFO] Pressure = 8.10 cm H20
+2021-04-22 11:28:04,119 [INFO] Bladder afferent firing rate = 0.43133488826606214 Hz
+2021-04-22 11:28:08,293 [INFO]     step:422000 t_sim:42200.00 ms
+2021-04-22 11:28:08,304 [INFO] n_gids: 10
+2021-04-22 11:28:08,304 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:28:08,304 [INFO] Volume = 0.75 ml
+2021-04-22 11:28:08,304 [INFO] Pressure = 2.22 cm H20
+2021-04-22 11:28:08,304 [INFO] Bladder afferent firing rate = 0.9574901704853767 Hz
+2021-04-22 11:28:08,304 [INFO]      _activate_hln: firing rate 0.9574901704853767 did not produce any spikes
+2021-04-22 11:28:12,471 [INFO]     step:424000 t_sim:42400.00 ms
+2021-04-22 11:28:12,478 [INFO] n_gids: 10
+2021-04-22 11:28:12,478 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:28:16,616 [INFO]     step:426000 t_sim:42600.00 ms
+2021-04-22 11:28:16,626 [INFO] n_gids: 10
+2021-04-22 11:28:16,626 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:28:20,604 [INFO]     step:428000 t_sim:42800.00 ms
+2021-04-22 11:28:20,611 [INFO] n_gids: 10
+2021-04-22 11:28:20,611 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:28:20,611 [INFO] Volume = 0.76 ml
+2021-04-22 11:28:20,611 [INFO] Pressure = 2.25 cm H20
+2021-04-22 11:28:20,611 [INFO] Bladder afferent firing rate = 0.9668362597664308 Hz
+2021-04-22 11:28:24,509 [INFO]     step:430000 t_sim:43000.00 ms
+2021-04-22 11:28:24,533 [INFO] n_gids: 10
+2021-04-22 11:28:24,533 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:28:24,533 [INFO] Volume = 0.76 ml
+2021-04-22 11:28:24,534 [INFO] Pressure = 2.26 cm H20
+2021-04-22 11:28:24,534 [INFO] Bladder afferent firing rate = 0.969112851075028 Hz
+2021-04-22 11:28:24,534 [INFO]      _activate_hln: firing rate 0.969112851075028 did not produce any spikes
+2021-04-22 11:28:28,615 [INFO]     step:432000 t_sim:43200.00 ms
+2021-04-22 11:28:28,626 [INFO] n_gids: 10
+2021-04-22 11:28:28,626 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:28:28,626 [INFO] Volume = 0.77 ml
+2021-04-22 11:28:28,627 [INFO] Pressure = 2.26 cm H20
+2021-04-22 11:28:28,627 [INFO] Bladder afferent firing rate = 0.970741500025531 Hz
+2021-04-22 11:28:28,627 [INFO]      _activate_hln: firing rate 0.970741500025531 did not produce any spikes
+2021-04-22 11:28:32,618 [INFO]     step:434000 t_sim:43400.00 ms
+2021-04-22 11:28:32,625 [INFO] n_gids: 10
+2021-04-22 11:28:32,625 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:28:36,716 [INFO]     step:436000 t_sim:43600.00 ms
+2021-04-22 11:28:36,726 [INFO] n_gids: 10
+2021-04-22 11:28:36,726 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:28:40,767 [INFO]     step:438000 t_sim:43800.00 ms
+2021-04-22 11:28:40,775 [INFO] n_gids: 10
+2021-04-22 11:28:40,775 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:28:40,775 [INFO] Volume = 0.78 ml
+2021-04-22 11:28:40,775 [INFO] Pressure = 3.35 cm H20
+2021-04-22 11:28:40,775 [INFO] Bladder afferent firing rate = 1.178091770537555 Hz
+2021-04-22 11:28:40,775 [INFO]      _activate_hln: firing rate 1.178091770537555 did not produce any spikes
+2021-04-22 11:28:44,817 [INFO]     step:440000 t_sim:44000.00 ms
+2021-04-22 11:28:44,827 [INFO] n_gids: 10
+2021-04-22 11:28:44,827 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:28:44,827 [INFO] Volume = 0.78 ml
+2021-04-22 11:28:44,827 [INFO] Pressure = 5.26 cm H20
+2021-04-22 11:28:44,827 [INFO] Bladder afferent firing rate = 1.1805332931842287 Hz
+2021-04-22 11:28:44,828 [INFO]      _activate_hln: firing rate 1.1805332931842287 did not produce any spikes
+2021-04-22 11:28:48,936 [INFO]     step:442000 t_sim:44200.00 ms
+2021-04-22 11:28:48,943 [INFO] n_gids: 10
+2021-04-22 11:28:48,943 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:28:52,860 [INFO]     step:444000 t_sim:44400.00 ms
+2021-04-22 11:28:52,867 [INFO] n_gids: 10
+2021-04-22 11:28:52,867 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:28:52,867 [INFO] Volume = 0.79 ml
+2021-04-22 11:28:52,868 [INFO] Pressure = 3.37 cm H20
+2021-04-22 11:28:52,868 [INFO] Bladder afferent firing rate = 1.1809108105107995 Hz
+2021-04-22 11:28:52,868 [INFO]      _activate_hln: firing rate 1.1809108105107995 did not produce any spikes
+2021-04-22 11:28:56,934 [INFO]     step:446000 t_sim:44600.00 ms
+2021-04-22 11:28:56,944 [INFO] n_gids: 10
+2021-04-22 11:28:56,944 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:29:01,017 [INFO]     step:448000 t_sim:44800.00 ms
+2021-04-22 11:29:01,024 [INFO] n_gids: 10
+2021-04-22 11:29:01,024 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:29:01,024 [INFO] Volume = 0.80 ml
+2021-04-22 11:29:01,025 [INFO] Pressure = 3.40 cm H20
+2021-04-22 11:29:01,025 [INFO] Bladder afferent firing rate = 1.1838975481180087 Hz
+2021-04-22 11:29:01,025 [INFO]      _activate_hln: firing rate 1.1838975481180087 did not produce any spikes
+2021-04-22 11:29:05,076 [INFO]     step:450000 t_sim:45000.00 ms
+2021-04-22 11:29:05,086 [INFO] n_gids: 10
+2021-04-22 11:29:05,086 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:29:05,086 [INFO] Volume = 0.80 ml
+2021-04-22 11:29:05,086 [INFO] Pressure = 5.31 cm H20
+2021-04-22 11:29:05,086 [INFO] Bladder afferent firing rate = 1.174858228747199 Hz
+2021-04-22 11:29:05,086 [INFO]      _activate_hln: firing rate 1.174858228747199 did not produce any spikes
+2021-04-22 11:29:09,300 [INFO]     step:452000 t_sim:45200.00 ms
+2021-04-22 11:29:09,323 [INFO] n_gids: 10
+2021-04-22 11:29:09,324 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:29:13,366 [INFO]     step:454000 t_sim:45400.00 ms
+2021-04-22 11:29:13,376 [INFO] n_gids: 10
+2021-04-22 11:29:13,377 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:29:13,377 [INFO] Volume = 0.80 ml
+2021-04-22 11:29:13,377 [INFO] Pressure = 3.42 cm H20
+2021-04-22 11:29:13,377 [INFO] Bladder afferent firing rate = 1.1869957452385074 Hz
+2021-04-22 11:29:13,377 [INFO]      _activate_hln: firing rate 1.1869957452385074 did not produce any spikes
+2021-04-22 11:29:17,403 [INFO]     step:456000 t_sim:45600.00 ms
+2021-04-22 11:29:17,410 [INFO] n_gids: 10
+2021-04-22 11:29:17,410 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:29:21,497 [INFO]     step:458000 t_sim:45800.00 ms
+2021-04-22 11:29:21,504 [INFO] n_gids: 10
+2021-04-22 11:29:21,504 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:29:21,504 [INFO] Volume = 0.81 ml
+2021-04-22 11:29:21,504 [INFO] Pressure = 3.44 cm H20
+2021-04-22 11:29:21,504 [INFO] Bladder afferent firing rate = 1.1893315141210512 Hz
+2021-04-22 11:29:21,504 [INFO]      _activate_hln: firing rate 1.1893315141210512 did not produce any spikes
+2021-04-22 11:29:25,516 [INFO]     step:460000 t_sim:46000.00 ms
+2021-04-22 11:29:25,526 [INFO] n_gids: 10
+2021-04-22 11:29:25,526 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:29:25,526 [INFO] Volume = 0.81 ml
+2021-04-22 11:29:25,526 [INFO] Pressure = 5.36 cm H20
+2021-04-22 11:29:25,526 [INFO] Bladder afferent firing rate = 1.1687557869663898 Hz
+2021-04-22 11:29:25,526 [INFO]      _activate_hln: firing rate 1.1687557869663898 did not produce any spikes
+2021-04-22 11:29:29,637 [INFO]     step:462000 t_sim:46200.00 ms
+2021-04-22 11:29:29,644 [INFO] n_gids: 10
+2021-04-22 11:29:29,644 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:29:33,620 [INFO]     step:464000 t_sim:46400.00 ms
+2021-04-22 11:29:33,630 [INFO] n_gids: 10
+2021-04-22 11:29:33,630 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:29:33,630 [INFO] Volume = 0.82 ml
+2021-04-22 11:29:33,630 [INFO] Pressure = 3.47 cm H20
+2021-04-22 11:29:33,630 [INFO] Bladder afferent firing rate = 1.192285424029322 Hz
+2021-04-22 11:29:37,684 [INFO]     step:466000 t_sim:46600.00 ms
+2021-04-22 11:29:37,692 [INFO] n_gids: 10
+2021-04-22 11:29:37,692 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:29:37,692 [INFO] Volume = 0.82 ml
+2021-04-22 11:29:37,692 [INFO] Pressure = 3.48 cm H20
+2021-04-22 11:29:37,692 [INFO] Bladder afferent firing rate = 1.19305564450312 Hz
+2021-04-22 11:29:37,692 [INFO]      _activate_hln: firing rate 1.19305564450312 did not produce any spikes
+2021-04-22 11:29:41,715 [INFO]     step:468000 t_sim:46800.00 ms
+2021-04-22 11:29:41,725 [INFO] n_gids: 10
+2021-04-22 11:29:41,725 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:29:41,725 [INFO] Volume = 0.83 ml
+2021-04-22 11:29:41,725 [INFO] Pressure = 2.45 cm H20
+2021-04-22 11:29:41,725 [INFO] Bladder afferent firing rate = 1.0172129290028438 Hz
+2021-04-22 11:29:41,725 [INFO]      _activate_hln: firing rate 1.0172129290028438 did not produce any spikes
+2021-04-22 11:29:45,727 [INFO]     step:470000 t_sim:47000.00 ms
+2021-04-22 11:29:45,735 [INFO] n_gids: 10
+2021-04-22 11:29:45,735 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:29:45,735 [INFO] Volume = 0.83 ml
+2021-04-22 11:29:45,735 [INFO] Pressure = 5.41 cm H20
+2021-04-22 11:29:45,735 [INFO] Bladder afferent firing rate = 1.1624036890184528 Hz
+2021-04-22 11:29:49,893 [INFO]     step:472000 t_sim:47200.00 ms
+2021-04-22 11:29:49,900 [INFO] n_gids: 10
+2021-04-22 11:29:49,901 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:29:49,901 [INFO] Volume = 0.83 ml
+2021-04-22 11:29:49,901 [INFO] Pressure = 2.47 cm H20
+2021-04-22 11:29:49,901 [INFO] Bladder afferent firing rate = 1.0215739885054702 Hz
+2021-04-22 11:29:49,901 [INFO]      _activate_hln: firing rate 1.0215739885054702 did not produce any spikes
+2021-04-22 11:29:53,881 [INFO]     step:474000 t_sim:47400.00 ms
+2021-04-22 11:29:53,891 [INFO] n_gids: 10
+2021-04-22 11:29:53,891 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:29:53,891 [INFO] Volume = 0.84 ml
+2021-04-22 11:29:53,891 [INFO] Pressure = 3.52 cm H20
+2021-04-22 11:29:53,891 [INFO] Bladder afferent firing rate = 1.1974145719322702 Hz
+2021-04-22 11:29:53,891 [INFO]      _activate_hln: firing rate 1.1974145719322702 did not produce any spikes
+2021-04-22 11:29:57,817 [INFO]     step:476000 t_sim:47600.00 ms
+2021-04-22 11:29:57,825 [INFO] n_gids: 10
+2021-04-22 11:29:57,825 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:30:01,935 [INFO]     step:478000 t_sim:47800.00 ms
+2021-04-22 11:30:01,945 [INFO] n_gids: 10
+2021-04-22 11:30:01,945 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:30:01,945 [INFO] Volume = 0.84 ml
+2021-04-22 11:30:01,945 [INFO] Pressure = 2.50 cm H20
+2021-04-22 11:30:01,945 [INFO] Bladder afferent firing rate = 1.0289355506957278 Hz
+2021-04-22 11:30:06,058 [INFO]     step:480000 t_sim:48000.00 ms
+2021-04-22 11:30:06,065 [INFO] n_gids: 10
+2021-04-22 11:30:06,066 [INFO] PGN firing rate = 0.83 Hz
+2021-04-22 11:30:06,066 [INFO] Volume = 0.85 ml
+2021-04-22 11:30:06,066 [INFO] Pressure = 11.32 cm H20
+2021-04-22 11:30:06,066 [INFO] Bladder afferent firing rate = 1.3170493527207272 Hz
+2021-04-22 11:30:06,066 [INFO]      _activate_hln: firing rate 1.3170493527207272 did not produce any spikes
+2021-04-22 11:30:10,120 [INFO]     step:482000 t_sim:48200.00 ms
+2021-04-22 11:30:10,127 [INFO] n_gids: 10
+2021-04-22 11:30:10,127 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:30:10,127 [INFO] Volume = 0.85 ml
+2021-04-22 11:30:10,127 [INFO] Pressure = 3.56 cm H20
+2021-04-22 11:30:10,127 [INFO] Bladder afferent firing rate = 1.2012421702549643 Hz
+2021-04-22 11:30:10,127 [INFO]      _activate_hln: firing rate 1.2012421702549643 did not produce any spikes
+2021-04-22 11:30:14,146 [INFO]     step:484000 t_sim:48400.00 ms
+2021-04-22 11:30:14,157 [INFO] n_gids: 10
+2021-04-22 11:30:14,157 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:30:14,157 [INFO] Volume = 0.85 ml
+2021-04-22 11:30:14,157 [INFO] Pressure = 3.57 cm H20
+2021-04-22 11:30:14,157 [INFO] Bladder afferent firing rate = 1.2019980911193482 Hz
+2021-04-22 11:30:14,157 [INFO]      _activate_hln: firing rate 1.2019980911193482 did not produce any spikes
+2021-04-22 11:30:18,247 [INFO]     step:486000 t_sim:48600.00 ms
+2021-04-22 11:30:18,254 [INFO] n_gids: 10
+2021-04-22 11:30:18,254 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:30:22,303 [INFO]     step:488000 t_sim:48800.00 ms
+2021-04-22 11:30:22,313 [INFO] n_gids: 10
+2021-04-22 11:30:22,313 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:30:22,313 [INFO] Volume = 0.86 ml
+2021-04-22 11:30:22,313 [INFO] Pressure = 3.60 cm H20
+2021-04-22 11:30:22,313 [INFO] Bladder afferent firing rate = 1.2040808629620106 Hz
+2021-04-22 11:30:22,313 [INFO]      _activate_hln: firing rate 1.2040808629620106 did not produce any spikes
+2021-04-22 11:30:26,376 [INFO]     step:490000 t_sim:49000.00 ms
+2021-04-22 11:30:26,386 [INFO] n_gids: 10
+2021-04-22 11:30:26,386 [INFO] PGN firing rate = 0.67 Hz
+2021-04-22 11:30:26,386 [INFO] Volume = 0.86 ml
+2021-04-22 11:30:26,386 [INFO] Pressure = 8.45 cm H20
+2021-04-22 11:30:26,386 [INFO] Bladder afferent firing rate = 0.28444040177855 Hz
+2021-04-22 11:30:30,368 [INFO]     step:492000 t_sim:49200.00 ms
+2021-04-22 11:30:30,378 [INFO] n_gids: 10
+2021-04-22 11:30:30,378 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:30:30,378 [INFO] Volume = 0.87 ml
+2021-04-22 11:30:30,378 [INFO] Pressure = 2.57 cm H20
+2021-04-22 11:30:30,378 [INFO] Bladder afferent firing rate = 1.0447563759098526 Hz
+2021-04-22 11:30:30,378 [INFO]      _activate_hln: firing rate 1.0447563759098526 did not produce any spikes
+2021-04-22 11:30:34,549 [INFO]     step:494000 t_sim:49400.00 ms
+2021-04-22 11:30:34,556 [INFO] n_gids: 10
+2021-04-22 11:30:34,556 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:30:34,556 [INFO] Volume = 0.87 ml
+2021-04-22 11:30:34,556 [INFO] Pressure = 3.62 cm H20
+2021-04-22 11:30:34,556 [INFO] Bladder afferent firing rate = 1.2066114702145956 Hz
+2021-04-22 11:30:34,556 [INFO]      _activate_hln: firing rate 1.2066114702145956 did not produce any spikes
+2021-04-22 11:30:38,623 [INFO]     step:496000 t_sim:49600.00 ms
+2021-04-22 11:30:38,630 [INFO] n_gids: 10
+2021-04-22 11:30:38,630 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:30:42,666 [INFO]     step:498000 t_sim:49800.00 ms
+2021-04-22 11:30:42,676 [INFO] n_gids: 10
+2021-04-22 11:30:42,676 [INFO] PGN firing rate = 0.50 Hz
+2021-04-22 11:30:42,676 [INFO] Volume = 0.88 ml
+2021-04-22 11:30:42,676 [INFO] Pressure = 5.56 cm H20
+2021-04-22 11:30:42,676 [INFO] Bladder afferent firing rate = 1.1428882265038998 Hz
+2021-04-22 11:30:42,676 [INFO]      _activate_hln: firing rate 1.1428882265038998 did not produce any spikes
+2021-04-22 11:30:46,668 [INFO]     step:500000 t_sim:50000.00 ms
+2021-04-22 11:30:46,676 [INFO] n_gids: 10
+2021-04-22 11:30:46,676 [INFO] PGN firing rate = 1.00 Hz
+2021-04-22 11:30:46,676 [INFO] Volume = 0.88 ml
+2021-04-22 11:30:46,676 [INFO] Pressure = 14.33 cm H20
+2021-04-22 11:30:46,676 [INFO] Bladder afferent firing rate = 3.6161559313297325 Hz
+2021-04-22 11:30:50,695 [INFO]     step:502000 t_sim:50200.00 ms
+2021-04-22 11:30:50,706 [INFO] n_gids: 10
+2021-04-22 11:30:50,706 [INFO] PGN firing rate = 0.33 Hz
+2021-04-22 11:30:50,706 [INFO] Volume = 0.88 ml
+2021-04-22 11:30:50,706 [INFO] Pressure = 2.61 cm H20
+2021-04-22 11:30:50,706 [INFO] Bladder afferent firing rate = 1.054984988209471 Hz
+2021-04-22 11:30:50,706 [INFO]      _activate_hln: firing rate 1.054984988209471 did not produce any spikes
+2021-04-22 11:30:54,778 [INFO]     step:504000 t_sim:50400.00 ms
+2021-04-22 11:30:54,785 [INFO] n_gids: 10
+2021-04-22 11:30:54,785 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:30:58,827 [INFO]     step:506000 t_sim:50600.00 ms
+2021-04-22 11:30:58,836 [INFO] n_gids: 10
+2021-04-22 11:30:58,836 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:31:02,959 [INFO]     step:508000 t_sim:50800.00 ms
+2021-04-22 11:31:02,966 [INFO] n_gids: 10
+2021-04-22 11:31:02,966 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:31:07,027 [INFO]     step:510000 t_sim:51000.00 ms
+2021-04-22 11:31:07,033 [INFO] n_gids: 10
+2021-04-22 11:31:07,033 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:31:11,046 [INFO]     step:512000 t_sim:51200.00 ms
+2021-04-22 11:31:11,056 [INFO] n_gids: 10
+2021-04-22 11:31:11,056 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:31:15,136 [INFO]     step:514000 t_sim:51400.00 ms
+2021-04-22 11:31:15,142 [INFO] n_gids: 10
+2021-04-22 11:31:15,142 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:31:19,298 [INFO]     step:516000 t_sim:51600.00 ms
+2021-04-22 11:31:19,307 [INFO] n_gids: 10
+2021-04-22 11:31:19,308 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:31:23,381 [INFO]     step:518000 t_sim:51800.00 ms
+2021-04-22 11:31:23,388 [INFO] n_gids: 10
+2021-04-22 11:31:23,388 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:31:27,623 [INFO]     step:520000 t_sim:52000.00 ms
+2021-04-22 11:31:27,633 [INFO] n_gids: 10
+2021-04-22 11:31:27,633 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:31:31,817 [INFO]     step:522000 t_sim:52200.00 ms
+2021-04-22 11:31:31,826 [INFO] n_gids: 10
+2021-04-22 11:31:31,826 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:31:35,836 [INFO]     step:524000 t_sim:52400.00 ms
+2021-04-22 11:31:35,842 [INFO] n_gids: 10
+2021-04-22 11:31:35,842 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:31:39,952 [INFO]     step:526000 t_sim:52600.00 ms
+2021-04-22 11:31:39,961 [INFO] n_gids: 10
+2021-04-22 11:31:39,961 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:31:44,112 [INFO]     step:528000 t_sim:52800.00 ms
+2021-04-22 11:31:44,118 [INFO] n_gids: 10
+2021-04-22 11:31:44,118 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:31:48,307 [INFO]     step:530000 t_sim:53000.00 ms
+2021-04-22 11:31:48,318 [INFO] n_gids: 10
+2021-04-22 11:31:48,318 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:31:52,424 [INFO]     step:532000 t_sim:53200.00 ms
+2021-04-22 11:31:52,430 [INFO] n_gids: 10
+2021-04-22 11:31:52,430 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:31:56,432 [INFO]     step:534000 t_sim:53400.00 ms
+2021-04-22 11:31:56,438 [INFO] n_gids: 10
+2021-04-22 11:31:56,438 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:32:00,407 [INFO]     step:536000 t_sim:53600.00 ms
+2021-04-22 11:32:00,417 [INFO] n_gids: 10
+2021-04-22 11:32:00,417 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:32:04,542 [INFO]     step:538000 t_sim:53800.00 ms
+2021-04-22 11:32:04,549 [INFO] n_gids: 10
+2021-04-22 11:32:04,550 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:32:08,746 [INFO]     step:540000 t_sim:54000.00 ms
+2021-04-22 11:32:08,756 [INFO] n_gids: 10
+2021-04-22 11:32:08,757 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:32:12,874 [INFO]     step:542000 t_sim:54200.00 ms
+2021-04-22 11:32:12,880 [INFO] n_gids: 10
+2021-04-22 11:32:12,880 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:32:17,065 [INFO]     step:544000 t_sim:54400.00 ms
+2021-04-22 11:32:17,075 [INFO] n_gids: 10
+2021-04-22 11:32:17,075 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:32:21,235 [INFO]     step:546000 t_sim:54600.00 ms
+2021-04-22 11:32:21,260 [INFO] n_gids: 10
+2021-04-22 11:32:21,260 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:32:25,504 [INFO]     step:548000 t_sim:54800.00 ms
+2021-04-22 11:32:25,511 [INFO] n_gids: 10
+2021-04-22 11:32:25,511 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:32:29,707 [INFO]     step:550000 t_sim:55000.00 ms
+2021-04-22 11:32:29,732 [INFO] n_gids: 10
+2021-04-22 11:32:29,732 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:32:33,815 [INFO]     step:552000 t_sim:55200.00 ms
+2021-04-22 11:32:33,822 [INFO] n_gids: 10
+2021-04-22 11:32:33,822 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:32:37,975 [INFO]     step:554000 t_sim:55400.00 ms
+2021-04-22 11:32:37,985 [INFO] n_gids: 10
+2021-04-22 11:32:37,985 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:32:42,216 [INFO]     step:556000 t_sim:55600.00 ms
+2021-04-22 11:32:42,223 [INFO] n_gids: 10
+2021-04-22 11:32:42,223 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:32:46,426 [INFO]     step:558000 t_sim:55800.00 ms
+2021-04-22 11:32:46,436 [INFO] n_gids: 10
+2021-04-22 11:32:46,436 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:32:50,631 [INFO]     step:560000 t_sim:56000.00 ms
+2021-04-22 11:32:50,638 [INFO] n_gids: 10
+2021-04-22 11:32:50,638 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:32:54,796 [INFO]     step:562000 t_sim:56200.00 ms
+2021-04-22 11:32:54,803 [INFO] n_gids: 10
+2021-04-22 11:32:54,803 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:32:58,882 [INFO]     step:564000 t_sim:56400.00 ms
+2021-04-22 11:32:58,892 [INFO] n_gids: 10
+2021-04-22 11:32:58,892 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:33:02,933 [INFO]     step:566000 t_sim:56600.00 ms
+2021-04-22 11:33:02,939 [INFO] n_gids: 10
+2021-04-22 11:33:02,940 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:33:06,891 [INFO]     step:568000 t_sim:56800.00 ms
+2021-04-22 11:33:06,900 [INFO] n_gids: 10
+2021-04-22 11:33:06,900 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:33:11,061 [INFO]     step:570000 t_sim:57000.00 ms
+2021-04-22 11:33:11,068 [INFO] n_gids: 10
+2021-04-22 11:33:11,069 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:33:15,143 [INFO]     step:572000 t_sim:57200.00 ms
+2021-04-22 11:33:15,152 [INFO] n_gids: 10
+2021-04-22 11:33:15,152 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:33:19,249 [INFO]     step:574000 t_sim:57400.00 ms
+2021-04-22 11:33:19,256 [INFO] n_gids: 10
+2021-04-22 11:33:19,256 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:33:23,388 [INFO]     step:576000 t_sim:57600.00 ms
+2021-04-22 11:33:23,395 [INFO] n_gids: 10
+2021-04-22 11:33:23,395 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:33:27,452 [INFO]     step:578000 t_sim:57800.00 ms
+2021-04-22 11:33:27,462 [INFO] n_gids: 10
+2021-04-22 11:33:27,462 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:33:31,540 [INFO]     step:580000 t_sim:58000.00 ms
+2021-04-22 11:33:31,546 [INFO] n_gids: 10
+2021-04-22 11:33:31,547 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:33:35,516 [INFO]     step:582000 t_sim:58200.00 ms
+2021-04-22 11:33:35,525 [INFO] n_gids: 10
+2021-04-22 11:33:35,525 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:33:39,657 [INFO]     step:584000 t_sim:58400.00 ms
+2021-04-22 11:33:39,664 [INFO] n_gids: 10
+2021-04-22 11:33:39,664 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:33:43,789 [INFO]     step:586000 t_sim:58600.00 ms
+2021-04-22 11:33:43,795 [INFO] n_gids: 10
+2021-04-22 11:33:43,795 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:33:47,957 [INFO]     step:588000 t_sim:58800.00 ms
+2021-04-22 11:33:47,967 [INFO] n_gids: 10
+2021-04-22 11:33:47,967 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:33:52,136 [INFO]     step:590000 t_sim:59000.00 ms
+2021-04-22 11:33:52,143 [INFO] n_gids: 10
+2021-04-22 11:33:52,143 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:33:56,249 [INFO]     step:592000 t_sim:59200.00 ms
+2021-04-22 11:33:56,259 [INFO] n_gids: 10
+2021-04-22 11:33:56,259 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:34:00,426 [INFO]     step:594000 t_sim:59400.00 ms
+2021-04-22 11:34:00,434 [INFO] n_gids: 10
+2021-04-22 11:34:00,434 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:34:04,576 [INFO]     step:596000 t_sim:59600.00 ms
+2021-04-22 11:34:04,586 [INFO] n_gids: 10
+2021-04-22 11:34:04,586 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:34:08,697 [INFO]     step:598000 t_sim:59800.00 ms
+2021-04-22 11:34:08,703 [INFO] n_gids: 10
+2021-04-22 11:34:08,703 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:34:12,779 [INFO]     step:600000 t_sim:60000.00 ms
+2021-04-22 11:34:12,787 [INFO] n_gids: 10
+2021-04-22 11:34:12,787 [INFO] PGN firing rate = 0.83 Hz
+2021-04-22 11:34:12,787 [INFO] Volume = 1.05 ml
+2021-04-22 11:34:12,787 [INFO] Pressure = 11.93 cm H20
+2021-04-22 11:34:12,787 [INFO] Bladder afferent firing rate = 1.7319367821892717 Hz
+2021-04-22 11:34:16,917 [INFO]     step:602000 t_sim:60200.00 ms
+2021-04-22 11:34:16,927 [INFO] n_gids: 10
+2021-04-22 11:34:16,927 [INFO] PGN firing rate = 0.17 Hz
+2021-04-22 11:34:16,928 [INFO] Volume = 0.05 ml
+2021-04-22 11:34:16,928 [INFO] Pressure = 1.16 cm H20
+2021-04-22 11:34:16,928 [INFO] Bladder afferent firing rate = 0.5916294363331873 Hz
+2021-04-22 11:34:16,928 [INFO]      _activate_hln: firing rate 0.5916294363331873 did not produce any spikes
+2021-04-22 11:34:21,032 [INFO]     step:604000 t_sim:60400.00 ms
+2021-04-22 11:34:21,039 [INFO] n_gids: 10
+2021-04-22 11:34:21,040 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:34:23,068 [INFO]     step:605000 t_sim:60500.00 ms
+2021-04-22 11:34:23,074 [INFO] n_gids: 10
+2021-04-22 11:34:23,074 [INFO]      _activate_hln: firing rate 0
+2021-04-22 11:34:23,158 [INFO] Simulation completed in 20.0 minutes, 38.02 seconds 
