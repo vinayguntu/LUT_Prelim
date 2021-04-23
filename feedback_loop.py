@@ -45,9 +45,10 @@ class FeedbackLoop(SimulatorMod):
 
     def _set_spike_detector(self, sim):
         for gid in self._low_level_neurons:
-            tvec = h.Vector()
-            nc = self._netcons[gid]
-            nc.record(tvec)
+            # tvec = h.Vector()
+            # nc = self._netcons[gid]
+            # nc.record(tvec)
+            tvec = sim._spikes[gid]
             self._spike_records[gid] = tvec
 
     def _activate_hln(self, sim, block_interval, firing_rate):
@@ -261,8 +262,8 @@ class FeedbackLoop(SimulatorMod):
 				# vol = fill*tvec[0]*150 + v_init
 			
 			# Filling: 0 - 54000 ms
-            if tvec[0] < 60000 and vol < max_v:
-                vol = fill*tvec[0]*20 + v_init
+            # if tvec[0] < 60000 and vol < max_v:
+            #     vol = fill*tvec[0]*20 + v_init
            
 			# # Voiding: 7000 - 10,000 ms
             # else:
@@ -309,6 +310,8 @@ class FeedbackLoop(SimulatorMod):
 
         # NEURON requires resetting NetCon.record() every time we read the tvec.
         self._set_spike_detector(sim)
+
+
 
     def finalize(self, sim):
         pass
