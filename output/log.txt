@@ -618,4 +618,4 @@
 2021-03-26 18:44:10,849 [INFO]      _activate_hln: firing rate 0
 2021-03-26 18:44:12,464 [INFO]     step:605000 t_sim:60500.00 ms
 2021-03-26 18:44:12,482 [INFO]      _activate_hln: firing rate 0
-2021-03-26 18:44:16,060 [INFO] Simulation completed in 18.0 minutes, 17.61 seconds 
+2021-03-26 18:44:16,060 [INFO] Simulation completed in 18.0 minutes, 17.61 seconds
