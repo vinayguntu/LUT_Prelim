@@ -189,7 +189,7 @@ class FeedbackLoop(SimulatorMod):
 
         # Calculate the avg number of spikes per neuron
         # return
-        block_length = sim.nsteps_block*sim.dt/100.0  #  time length of previous block of simulation TODO: precalcualte /100
+        block_length = sim.nsteps_block*sim.dt/1000.0  #  time length of previous block of simulation TODO: precalcualte /100
         n_gids = 0
         n_spikes = 0
         for gid, tvec in self._spike_records.items():
