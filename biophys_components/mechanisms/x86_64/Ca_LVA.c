@@ -218,7 +218,7 @@ extern void _cvode_abstol( Symbol**, double*, int);
  	hoc_register_cvode(_mechtype, _ode_count, _ode_map, _ode_spec, _ode_matsol);
  	hoc_register_tolerance(_mechtype, _hoc_state_tol, &_atollist);
  	hoc_register_var(hoc_scdoub, hoc_vdoub, hoc_intfunc);
- 	ivoc_help("help ?1 Ca_LVA /home/matt/repos/LUT_Prelim/biophys_components/mechanisms/modfiles/Ca_LVA.mod\n");
+ 	ivoc_help("help ?1 Ca_LVA /home/chenziao/Desktop/LUT/LUT_Prelim/biophys_components/mechanisms/modfiles/x86_64/Ca_LVA.mod\n");
  hoc_register_limits(_mechtype, _hoc_parm_limits);
  hoc_register_units(_mechtype, _hoc_parm_units);
  }
@@ -485,7 +485,7 @@ _first = 0;
 #endif
 
 #if NMODL_TEXT
-static const char* nmodl_filename = "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/modfiles/Ca_LVA.mod";
+static const char* nmodl_filename = "/home/chenziao/Desktop/LUT/LUT_Prelim/biophys_components/mechanisms/modfiles/Ca_LVA.mod";
 static const char* nmodl_file_text = 
   ": Comment: LVA ca channel. Note: mtau is an approximation from the plots\n"
   ": Reference:		Avery and Johnston 1996, tau from Randall 1997\n"

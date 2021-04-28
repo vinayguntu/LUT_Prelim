@@ -1,12 +1,12 @@
-edge_type_id target_query source_query model_template cconnection_rule distance_range delay target_sections dynamics_params
-100 pop_name=='IND' pop_name=='Bladaff' Exp2Syn NULL "[0.0, 300.0]" 2.0 ['somatic'] AMPA_ExcToExc.json
-101 pop_name=='IND' pop_name=='EUSaff' Exp2Syn NULL "[0.0, 300.0]" 2.0 ['somatic'] AMPA_ExcToExc.json
-102 pop_name=='IND' pop_name=='PAGaff' Exp2Syn NULL "[0.0, 300.0]" 2.0 ['somatic'] AMPA_ExcToExc.json
-103 pop_name=='PGN' pop_name=='IND' Exp2Syn NULL "[0.0, 300.0]" 2.0 ['somatic'] AMPA_ExcToExc.json
-104 pop_name=='INmplus' pop_name=='EUSaff' Exp2Syn NULL "[0.0, 300.0]" 2.0 ['somatic'] AMPA_ExcToExc.json
-105 pop_name=='INmminus' pop_name=='EUSaff' Exp2Syn NULL "[0.0, 300.0]" 2.0 ['somatic'] AMPA_ExcToExc.json
-106 pop_name=='PGN' pop_name=='INmplus' Exp2Syn "<function percent_connector at 0x7fa13242f620>" "[0.0, 300.0]" 2.0 ['somatic'] AMPA_ExcToExc.json
-107 pop_name=='PGN' pop_name=='INmminus' Exp2Syn NULL "[0.0, 300.0]" 2.0 ['somatic'] GABA_InhToExc.json
-108 pop_name=='MPG' pop_name=='PGN' Exp2Syn NULL "[0.0, 300.0]" 2.0 ['somatic'] AMPA_ExcToExc.json
-109 pop_name=='FB' pop_name=='PGN' Exp2Syn NULL "[0.0, 300.0]" 2.0 ['somatic'] AMPA_ExcToExc.json
-110 pop_name=='IND' pop_name=='FB' Exp2Syn NULL "[0.0, 300.0]" 2.0 ['somatic'] GABA_InhToInh.json
+edge_type_id target_query source_query cconnection_rule delay model_template dynamics_params distance_range target_sections
+100 pop_name=='IND' pop_name=='Bladaff' NULL 2.0 Exp2Syn AMPA_ExcToExc.json "[0.0, 300.0]" ['somatic']
+101 pop_name=='IND' pop_name=='EUSaff' NULL 2.0 Exp2Syn AMPA_ExcToExc.json "[0.0, 300.0]" ['somatic']
+102 pop_name=='IND' pop_name=='PAGaff' NULL 2.0 Exp2Syn AMPA_ExcToExc.json "[0.0, 300.0]" ['somatic']
+103 pop_name=='PGN' pop_name=='IND' NULL 2.0 Exp2Syn AMPA_ExcToExc.json "[0.0, 300.0]" ['somatic']
+104 pop_name=='INmplus' pop_name=='EUSaff' NULL 2.0 Exp2Syn AMPA_ExcToExc.json "[0.0, 300.0]" ['somatic']
+105 pop_name=='INmminus' pop_name=='EUSaff' NULL 2.0 Exp2Syn AMPA_ExcToExc.json "[0.0, 300.0]" ['somatic']
+106 pop_name=='PGN' pop_name=='INmplus' "<function percent_connector at 0x7fd52e565488>" 2.0 Exp2Syn AMPA_ExcToExc.json "[0.0, 300.0]" ['somatic']
+107 pop_name=='PGN' pop_name=='INmminus' NULL 2.0 Exp2Syn GABA_InhToExc.json "[0.0, 300.0]" ['somatic']
+108 pop_name=='MPG' pop_name=='PGN' NULL 2.0 Exp2Syn AMPA_ExcToExc.json "[0.0, 300.0]" ['somatic']
+109 pop_name=='FB' pop_name=='PGN' NULL 2.0 Exp2Syn AMPA_ExcToExc.json "[0.0, 300.0]" ['somatic']
+110 pop_name=='IND' pop_name=='FB' NULL 2.0 Exp2Syn GABA_InhToInh.json "[0.0, 300.0]" ['somatic']

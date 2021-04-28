@@ -218,7 +218,7 @@ extern void _cvode_abstol( Symbol**, double*, int);
  	hoc_register_cvode(_mechtype, _ode_count, _ode_map, _ode_spec, _ode_matsol);
  	hoc_register_tolerance(_mechtype, _hoc_state_tol, &_atollist);
  	hoc_register_var(hoc_scdoub, hoc_vdoub, hoc_intfunc);
- 	ivoc_help("help ?1 Kd /home/matt/repos/LUT_Prelim/biophys_components/mechanisms/modfiles/Kd.mod\n");
+ 	ivoc_help("help ?1 Kd /home/chenziao/Desktop/LUT/LUT_Prelim/biophys_components/mechanisms/modfiles/x86_64/Kd.mod\n");
  hoc_register_limits(_mechtype, _hoc_parm_limits);
  hoc_register_units(_mechtype, _hoc_parm_units);
  }
@@ -483,7 +483,7 @@ _first = 0;
 #endif
 
 #if NMODL_TEXT
-static const char* nmodl_filename = "/home/matt/repos/LUT_Prelim/biophys_components/mechanisms/modfiles/Kd.mod";
+static const char* nmodl_filename = "/home/chenziao/Desktop/LUT/LUT_Prelim/biophys_components/mechanisms/modfiles/Kd.mod";
 static const char* nmodl_file_text = 
   ": Based on Kd model of Foust et al. (2011)\n"
   "\n"

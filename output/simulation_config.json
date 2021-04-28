@@ -33,9 +33,9 @@
     }
   },
   "output": {
-    "spikes_file_csv": "./output/spikes.csv",
-    "spikes_file": "./output/spikes.h5",
-    "log_file": "./output/log.txt",
+    "spikes_file_csv": "spikes.csv",
+    "spikes_file": "spikes.h5",
+    "log_file": "log.txt",
     "output_dir": "./output",
     "overwrite_output_dir": true
   },
@@ -67,8 +67,8 @@
     }
   },
   "network": "./circuit_config.json",
-  "config_path": "/home/matt/repos/LUT_Prelim/jsons/simulation_config.json",
-  "config_dir": "/home/matt/repos/LUT_Prelim/jsons",
+  "config_path": "/home/chenziao/Desktop/LUT/LUT_Prelim/jsons/simulation_config.json",
+  "config_dir": "/home/chenziao/Desktop/LUT/LUT_Prelim/jsons",
   "components": {
     "point_neuron_models_dir": "./biophys_components/point_neuron_templates",
     "biophysical_neuron_models_dir": "./biophys_components/biophysical_neuron_templates",
