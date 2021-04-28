@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def plot_figure(ba_means, ba_stdevs, pgn_means, pgn_stdevs, eus_means, eus_stdevs,
-                inmm_means, inmm_stdevs, inmp_means, inmp_stdevs, fbmod):
+                inmm_means, inmm_stdevs, inmp_means, inmp_stdevs, fbmod, savefig=True):
 
     # Only plot one point each 1000 samples
     plt_ba_means = []
@@ -39,7 +39,7 @@ def plot_figure(ba_means, ba_stdevs, pgn_means, pgn_stdevs, eus_means, eus_stdev
         plt_inmp_means.append(inmp_means[n])   
         plt_inmp_stdevs.append(inmp_stdevs[n]) 
 
-    plt.figure()
+    fig0 = plt.figure()
     plt.plot(np.arange(0,len(ba_means)/10,100), plt_ba_means, 
                  color='b', marker='^', mfc='b', mec='b', label='Bladder Afferent')
     plt.xlabel('Time (t) [ms]')
@@ -71,7 +71,7 @@ def plot_figure(ba_means, ba_stdevs, pgn_means, pgn_stdevs, eus_means, eus_stdev
 
     fig1.tight_layout()  # otherwise the right y-label is slightly clipped
 
-    plt.figure()
+    fig2 = plt.figure()
 
     plt.plot(np.arange(0,len(inmm_means)/10,100), plt_inmm_means, 
                 color='b', marker='^', mfc='b', mec='b', label='INm-')
@@ -87,31 +87,30 @@ def plot_figure(ba_means, ba_stdevs, pgn_means, pgn_stdevs, eus_means, eus_stdev
     plt.ylabel('Neuron Firing Rate (FR) [Hz]')
     plt.legend()
 
+    if savefig:
+        fig0.savefig('./graphs/NFR_PGN.png',transparent=True)
+        fig1.savefig('./graphs/Pressure_vol.png',transparent=True)
+        fig0.savefig('./graphs/NFR_PAG.png',transparent=True)
+
     plt.show()
 
-def plotting_calculator(spike_trains, sim, window_size, arange1, arange2, arange3=0, multiplier=1):
+def plotting_calculator(spike_trains, n_steps, dt, window_size, arange1, arange2, arange3=0, multiplier=1):
     # Plot PGN firing rate
-    means = np.zeros(sim.n_steps)
-    stdevs = np.zeros(sim.n_steps)
-    fr_conv = np.zeros((arange2,sim.n_steps))
+    means = np.zeros(n_steps)
+    fr_conv = np.zeros((arange2,n_steps))
+    window = np.ones(window_size)
 
     for gid in np.arange(arange1, arange3 + arange2):
-        spikes = np.zeros(sim.n_steps, dtype=np.int)
-        if len(spike_trains.get_times(gid)) > 0:
-            spikes[(spike_trains.get_times(gid)/sim.dt).astype(np.int)] = 1
-        window = np.ones(window_size)
+        spikes = np.zeros(n_steps)
+        spiketimes = spike_trains.get_times(gid)
+        if len(spiketimes) > 0:
+            spikes[(spiketimes/dt).astype(np.int)] = 1.0
 
-        frs = np.convolve(spikes, window)
+        frs = np.convolve(spikes, window)[:n_steps]
+        means += frs
+        fr_conv[gid-arange1] = frs
 
-        for n in range(len(means)):
-            means[n] += frs[n]
-            if arange1 > 0:
-                fr_conv[gid % arange1][n] = frs[n]
-            else:
-                fr_conv[gid][n] = frs[n]
-
-    for n in range(len(means)):
-        means[n] /= arange2*multiplier
-        stdevs[n] = np.std(fr_conv[:,n])
+        means /= arange2*multiplier
+        stdevs = np.std(fr_conv,axis=0)
     
     return means, stdevs

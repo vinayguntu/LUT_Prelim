@@ -79,11 +79,13 @@ def run(config_file):
     print(spikes_df[(spikes_df['node_ids'] >= 50) & (spikes_df['node_ids'] < 75)])
     
     #plotting
-    ba_means, ba_stdevs = plotting_calculator(spike_trains, sim, 60000, 0, numBladaff, multiplier=2)
-    pgn_means, pgn_stdevs = plotting_calculator(spike_trains, sim, 60000, PGN_gids, numPGN, PGN_gids, multiplier=2)
-    eus_means, eus_stdevs = plotting_calculator(spike_trains, sim, 60000, EUSmn_gids, numEUSmn, EUSmn_gids, multiplier=2)
-    inmm_means, inmm_stdevs = plotting_calculator(spike_trains, sim, 10000, INmminus_gids, numINmminus, INmminus_gids)
-    inmp_means, inmp_stdevs = plotting_calculator(spike_trains, sim, 10000, PAG_gids, numINmplus, PAG_gids)
+    n_steps = sim.n_steps
+    dt = sim.dt
+    ba_means, ba_stdevs = plotting_calculator(spike_trains, n_steps, dt, 60000, Blad_gids, numBladaff, multiplier=2)
+    pgn_means, pgn_stdevs = plotting_calculator(spike_trains, n_steps, dt, 60000, PGN_gids, numPGN, PGN_gids, multiplier=2)
+    eus_means, eus_stdevs = plotting_calculator(spike_trains, n_steps, dt, 60000, EUSmn_gids, numEUSmn, EUSmn_gids, multiplier=2)
+    inmm_means, inmm_stdevs = plotting_calculator(spike_trains, n_steps, dt, 10000, INmminus_gids, numINmminus, INmminus_gids)
+    inmp_means, inmp_stdevs = plotting_calculator(spike_trains, n_steps, dt, 10000, PAG_gids, numINmplus, PAG_gids)
 
     plot_figure(ba_means, ba_stdevs, pgn_means, pgn_stdevs, eus_means, eus_stdevs, inmm_means, inmm_stdevs, inmp_means, inmp_stdevs, fbmod)
 

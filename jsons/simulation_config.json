@@ -47,7 +47,7 @@
   "reports": {
   "membrane_report": {
 	  "module": "membrane_report",
-	  "cells": "all", 
+	  "cells": [0], 
 	  "variable_name": ["v"],
 	  "file_name": "cell_vars.h5",
 	  "sections": "soma"
