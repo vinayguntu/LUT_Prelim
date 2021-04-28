@@ -59,7 +59,7 @@ class FeedbackLoop(SimulatorMod):
         # next block
         if firing_rate != 0.0:
             psg = PoissonSpikeGenerator()
-            psg.add(node_ids=[0], firing_rate=firing_rate, times=(next_block_tstart/1000.0, next_block_tstop/1000.0))
+            psg.add(node_ids=[0], firing_rate=firing_rate, times=(next_block_tstart, next_block_tstop))
             if psg.n_spikes() <= 0:
                 io.log_info('     _activate_hln: firing rate {} did not produce any spikes'.format(firing_rate))
             else:
@@ -198,7 +198,7 @@ class FeedbackLoop(SimulatorMod):
 
         io.log_info("n_gids: {}".format(n_gids))
 
-        avg_spikes = n_spikes/(float(n_gids)*3.0)
+        avg_spikes = n_spikes/(float(n_gids)*1.0)
 
         # Calculate the firing rate the the low-level neuron(s)
         fr = avg_spikes/float(block_length)
@@ -225,7 +225,7 @@ class FeedbackLoop(SimulatorMod):
         # Grill function returning pressure in units of cm H20
 	    # Grill, et al. 2016
         def pressure(fr,v):
-            p = 10*fr + 0.1*v
+            p = 1.0*fr + 1.0*v
 
             # Round negative pressure up to 0
             if p < 0:
@@ -237,10 +237,10 @@ class FeedbackLoop(SimulatorMod):
 	    # Grill, et al. 2016
         def blad_aff_fr(p):
             fr1 = -3.0E-08*p**5 + 1.0E-5*p**4 - 1.5E-03*p**3 + 7.9E-02*p**2 - 0.6*p
-			
+            fr1 = max(fr1,0.0)
             # Take hard max or absolute value of negative firing rates
-            if fr1 < 0:
-                fr1 *= -1#fr1 *= 0
+            # if fr1 < 0:
+            #     fr1 *= -1#fr1 *= 0
 
             return fr1 # Using scaling factor of 5 here to get the correct firing rate range
 
@@ -254,25 +254,26 @@ class FeedbackLoop(SimulatorMod):
         vol = v_init
 
         # Update blad aff firing rate
+        t = sim.h.t-block_length*1000.0
         if fr > 0:
             PGN_fr = pgn_fire_rate(fr)
 
             # Filling: 0 - 7000 ms
-            # if tvec[0] < 7000 and vol < max_v:
-				# vol = fill*tvec[0]*150 + v_init
+            # if t < 7000 and vol < max_v:
+		# vol = fill*t*150 + v_init
 			
 			# Filling: 0 - 54000 ms
-            # if tvec[0] < 60000 and vol < max_v:
-            #     vol = fill*tvec[0]*20 + v_init
+            if t < 60000 and vol < max_v:
+                vol = fill*t*20 + v_init
            
 			# # Voiding: 7000 - 10,000 ms
             # else:
-                # vol = max_v - void*(10000-tvec[0])*100
+                # vol = max_v - void*(10000-t)*100
 
 
 		   # Voiding: 54000 - 60000 ms
             # else:
-                # vol = max_v - void*(60000-tvec[0])*100
+                # vol = max_v - void*(60000-t)*100
 
             # Maintain minimum volume
             if vol < v_init:
@@ -296,7 +297,7 @@ class FeedbackLoop(SimulatorMod):
             io.log_info('Bladder afferent firing rate = {} Hz'.format(bladaff_fr))
 
             # Save values in appropriate lists
-            self.times.append(tvec[0])
+            self.times.append(t)
             self.b_vols.append(vol)
             self.b_pres.append(p)
 			# b_aff.append(bladaff_fr)
