@@ -43,8 +43,8 @@ def run(config_file=None,sim=None):
     spike_trains = SpikeTrains.from_sonata('output/spikes.h5')
 
     #plotting
-    pops = ['Bladaff','PGN','EUSmn','INmminus','PAGaff']
-    windows = [6000]*3+[1000]*2
+    pops = ['Bladaff','PGN','PAGaff','EUSmn','INmminus']
+    windows = [200]*3+[1000]*2
     means = {}
     stdevs = {}
     for pop,win in zip(pops,windows):
