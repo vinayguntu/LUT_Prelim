@@ -52,8 +52,8 @@ class FeedbackLoop(SimulatorMod):
             self._spike_records[gid] = tvec
 
     def _activate_hln(self, sim, block_interval, firing_rate):
-        next_block_tstart = (block_interval[1] + 1) * sim.dt  # The next time-step
-        next_block_tstop = next_block_tstart + sim.nsteps_block*sim.dt  # The time-step when the next block ends
+        next_block_tstart = (block_interval[1] + 1) * sim.dt/1000.0  # The next time-step
+        next_block_tstop = next_block_tstart + sim.nsteps_block*sim.dt/1000.0  # The time-step when the next block ends
 
         # This is where you can use the firing-rate of the low-level neurons to generate a set of spike times for the
         # next block
