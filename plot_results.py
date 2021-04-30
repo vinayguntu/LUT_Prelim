@@ -44,7 +44,7 @@ def run(config_file=None,sim=None):
 
     #plotting
     pops = ['Bladaff','PGN','PAGaff','EUSmn','INmminus']
-    windows = [200]*3+[1000]*2
+    windows = [6000]*3+[1000]*2
     means = {}
     stdevs = {}
     for pop,win in zip(pops,windows):
