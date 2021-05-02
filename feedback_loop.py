@@ -61,16 +61,28 @@ class FeedbackLoop(SimulatorMod):
         if firing_rate != 0.0:
             psg = PoissonSpikeGenerator()
             psg.add(node_ids=[0], firing_rate=firing_rate, times=(next_block_tstart, next_block_tstop))            
-            io.log_info('     _activate_hln: firing rate {} Hz'.format(psg.n_spikes()/block_length))
-            if psg.n_spikes() > 0:
-                self._spike_events = psg.get_times(0)
+            self._spike_events = psg.get_times(0)
+            n_spikes = len(self._spike_events)
+            io.log_info('     _activate_hln firing rate: {:.2f} Hz'.format(n_spikes/block_length))
+            if n_spikes > 0:
                 # Update firing rate of bladder afferent neurons
                 for gid in self._high_level_neurons:
                     nc = self._netcons[gid]
                     for t in self._spike_events:
                         nc.event(t)
+            ## Use inhomogeneous input
+            #n = len(self._high_level_neurons)
+            #psg.add(node_ids=list(range(n)), firing_rate=firing_rate, times=(next_block_tstart, next_block_tstop))            
+            #n_spikes = np.zeros(n)
+            #for i, gid in enumerate(self._high_level_neurons):
+            #    self._spike_events = psg.get_times(i)
+            #    n_spikes[i] = len(self._spike_events)
+            #    nc = self._netcons[gid]
+            #    for t in self._spike_events:
+            #            nc.event(t)
+            #io.log_info('     _activate_hln firing rate: '+','.join(["%.2f" % (ns/block_length) for ns in n_spikes])+' Hz')
         else:
-            io.log_info('     _activate_hln: firing rate 0')
+            io.log_info('     _activate_hln firing rate: 0')
 
         # If pressure is maxxed, update firing rate of EUS motor neurons 
         # Guarding reflex
@@ -109,13 +121,24 @@ class FeedbackLoop(SimulatorMod):
             psg = PoissonSpikeGenerator()
             pag_fr = 15
             psg.add(node_ids=[0], firing_rate=pag_fr, times=(next_block_tstart, next_block_tstop))
-            io.log_info('     pag: firing rate {} Hz'.format(psg.n_spikes()/block_length))
-            if psg.n_spikes() > 0:
-                self._spike_events = psg.get_times(0)
-                for gid in self._pag_neurons:
-                    nc = self._netcons[gid]
-                    for t in self._spike_events:
-                        nc.event(t)
+            self._spike_events = psg.get_times(0)
+            n_spikes = len(self._spike_events)
+            io.log_info('     pag firing rate: {:.2f} Hz'.format(n_spikes/block_length))
+            for gid in self._pag_neurons:
+                nc = self._netcons[gid]
+                for t in self._spike_events:
+                    nc.event(t)
+            ## Use inhomogeneous input
+            #n = len(self._pag_neurons)
+            #psg.add(node_ids=list(range(n)), firing_rate=pag_fr, times=(next_block_tstart, next_block_tstop))            
+            #n_spikes = np.zeros(n)
+            #for i, gid in enumerate(self._pag_neurons):
+            #    self._spike_events = psg.get_times(i)
+            #    n_spikes[i] = len(self._spike_events)
+            #    nc = self._netcons[gid]
+            #    for t in self._spike_events:
+            #            nc.event(t)
+            #io.log_info('     pag firing rate: '+','.join(["%.2f" % (ns/block_length) for ns in n_spikes])+' Hz')
 
     def initialize(self, sim):
         network = sim.net
@@ -295,7 +318,7 @@ class FeedbackLoop(SimulatorMod):
             io.log_info('PGN firing rate = %.2f Hz' %fr)
             io.log_info('Volume = %.2f ml' %vol)
             io.log_info('Pressure = %.2f cm H20' %p)
-            io.log_info('Bladder afferent firing rate = {} Hz'.format(bladaff_fr))
+            io.log_info('Bladder afferent firing rate = {:.2f} Hz'.format(bladaff_fr))
 
             # Save values in appropriate lists
             self.times.append(t)
