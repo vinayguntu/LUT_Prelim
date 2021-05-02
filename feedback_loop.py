@@ -44,9 +44,6 @@ class FeedbackLoop(SimulatorMod):
 
     def _set_spike_detector(self, sim):
         for gid in self._low_level_neurons:
-            # tvec = h.Vector()
-            # nc = self._netcons[gid]
-            # nc.record(tvec)
             tvec = sim._spikes[gid]
             self._spike_records[gid] = tvec
 
@@ -75,7 +72,7 @@ class FeedbackLoop(SimulatorMod):
             #psg.add(node_ids=list(range(n)), firing_rate=firing_rate, times=(next_block_tstart, next_block_tstop))            
             #n_spikes = np.zeros(n)
             #for i, gid in enumerate(self._high_level_neurons):
-            #    self._spike_events = psg.get_times(i)
+            #    self._spike_events = psg.get_times(i)*1000
             #    n_spikes[i] = len(self._spike_events)
             #    nc = self._netcons[gid]
             #    for t in self._spike_events:
@@ -134,7 +131,7 @@ class FeedbackLoop(SimulatorMod):
             #psg.add(node_ids=list(range(n)), firing_rate=pag_fr, times=(next_block_tstart, next_block_tstop))            
             #n_spikes = np.zeros(n)
             #for i, gid in enumerate(self._pag_neurons):
-            #    self._spike_events = psg.get_times(i)
+            #    self._spike_events = psg.get_times(i)*1000
             #    n_spikes[i] = len(self._spike_events)
             #    nc = self._netcons[gid]
             #    for t in self._spike_events:
@@ -154,7 +151,6 @@ class FeedbackLoop(SimulatorMod):
 
         self._high_level_neurons = list(sim.net.get_node_set('high_level_neurons').gids())
         self._pag_neurons = list(sim.net.get_node_set('pag_neurons').gids())
-        # self._pag_neurons = [i for i in np.arange(50,75)]
 
         io.log_info('Found {} high level neurons'.format(len(self._high_level_neurons)))
         for gid in self._high_level_neurons:
