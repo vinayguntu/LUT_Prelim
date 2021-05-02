@@ -43,14 +43,15 @@ def run(config_file=None,sim=None):
     spike_trains = SpikeTrains.from_sonata('output/spikes.h5')
 
     #plotting
-    pops = ['Bladaff','PGN','PAGaff','EUSmn','INmminus']
-    windows = [6000]*3+[1000]*2
+    window_size = 1000
+    pops = ['Bladaff','PGN','PAGaff','EUSmn','INmminus','IND']
+    windows = [window_size]*len(pops)
     means = {}
     stdevs = {}
     for pop,win in zip(pops,windows):
         means[pop], stdevs[pop] = plotting_calculator(spike_trains, n_steps, dt, win, gids, num, pop)
     
-    plot_figure(means, stdevs, n_steps, dt, tstep=100, fbmod=fbmod)
+    plot_figure(means, stdevs, n_steps, dt, tstep=window_size, fbmod=fbmod)
 
 
 if __name__ == '__main__':

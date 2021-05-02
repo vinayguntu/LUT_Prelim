@@ -52,17 +52,17 @@ class FeedbackLoop(SimulatorMod):
             self._spike_records[gid] = tvec
 
     def _activate_hln(self, sim, block_interval, firing_rate):
+        block_length = sim.nsteps_block*sim.dt/1000.0
         next_block_tstart = (block_interval[1] + 1) * sim.dt/1000.0  # The next time-step
-        next_block_tstop = next_block_tstart + sim.nsteps_block*sim.dt/1000.0  # The time-step when the next block ends
+        next_block_tstop = next_block_tstart + block_length  # The time-step when the next block ends
 
         # This is where you can use the firing-rate of the low-level neurons to generate a set of spike times for the
         # next block
         if firing_rate != 0.0:
             psg = PoissonSpikeGenerator()
-            psg.add(node_ids=[0], firing_rate=firing_rate, times=(next_block_tstart, next_block_tstop))
-            if psg.n_spikes() <= 0:
-                io.log_info('     _activate_hln: firing rate {} did not produce any spikes'.format(firing_rate))
-            else:
+            psg.add(node_ids=[0], firing_rate=firing_rate, times=(next_block_tstart, next_block_tstop))            
+            io.log_info('     _activate_hln: firing rate {} Hz'.format(psg.n_spikes()/block_length))
+            if psg.n_spikes() > 0:
                 self._spike_events = psg.get_times(0)
                 # Update firing rate of bladder afferent neurons
                 for gid in self._high_level_neurons:
@@ -109,12 +109,13 @@ class FeedbackLoop(SimulatorMod):
             psg = PoissonSpikeGenerator()
             pag_fr = 15
             psg.add(node_ids=[0], firing_rate=pag_fr, times=(next_block_tstart, next_block_tstop))
-            self._spike_events = psg.get_times(0)
-            print('pag firing rate = %.2f Hz' % pag_fr)
-            for gid in self._pag_neurons:
-                nc = self._netcons[gid]
-                for t in self._spike_events:
-                    nc.event(t)
+            io.log_info('     pag: firing rate {} Hz'.format(psg.n_spikes()/block_length))
+            if psg.n_spikes() > 0:
+                self._spike_events = psg.get_times(0)
+                for gid in self._pag_neurons:
+                    nc = self._netcons[gid]
+                    for t in self._spike_events:
+                        nc.event(t)
 
     def initialize(self, sim):
         network = sim.net
@@ -208,10 +209,10 @@ class FeedbackLoop(SimulatorMod):
 	    # Grill, et al. 2016
         def pgn_fire_rate(x):
             f = 2.0E-03*x**3 - 3.3E-02*x**2 + 1.8*x - 0.5
-            
+            f = max(f,0.0)
             # Take absolute value of firing rate if negative
-            if f < 0:
-                f *= -1
+            # if f < 0:
+            #     f *= -1
 
             return f
 
@@ -225,7 +226,7 @@ class FeedbackLoop(SimulatorMod):
         # Grill function returning pressure in units of cm H20
 	    # Grill, et al. 2016
         def pressure(fr,v):
-            p = 1.0*fr + 1.0*v
+            p = 3.0*fr + 0.5*v
 
             # Round negative pressure up to 0
             if p < 0:

@@ -6,7 +6,7 @@
   }, 
   "target_simulator": "NEURON", 
   "run": {
-    "nsteps_block": 2000,
+    "nsteps_block": 10000,
     "tstop": 60500.0,
     "dt": 0.1, 
     "dL": 9999, 

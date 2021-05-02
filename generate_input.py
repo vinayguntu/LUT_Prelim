@@ -189,7 +189,7 @@ if __name__ == '__main__':
   delay = 0 # ms 1000
   
   # (begin_void,end_void,v_time,v_vol) = bladder_rate(output_file, input_dir, fill, void, max_v, cells, start, mid + delay, duration)
-  begin_void = 50000
+  begin_void = 1000
   end_void= 60000
   # Create Bladder afferent input spikes --------------------
   output_file = 'Blad_spikes.csv'
