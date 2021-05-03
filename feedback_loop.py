@@ -13,6 +13,7 @@ import os
 import synapses
 synapses.load()
 
+pc = h.ParallelContext()
 bionet.pyfunction_cache.add_cell_model(loadHOC, directive='hoc', model_type='biophysical')
 
 # Huge thank you to Kael Dai, Allen Institute 2019 for the template code
@@ -196,6 +197,7 @@ class FeedbackLoop(SimulatorMod):
         io.log_info('Found {} low level neurons'.format(len(self._low_level_neurons)))
 
         self._set_spike_detector(sim)
+        pc.barrier()
 
     def step(self, sim, tstep):
         pass
@@ -327,6 +329,7 @@ class FeedbackLoop(SimulatorMod):
             self._activate_hln(sim, block_interval, fr) 
 
         # NEURON requires resetting NetCon.record() every time we read the tvec.
+        pc.barrier()
         self._set_spike_detector(sim)
 
     def save_aff(self, path):
