@@ -1,5 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
+from bmtk.utils.reports.spike_trains import SpikeTrains
+
 
 def plot_figure(means, stdevs, n_steps, dt, tstep=100, fbmod=None, savefig=True):
     #Plot bladder volume and bladder pressure
@@ -31,23 +34,28 @@ def plot_figure(means, stdevs, n_steps, dt, tstep=100, fbmod=None, savefig=True)
     plt.plot(t, means['PGN'][ind], color='g', marker='o', mfc='g', mec='g', label='PGN')
     plt.plot(t, means['PAGaff'][ind], color='r', marker='D', mfc='r', mec='r', label='PAG')
     #plt.plot(t, means['EUSmn'][ind], color='k', marker='D', mfc='k', mec='k', label='EUS Motor Neurons')
+
     plt.xlabel('Time (t) [ms]')
     plt.ylabel('Neuron Firing Rate (FR) [Hz]')
     plt.legend()
+
 
     fig3 = plt.figure()
     plt.plot(t, means['INmminus'][ind], color='b', marker='^', mfc='b', mec='b', label='INm-')
     plt.plot(t, means['EUSmn'][ind], color='m', marker='^', mfc='m', mec='m', label='EUS Afferent')
     plt.plot(t, means['IND'][ind], color='r', marker='^', mfc='r', mec='r', label='IND')
+
     plt.xlabel('Time (t) [ms]')
     plt.ylabel('Neuron Firing Rate (FR) [Hz]')
     plt.legend()
+
 
     if savefig:
         if fbmod is not None:
             fig1.savefig('./graphs/Pressure_vol.png',transparent=True)
         fig2.savefig('./graphs/NFR_PGN.png',transparent=True)
         fig3.savefig('./graphs/NFR_INm.png',transparent=True)
+
 
     plt.show()
 

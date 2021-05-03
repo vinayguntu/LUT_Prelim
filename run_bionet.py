@@ -13,7 +13,9 @@ from feedback_loop import FeedbackLoop
 from plotting import plot_figure, plotting_calculator
 # Import the synaptic depression/facilitation model
 import synapses
+
 import plot_results
+
 
 """
 Basic Logging features, disable faulthandler if you don't want stacktraces printed
@@ -48,10 +50,9 @@ def run(config_file):
     fbmod.save_aff(conf.output_dir)
     plot_results.run(sim=sim,conf=conf)
 
-    bionet.nrn.quit_execution()
-
 if __name__ == '__main__':
     if __file__ != sys.argv[-1]:
         run(sys.argv[-1])
+        build_plots()
     else:
         run('config.json')
