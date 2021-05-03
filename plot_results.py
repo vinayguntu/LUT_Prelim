@@ -1,4 +1,4 @@
-import sys
+import sys, os
 from bmtk.simulator import bionet
 from bmtk.utils.reports.spike_trains import SpikeTrains
 from feedback_loop import FeedbackLoop
@@ -27,7 +27,7 @@ for pop,n in num.items():
     gids[pop] = ind
     ind += n
 
-def run(config_file=None,sim=None):
+def run(config_file=None,sim=None,conf=None):
     if config_file is not None:
         conf = bionet.Config.from_json(config_file, validate=True)
         dt = conf['run']['dt']
@@ -37,10 +37,12 @@ def run(config_file=None,sim=None):
         n_steps = sim.n_steps
         dt = sim.dt
         fbmod = sim._sim_mods[[isinstance(mod,FeedbackLoop) for mod in sim._sim_mods].index(True)]
+    output_dir = conf.output_dir
     print(n_steps,dt)
-    spikes_df = pd.read_csv('output/spikes.csv', sep=' ')
+
+    spikes_df = pd.read_csv(os.path.join(output_dir,'spikes.csv'), sep=' ')
     print(spikes_df['node_ids'].unique())
-    spike_trains = SpikeTrains.from_sonata('output/spikes.h5')
+    spike_trains = SpikeTrains.from_sonata(os.path.join(output_dir,'spikes.h5'))
 
     #plotting
     window_size = 1000

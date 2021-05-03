@@ -7,6 +7,7 @@ from bmtk.simulator.bionet.default_setters.cell_models import loadHOC
 
 import logging
 import numpy as np
+import os
 
 # Import the synaptic depression/facilitation model
 import synapses
@@ -20,7 +21,7 @@ class FeedbackLoop(SimulatorMod):
     def __init__(self):
         self._synapses = {}
         self._netcon = None
-        self._spike_events = None
+        self._spike_events = {}
 
         self._high_level_neurons = []
         self._low_level_neurons = []
@@ -57,16 +58,17 @@ class FeedbackLoop(SimulatorMod):
         if firing_rate != 0.0:
             psg = PoissonSpikeGenerator()
             psg.add(node_ids=[0], firing_rate=firing_rate, times=(next_block_tstart, next_block_tstop)) # sec
-            self._spike_events = psg.get_times(0)*1000 # convert sec to ms
-            n_spikes = len(self._spike_events)
+            spikes = psg.get_times(0)*1000 # convert sec to ms
+            n_spikes = len(spikes)
             io.log_info('     _activate_hln firing rate: {:.2f} Hz'.format(n_spikes/block_length))
             if n_spikes > 0:
                 # Update firing rate of bladder afferent neurons
                 for gid in self._high_level_neurons:
+                    self._spike_events[gid] = np.concatenate((self._spike_events[gid],spikes))
                     nc = self._netcons[gid]
-                    for t in self._spike_events:
+                    for t in spikes:
                         nc.event(t)
-                io.log_info('Last spike: {:.1f} ms'.format(self._spike_events[-1]))
+                io.log_info('Last spike: {:.1f} ms'.format(spikes[-1]))
             ## Use inhomogeneous input
             #n = len(self._high_level_neurons)
             #psg.add(node_ids=list(range(n)), firing_rate=firing_rate, times=(next_block_tstart, next_block_tstop))            
@@ -118,13 +120,14 @@ class FeedbackLoop(SimulatorMod):
             psg = PoissonSpikeGenerator()
             pag_fr = 15
             psg.add(node_ids=[0], firing_rate=pag_fr, times=(next_block_tstart, next_block_tstop))
-            self._spike_events = psg.get_times(0)*1000
-            n_spikes = len(self._spike_events)
+            spikes = psg.get_times(0)*1000
+            n_spikes = len(spikes)
             io.log_info('     pag firing rate: {:.2f} Hz'.format(n_spikes/block_length))
-            io.log_info('Last spike: {:.1f} ms'.format(self._spike_events[-1]))
+            if n_spikes>0: io.log_info('Last spike: {:.1f} ms'.format(spikes[-1]))
             for gid in self._pag_neurons:
+                self._spike_events[gid] = np.concatenate((self._spike_events[gid],spikes))
                 nc = self._netcons[gid]
-                for t in self._spike_events:
+                for t in spikes:
                     nc.event(t)
             ## Use inhomogeneous input
             #n = len(self._pag_neurons)
@@ -144,7 +147,7 @@ class FeedbackLoop(SimulatorMod):
         #####  Make sure to save spikes vector and vector stim object
         # Attach a NetCon/synapse on the high-level neuron(s) soma. We can use the NetCon.event(time) method to send
         # a spike to the synapse. Which, is a spike occurs, the high-level neuron will inhibit the low-level neuron.
-        self._spikes = h.Vector(np.array([]))  # start off with empty input
+        self._spikes = h.Vector()  # start off with empty input
         vec_stim = h.VecStim()
         vec_stim.play(self._spikes)
         self._vect_stim = vec_stim
@@ -155,16 +158,17 @@ class FeedbackLoop(SimulatorMod):
         io.log_info('Found {} high level neurons'.format(len(self._high_level_neurons)))
         for gid in self._high_level_neurons:
             cell = sim.net.get_cell_gid(gid)
+            self._spike_events[gid] = np.array([])
 
             # Create synapse
             # These values will determine how the high-level neuron behaves with the input
-            new_syn = h.Exp2Syn(0.5, cell.hobj.soma[0])
-            new_syn.e = 0.0
-            new_syn.tau1 = 0.1
-            new_syn.tau2 = 0.3
-            self._synapses[gid] = new_syn
+            syn = h.Exp2Syn(0.5, cell.hobj.soma[0])
+            syn.e = 0.0
+            syn.tau1 = 0.1
+            syn.tau2 = 0.3
+            self._synapses[gid] = syn
 
-            nc = h.NetCon(self._vect_stim, new_syn)
+            nc = h.NetCon(self._vect_stim, syn)
             nc.threshold = sim.net.spike_threshold
             nc.weight[0] = 0.5
             nc.delay = 1.0
@@ -173,6 +177,7 @@ class FeedbackLoop(SimulatorMod):
         io.log_info('Found {} PAG neurons'.format(len(self._pag_neurons)))
         for gid in self._pag_neurons:
             trg_cell = sim.net.get_cell_gid(gid)  # network._rank_node_ids['LUT'][51]
+            self._spike_events[gid] = np.array([])
 
             syn = h.Exp2Syn(0.5, sec=trg_cell.hobj.soma[0])
             syn.e = 0.0
@@ -324,7 +329,20 @@ class FeedbackLoop(SimulatorMod):
         # NEURON requires resetting NetCon.record() every time we read the tvec.
         self._set_spike_detector(sim)
 
+    def save_aff(self, path):
+        blad_spikes = PoissonSpikeGenerator(population='Bladaff')
+        for gid in self._high_level_neurons:
+            for t in self._spike_events[gid]:
+                blad_spikes.add_spike(node_id=gid,population='Bladaff',timestamp=t)
+        blad_spikes.to_sonata(os.path.join(path,'Bladaff_spikes.h5'))
+        blad_spikes.to_csv(os.path.join(path,'Bladaff_spikes.csv'))
 
+        pag_spikes = PoissonSpikeGenerator(population='PAGaff')
+        for gid in self._pag_neurons:
+            for t in self._spike_events[gid]:
+                pag_spikes.add_spike(node_id=gid,population='PAGaff',timestamp=t)
+        pag_spikes.to_sonata(os.path.join(path,'PAGaff_spikes.h5'))
+        pag_spikes.to_csv(os.path.join(path,'PAGaff_spikes.csv'))
 
     def finalize(self, sim):
         pass
