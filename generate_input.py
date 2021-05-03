@@ -18,10 +18,9 @@ def write_file(spikes_path, stims, pop_name):
 
       for t in timestamps:
         csvwriter.writerow([node_id, t, pop_name])  # write head node/time pair to a row.
-        
 
 ###################################################################################################
-# eus_rate() will generate a spike train corresponding to the filling/voiding of the bladder
+# generate_poisson() will generate a spike train corresponding to the filling/voiding of the bladder
 # INPUTS: filename  -- name of the file to write bladder spikes to
 #     input_dir -- directory containing the file to be written to
 #     cells     -- array of cell indices
@@ -29,13 +28,14 @@ def write_file(spikes_path, stims, pop_name):
 #     start     -- start times for simulation
 #     end     -- end times of simulation
 
-def eus_rate(filename,input_dir,cells,hz,start,end):
+def generate_poisson(filename,input_dir,cells,hz,start,end,pop_name):
     stims = {}   
     for i in np.arange(0,len(hz)):
         interval = 1000.0/hz[i]
         for cell in cells:
             spk = start[i]
-            spike_ints = np.random.poisson(interval,100)
+            spike_ints = np.random.exponential(interval,100)
+            # spike_ints = -np.log(np.random.uniform(size=100))*interval
             for spike_int in spike_ints:
                 if not stims.get(cell):
                     stims[cell] = []
@@ -43,7 +43,7 @@ def eus_rate(filename,input_dir,cells,hz,start,end):
                 if spk <= end[i]:
                     stims[cell].append(spk)
 
-    write_file(os.path.join(input_dir, filename), stims, 'EUS_aff_virt')
+    write_file(os.path.join(input_dir, filename), stims, pop_name)
     '''
     with open(os.path.join(input_dir,filename),'w') as file:
         file.write('gid spike-times\n')
@@ -52,58 +52,6 @@ def eus_rate(filename,input_dir,cells,hz,start,end):
     '''
     return
 
-###################################################################################################
-# pag_rate() will generate a spike train corresponding to the filling/voiding of the bladder
-# INPUTS: filename  -- name of the file to write bladder spikes to
-#     input_dir -- directory containing the file to be written to
-#     cells     -- array of cell indices
-#     hz    -- firing rates (low,high,low)
-#     start     -- start times for simulation
-#     end     -- end times of simulation
-
-def pag_rate(filename,input_dir,cells,hz,start,end):
-    stims = {}   
-    for i in np.arange(0,len(hz)):
-        interval = 1000.0/hz[i]
-        for cell in cells:
-            spk = start[i]
-            spike_ints = np.random.poisson(interval,100)
-            for spike_int in spike_ints:
-                if not stims.get(cell):
-                    stims[cell] = []
-                spk += spike_int
-                if spk <= end[i]:
-                    stims[cell].append(spk)
-    write_file(os.path.join(input_dir, filename), stims, 'PAG_aff_virt')
-    '''
-    with open(os.path.join(input_dir,filename),'w') as file:
-        file.write('gid spike-times\n')
-        for key, value in stims.items():
-            file.write(str(key)+' '+','.join(str(x) for x in value)+'\n')   
-    '''
-    return
-def bladder_rate(filename,input_dir,cells,hz,start,end):
-    stims = {} 
-    for i in np.arange(0,len(hz)):
-        interval = 1000.0/hz[i]
-        for cell in cells:
-            spk = start[i]
-            spike_ints = np.random.poisson(interval,100)
-            for spike_int in spike_ints:
-                if not stims.get(cell):
-                    stims[cell] = []
-                spk += spike_int
-                if spk <= end[i]:
-                    stims[cell].append(spk)
-
-    write_file(os.path.join(input_dir, filename), stims, 'Blad_aff_virt')
-    '''
-    with open(os.path.join(input_dir,filename),'w') as file:
-        file.write('gid spike-times\n')
-        for key, value in stims.items():
-            file.write(str(key)+' '+','.join(str(x) for x in value)+'\n')   
-    '''
-    return
 ###################################################################################################
 # bladder_rate() will generate a spike train corresponding to the filling/voiding of the bladder
 # INPUTS: filename  -- name of the file to write bladder spikes to
@@ -241,7 +189,7 @@ if __name__ == '__main__':
   delay = 0 # ms 1000
   
   # (begin_void,end_void,v_time,v_vol) = bladder_rate(output_file, input_dir, fill, void, max_v, cells, start, mid + delay, duration)
-  begin_void = 50000
+  begin_void = 1000
   end_void= 60000
   # Create Bladder afferent input spikes --------------------
   output_file = 'Blad_spikes.csv'
@@ -254,7 +202,7 @@ if __name__ == '__main__':
   start = [0.0, begin_void - delay]
   end = [begin_void - delay , end_void + delay]
   
-  bladder_rate(output_file, input_dir, cells, hz, start, end)
+  generate_poisson(output_file, input_dir, cells, hz, start, end, 'Blad_aff_virt')
   
   # Create EUS afferent input spikes --------------------
   output_file = 'EUS_spikes.csv'
@@ -267,7 +215,7 @@ if __name__ == '__main__':
   start = [0.0, 48000, 52000]
   end = [48000 , 52000, 60000.0]
   
-  eus_rate(output_file, input_dir, cells, hz, start, end)
+  generate_poisson(output_file, input_dir, cells, hz, start, end, 'EUS_aff_virt')
 
   # Create PAG afferent input spikes --------------------
   output_file = 'PAG_spikes.csv'
@@ -279,4 +227,4 @@ if __name__ == '__main__':
               # (Blok et al. 2000)
   start = [0.0, begin_void - delay]
   end = [begin_void - delay , end_void + delay]
-  pag_rate(output_file, input_dir, cells, hz, start, end)
+  generate_poisson(output_file, input_dir, cells, hz, start, end, 'PAG_aff_virt')
