@@ -1,2 +1,2 @@
-node_type_id model_type pop_name potential
-100 virtual Blad_aff_virt exc
+node_type_id potential pop_name model_type
+100 exc Blad_aff_virt virtual

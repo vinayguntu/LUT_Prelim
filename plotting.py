@@ -1,7 +1,5 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import pandas as pd
-from bmtk.utils.reports.spike_trains import SpikeTrains
 
 
 def plot_figure(means, stdevs, n_steps, dt, tstep=100, fbmod=None, savefig=True):
