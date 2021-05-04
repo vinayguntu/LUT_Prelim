@@ -1,5 +1,5 @@
 from bmtk.simulator.bionet.modules.sim_module import SimulatorMod
-from bmtk.utils.reports.spike_trains import PoissonSpikeGenerator
+from bmtk.utils.reports.spike_trains import PoissonSpikeGenerator, SpikeTrains
 from bmtk.simulator.bionet.io_tools import io
 from neuron import h
 from bmtk.simulator import bionet
@@ -334,19 +334,13 @@ class FeedbackLoop(SimulatorMod):
         self._set_spike_detector(sim)
 
     def save_aff(self, path):
-        blad_spikes = PoissonSpikeGenerator(population='Bladaff')
-        for gid in self._high_level_neurons:
-            for t in self._spike_events[gid]:
-                blad_spikes.add_spike(node_id=gid,population='Bladaff',timestamp=t)
-        blad_spikes.to_sonata(os.path.join(path,'Bladaff_spikes.h5'))
-        blad_spikes.to_csv(os.path.join(path,'Bladaff_spikes.csv'))
-
-        pag_spikes = PoissonSpikeGenerator(population='PAGaff')
-        for gid in self._pag_neurons:
-            for t in self._spike_events[gid]:
-                pag_spikes.add_spike(node_id=gid,population='PAGaff',timestamp=t)
-        pag_spikes.to_sonata(os.path.join(path,'PAGaff_spikes.h5'))
-        pag_spikes.to_csv(os.path.join(path,'PAGaff_spikes.csv'))
+        populations = {'Bladaff':'_high_level_neurons','PAGaff':'_pag_neurons'}
+        for pop_name, node_name in populations.items():
+            spiketrains = SpikeTrains(population=pop_name)
+            for gid in getattr(self,node_name):
+                spiketrains.add_spikes(gid,self._spike_events[gid],population=pop_name)
+            spiketrains.to_sonata(os.path.join(path,pop_name+'_spikes.h5'))
+            spiketrains.to_csv(os.path.join(path,pop_name+'_spikes.csv'))
 
     def finalize(self, sim):
         pass
