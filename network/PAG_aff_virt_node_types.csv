@@ -1,2 +1,2 @@
-node_type_id potential pop_name model_type
-100 exc PAG_aff_virt virtual
+node_type_id model_type potential pop_name
+100 virtual exc PAG_aff_virt
