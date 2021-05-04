@@ -225,8 +225,7 @@ class FeedbackLoop(SimulatorMod):
         """
 
         # Calculate the avg number of spikes per neuron
-        # return
-        block_length = sim.nsteps_block*sim.dt/1000.0  #  time length of previous block of simulation TODO: precalcualte /100
+        block_length = sim.nsteps_block*sim.dt/1000.0  #  time length of previous block of simulation TODO: precalcualte /1000
         n_gids = 0
         n_spikes = 0
         for gid, tvec in self._spike_records.items():
@@ -275,59 +274,56 @@ class FeedbackLoop(SimulatorMod):
 
         # Update blad aff firing rate
         t = sim.h.t-block_length*1000.0
-        if fr > 0:
-            PGN_fr = pgn_fire_rate(fr)
 
-            # Filling: 0 - 7000 ms
-            # if t < 7000 and vol < max_v:
-		# vol = fill*t*150 + v_init
-			
-			# Filling: 0 - 54000 ms
-            if t < 60000 and vol < max_v:
-                vol = fill*t*20 + v_init
-           
-			# # Voiding: 7000 - 10,000 ms
-            # else:
-                # vol = max_v - void*(10000-t)*100
+        PGN_fr = pgn_fire_rate(fr)
+
+        # Filling: 0 - 7000 ms
+        # if t < 7000 and vol < max_v:
+            # vol = fill*t*150 + v_init
+        
+        # Filling: 0 - 54000 ms
+        if t < 60000 and vol < max_v:
+            vol = fill*t*20 + v_init
+       
+        # # Voiding: 7000 - 10,000 ms
+        # else:
+            # vol = max_v - void*(10000-t)*100
 
 
-		   # Voiding: 54000 - 60000 ms
-            # else:
-                # vol = max_v - void*(60000-t)*100
+       # Voiding: 54000 - 60000 ms
+        # else:
+            # vol = max_v - void*(60000-t)*100
 
-            # Maintain minimum volume
-            if vol < v_init:
-                vol = v_init
-            grill_vol = blad_vol(vol)
+        # Maintain minimum volume
+        if vol < v_init:
+            vol = v_init
+        grill_vol = blad_vol(vol)
 
-            # Calculate pressure using Grill equation
-            p = pressure(PGN_fr, grill_vol)
+        # Calculate pressure using Grill equation
+        p = pressure(PGN_fr, grill_vol)
 
-            # Update global pressure (to be used to determine if EUS motor
-            # needs to be updated for guarding reflex)
-            self._prev_glob_press = self._glob_press
-            self._glob_press = p 
+        # Update global pressure (to be used to determine if EUS motor
+        # needs to be updated for guarding reflex)
+        self._prev_glob_press = self._glob_press
+        self._glob_press = p 
 
-            # Calculate bladder afferent firing rate using Grill equation
-            bladaff_fr = blad_aff_fr(p)
+        # Calculate bladder afferent firing rate using Grill equation
+        bladaff_fr = blad_aff_fr(p)
 
-            io.log_info('PGN firing rate = %.2f Hz' %fr)
-            io.log_info('Volume = %.2f ml' %vol)
-            io.log_info('Pressure = %.2f cm H20' %p)
-            io.log_info('Bladder afferent firing rate = {:.2f} Hz'.format(bladaff_fr))
+        io.log_info('PGN firing rate = %.2f Hz' %fr)
+        io.log_info('Volume = %.2f ml' %vol)
+        io.log_info('Pressure = %.2f cm H20' %p)
+        io.log_info('Bladder afferent firing rate = {:.2f} Hz'.format(bladaff_fr))
 
-            # Save values in appropriate lists
-            self.times.append(t)
-            self.b_vols.append(vol)
-            self.b_pres.append(p)
-			# b_aff.append(bladaff_fr)
-			# pgn_fir.append(fr)
+        # Save values in appropriate lists
+        self.times.append(t)
+        self.b_vols.append(vol)
+        self.b_pres.append(p)
+        # b_aff.append(bladaff_fr)
+        # pgn_fir.append(fr)
 
-            # Set the activity of high-level neuron
-            self._activate_hln(sim, block_interval, bladaff_fr)
-
-        else:
-            self._activate_hln(sim, block_interval, fr) 
+        # Set the activity of high-level neuron
+        self._activate_hln(sim, block_interval, bladaff_fr)
 
         # NEURON requires resetting NetCon.record() every time we read the tvec.
         pc.barrier()
