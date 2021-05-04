@@ -186,7 +186,7 @@ class FeedbackLoop(SimulatorMod):
 
             nc = h.NetCon(self._vect_stim, syn)
             nc.threshold = sim.net.spike_threshold
-            nc.weight[0] = 0.5
+            nc.weight[0] = 0.2
             nc.delay = 1.0
             self._netcons[gid] = nc
 
@@ -203,7 +203,7 @@ class FeedbackLoop(SimulatorMod):
 
             nc = h.NetCon(self._vect_stim, syn)
             nc.threshold = sim.net.spike_threshold
-            nc.weight[0] = 0.5
+            nc.weight[0] = 0.2
             nc.delay = 1.0
             self._netcons[gid] = nc
 
@@ -252,7 +252,7 @@ class FeedbackLoop(SimulatorMod):
         # Grill function returning pressure in units of cm H20
 	    # Grill, et al. 2016
         def pressure(fr,v):
-            p = 3.0*fr + 0.5*v
+            p = 0.2*fr + 1.0*v
             p = max(p,0.0)
             return p 
 
