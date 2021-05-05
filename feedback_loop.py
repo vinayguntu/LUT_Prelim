@@ -1,5 +1,5 @@
 from bmtk.simulator.bionet.modules.sim_module import SimulatorMod
-from bmtk.utils.reports.spike_trains import PoissonSpikeGenerator
+from bmtk.utils.reports.spike_trains import PoissonSpikeGenerator, SpikeTrains
 from bmtk.simulator.bionet.io_tools import io
 from neuron import h
 from bmtk.simulator import bionet
@@ -56,31 +56,38 @@ class FeedbackLoop(SimulatorMod):
 
         # This is where you can use the firing-rate of the low-level neurons to generate a set of spike times for the
         # next block
-        if firing_rate != 0.0:
+        if firing_rate > 0.0:
             psg = PoissonSpikeGenerator()
-            psg.add(node_ids=[0], firing_rate=firing_rate, times=(next_block_tstart, next_block_tstop)) # sec
-            spikes = psg.get_times([0])*1000 # convert sec to ms
-            n_spikes = len(spikes)
-            io.log_info('     _activate_hln firing rate: {:.2f} Hz'.format(n_spikes/block_length))
-            if n_spikes > 0:
-                # Update firing rate of bladder afferent neurons
-                for gid in self._high_level_neurons:
+            # # Use homogeneous input
+            # psg.add(node_ids=[0], firing_rate=firing_rate, times=(next_block_tstart, next_block_tstop)) # sec
+            # spikes = psg.get_times([0])*1000 # convert sec to ms
+            # n_spikes = len(spikes)
+            # io.log_info('     _activate_hln firing rate: {:.2f} Hz'.format(n_spikes/block_length))
+            # if n_spikes > 0:
+                # # Update firing rate of bladder afferent neurons
+                # for gid in self._high_level_neurons:
+                    # self._spike_events[gid] = np.concatenate((self._spike_events[gid],spikes))
+                    # nc = self._netcons[gid]
+                    # for t in spikes:
+                        # nc.event(t)
+                # io.log_info('Last spike: {:.1f} ms'.format(spikes[-1]))
+            # Use inhomogeneous input
+            n = len(self._high_level_neurons)
+            psg.add(node_ids=self._high_level_neurons, firing_rate=firing_rate, times=(next_block_tstart, next_block_tstop))
+            n_spikes = np.zeros(n)
+            last_spike = 0.0
+            for i, gid in enumerate(self._high_level_neurons):
+                spikes = psg.get_times(gid)*1000
+                n_spikes[i] = len(spikes)
+                if n_spikes[i] > 0:
                     self._spike_events[gid] = np.concatenate((self._spike_events[gid],spikes))
                     nc = self._netcons[gid]
                     for t in spikes:
                         nc.event(t)
-                io.log_info('Last spike: {:.1f} ms'.format(spikes[-1]))
-            ## Use inhomogeneous input
-            #n = len(self._high_level_neurons)
-            #psg.add(node_ids=list(range(n)), firing_rate=firing_rate, times=(next_block_tstart, next_block_tstop))            
-            #n_spikes = np.zeros(n)
-            #for i, gid in enumerate(self._high_level_neurons):
-            #    self._spike_events = psg.get_times(i)*1000
-            #    n_spikes[i] = len(self._spike_events)
-            #    nc = self._netcons[gid]
-            #    for t in self._spike_events:
-            #            nc.event(t)
-            #io.log_info('     _activate_hln firing rate: '+','.join(["%.2f" % (ns/block_length) for ns in n_spikes])+' Hz')
+                    last_spike = max(last_spike,spikes[-1])
+            io.log_info('     _activate_hln firing rate: '+','.join(["%.2f" % (ns/block_length) for ns in n_spikes])+' Hz')
+            if last_spike > 0:
+                io.log_info('Last spike: {:.1f} ms'.format(last_spike))
         else:
             io.log_info('     _activate_hln firing rate: 0')
 
@@ -118,29 +125,37 @@ class FeedbackLoop(SimulatorMod):
         #             nc.event(t)
 ################ Activate higher order based on afferent firing rate ##############################					
         if firing_rate > 10:
-            psg = PoissonSpikeGenerator()
             pag_fr = 15
-            psg.add(node_ids=[0], firing_rate=pag_fr, times=(next_block_tstart, next_block_tstop))
-            spikes = psg.get_times([0])*1000
-            n_spikes = len(spikes)
-            io.log_info('     pag firing rate: {:.2f} Hz'.format(n_spikes/block_length))
-            if n_spikes>0: io.log_info('Last spike: {:.1f} ms'.format(spikes[-1]))
-            for gid in self._pag_neurons:
-                self._spike_events[gid] = np.concatenate((self._spike_events[gid],spikes))
-                nc = self._netcons[gid]
-                for t in spikes:
-                    nc.event(t)
-            ## Use inhomogeneous input
-            #n = len(self._pag_neurons)
-            #psg.add(node_ids=list(range(n)), firing_rate=pag_fr, times=(next_block_tstart, next_block_tstop))            
-            #n_spikes = np.zeros(n)
-            #for i, gid in enumerate(self._pag_neurons):
-            #    self._spike_events = psg.get_times(i)*1000
-            #    n_spikes[i] = len(self._spike_events)
-            #    nc = self._netcons[gid]
-            #    for t in self._spike_events:
-            #            nc.event(t)
-            #io.log_info('     pag firing rate: '+','.join(["%.2f" % (ns/block_length) for ns in n_spikes])+' Hz')
+            psg = PoissonSpikeGenerator()
+            # # Use homogeneous input
+            # psg.add(node_ids=[0], firing_rate=pag_fr, times=(next_block_tstart, next_block_tstop))
+            # spikes = psg.get_times([0])*1000
+            # n_spikes = len(spikes)
+            # io.log_info('     pag firing rate: {:.2f} Hz'.format(n_spikes/block_length))
+            # if n_spikes>0:
+                # io.log_info('Last spike: {:.1f} ms'.format(spikes[-1]))
+            # for gid in self._pag_neurons:
+                # self._spike_events[gid] = np.concatenate((self._spike_events[gid],spikes))
+                # nc = self._netcons[gid]
+                # for t in spikes:
+                    # nc.event(t)
+            # Use inhomogeneous input
+            n = len(self._pag_neurons)
+            psg.add(node_ids=self._pag_neurons, firing_rate=pag_fr, times=(next_block_tstart, next_block_tstop))            
+            n_spikes = np.zeros(n)
+            last_spike = 0.0
+            for i, gid in enumerate(self._pag_neurons):
+                spikes = psg.get_times(gid)*1000
+                n_spikes[i] = len(spikes)
+                if n_spikes[i] > 0:
+                    self._spike_events[gid] = np.concatenate((self._spike_events[gid],spikes))
+                    nc = self._netcons[gid]
+                    for t in spikes:
+                        nc.event(t)
+                    last_spike = max(last_spike,spikes[-1])
+            io.log_info('     pag firing rate: '+','.join(["%.2f" % (ns/block_length) for ns in n_spikes])+' Hz')
+            if last_spike > 0:
+                io.log_info('Last spike: {:.1f} ms'.format(last_spike))
 
         io.log_info('\n')
 
@@ -171,7 +186,7 @@ class FeedbackLoop(SimulatorMod):
 
             nc = h.NetCon(self._vect_stim, syn)
             nc.threshold = sim.net.spike_threshold
-            nc.weight[0] = 0.5
+            nc.weight[0] = 0.2
             nc.delay = 1.0
             self._netcons[gid] = nc
 
@@ -188,7 +203,7 @@ class FeedbackLoop(SimulatorMod):
 
             nc = h.NetCon(self._vect_stim, syn)
             nc.threshold = sim.net.spike_threshold
-            nc.weight[0] = 0.5
+            nc.weight[0] = 0.2
             nc.delay = 1.0
             self._netcons[gid] = nc
 
@@ -210,17 +225,15 @@ class FeedbackLoop(SimulatorMod):
         """
 
         # Calculate the avg number of spikes per neuron
-        # return
-        block_length = sim.nsteps_block*sim.dt/1000.0  #  time length of previous block of simulation TODO: precalcualte /100
+        block_length = sim.nsteps_block*sim.dt/1000.0  #  time length of previous block of simulation TODO: precalcualte /1000
         n_gids = 0
         n_spikes = 0
         for gid, tvec in self._spike_records.items():
             n_gids += 1
             n_spikes += len(list(tvec))  # use tvec generator. Calling this deletes the values in tvec
 
-        avg_spikes = n_spikes/(float(n_gids)*1.0)
-
         # Calculate the firing rate the the low-level neuron(s)
+        avg_spikes = n_spikes/(float(n_gids)*1.0)
         fr = avg_spikes/float(block_length)
     
         # Grill function for polynomial fit according to PGN firing rate
@@ -228,28 +241,19 @@ class FeedbackLoop(SimulatorMod):
         def pgn_fire_rate(x):
             f = 2.0E-03*x**3 - 3.3E-02*x**2 + 1.8*x - 0.5
             f = max(f,0.0)
-            # Take absolute value of firing rate if negative
-            # if f < 0:
-            #     f *= -1
-
             return f
 
         # Grill function for polynomial fit according to bladder volume
 	    # Grill, et al. 2016
         def blad_vol(vol):
             f = 1.5*20*vol - 10 #1.5*20*vol-10
-
             return f
 
         # Grill function returning pressure in units of cm H20
 	    # Grill, et al. 2016
         def pressure(fr,v):
-            p = 3.0*fr + 0.5*v
-
-            # Round negative pressure up to 0
-            if p < 0:
-                p = 0
-
+            p = 0.2*fr + 1.0*v
+            p = max(p,0.0)
             return p 
 
         # Grill function returning bladder afferent firing rate in units of Hz
@@ -257,10 +261,6 @@ class FeedbackLoop(SimulatorMod):
         def blad_aff_fr(p):
             fr1 = -3.0E-08*p**5 + 1.0E-5*p**4 - 1.5E-03*p**3 + 7.9E-02*p**2 - 0.6*p
             fr1 = max(fr1,0.0)
-            # Take hard max or absolute value of negative firing rates
-            # if fr1 < 0:
-            #     fr1 *= -1#fr1 *= 0
-
             return fr1 # Using scaling factor of 5 here to get the correct firing rate range
 
         # Calculate bladder volume using Grill's polynomial fit equation
@@ -274,78 +274,69 @@ class FeedbackLoop(SimulatorMod):
 
         # Update blad aff firing rate
         t = sim.h.t-block_length*1000.0
-        if fr > 0:
-            PGN_fr = pgn_fire_rate(fr)
 
-            # Filling: 0 - 7000 ms
-            # if t < 7000 and vol < max_v:
-		# vol = fill*t*150 + v_init
-			
-			# Filling: 0 - 54000 ms
-            if t < 60000 and vol < max_v:
-                vol = fill*t*20 + v_init
-           
-			# # Voiding: 7000 - 10,000 ms
-            # else:
-                # vol = max_v - void*(10000-t)*100
+        PGN_fr = pgn_fire_rate(fr)
+
+        # Filling: 0 - 7000 ms
+        # if t < 7000 and vol < max_v:
+            # vol = fill*t*150 + v_init
+        
+        # Filling: 0 - 54000 ms
+        if t < 60000 and vol < max_v:
+            vol = fill*t*20 + v_init
+       
+        # # Voiding: 7000 - 10,000 ms
+        # else:
+            # vol = max_v - void*(10000-t)*100
 
 
-		   # Voiding: 54000 - 60000 ms
-            # else:
-                # vol = max_v - void*(60000-t)*100
+       # Voiding: 54000 - 60000 ms
+        # else:
+            # vol = max_v - void*(60000-t)*100
 
-            # Maintain minimum volume
-            if vol < v_init:
-                vol = v_init
-            grill_vol = blad_vol(vol)
+        # Maintain minimum volume
+        if vol < v_init:
+            vol = v_init
+        grill_vol = blad_vol(vol)
 
-            # Calculate pressure using Grill equation
-            p = pressure(PGN_fr, grill_vol)
+        # Calculate pressure using Grill equation
+        p = pressure(PGN_fr, grill_vol)
 
-            # Update global pressure (to be used to determine if EUS motor
-            # needs to be updated for guarding reflex)
-            self._prev_glob_press = self._glob_press
-            self._glob_press = p 
+        # Update global pressure (to be used to determine if EUS motor
+        # needs to be updated for guarding reflex)
+        self._prev_glob_press = self._glob_press
+        self._glob_press = p 
 
-            # Calculate bladder afferent firing rate using Grill equation
-            bladaff_fr = blad_aff_fr(p)
+        # Calculate bladder afferent firing rate using Grill equation
+        bladaff_fr = blad_aff_fr(p)
 
-            io.log_info('PGN firing rate = %.2f Hz' %fr)
-            io.log_info('Volume = %.2f ml' %vol)
-            io.log_info('Pressure = %.2f cm H20' %p)
-            io.log_info('Bladder afferent firing rate = {:.2f} Hz'.format(bladaff_fr))
+        io.log_info('PGN firing rate = %.2f Hz' %fr)
+        io.log_info('Volume = %.2f ml' %vol)
+        io.log_info('Pressure = %.2f cm H20' %p)
+        io.log_info('Bladder afferent firing rate = {:.2f} Hz'.format(bladaff_fr))
 
-            # Save values in appropriate lists
-            self.times.append(t)
-            self.b_vols.append(vol)
-            self.b_pres.append(p)
-			# b_aff.append(bladaff_fr)
-			# pgn_fir.append(fr)
+        # Save values in appropriate lists
+        self.times.append(t)
+        self.b_vols.append(vol)
+        self.b_pres.append(p)
+        # b_aff.append(bladaff_fr)
+        # pgn_fir.append(fr)
 
-            # Set the activity of high-level neuron
-            self._activate_hln(sim, block_interval, bladaff_fr)
-
-        else:
-            self._activate_hln(sim, block_interval, fr) 
+        # Set the activity of high-level neuron
+        self._activate_hln(sim, block_interval, bladaff_fr)
 
         # NEURON requires resetting NetCon.record() every time we read the tvec.
         pc.barrier()
         self._set_spike_detector(sim)
 
     def save_aff(self, path):
-        blad_spikes = PoissonSpikeGenerator(population='Bladaff')
-        for gid in self._high_level_neurons:
-            for t in self._spike_events[gid]:
-                blad_spikes.add_spike(node_id=gid,population='Bladaff',timestamp=t)
-        blad_spikes.to_sonata(os.path.join(path,'Bladaff_spikes.h5'))
-        blad_spikes.to_csv(os.path.join(path,'Bladaff_spikes.csv'))
-
-        pag_spikes = PoissonSpikeGenerator(population='PAGaff')
-        for gid in self._pag_neurons:
-            for t in self._spike_events[gid]:
-                pag_spikes.add_spike(node_id=gid,population='PAGaff',timestamp=t)
-        pag_spikes.to_sonata(os.path.join(path,'PAGaff_spikes.h5'))
-        pag_spikes.to_csv(os.path.join(path,'PAGaff_spikes.csv'))
+        populations = {'Bladaff':'_high_level_neurons','PAGaff':'_pag_neurons'}
+        for pop_name, node_name in populations.items():
+            spiketrains = SpikeTrains(population=pop_name)
+            for gid in getattr(self,node_name):
+                spiketrains.add_spikes(gid,self._spike_events[gid],population=pop_name)
+            spiketrains.to_sonata(os.path.join(path,pop_name+'_spikes.h5'))
+            spiketrains.to_csv(os.path.join(path,pop_name+'_spikes.csv'))
 
     def finalize(self, sim):
         pass
