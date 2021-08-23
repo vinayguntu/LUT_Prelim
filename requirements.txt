@@ -48,7 +48,7 @@ nest-asyncio==1.4.3
 networkx==2.5
 NEURON==7.8.2
 nflows==0.14
-notebook==6.2.0
+notebook==6.4.1
 numpy==1.19.5
 oauthlib==3.1.0
 opt-einsum==3.3.0
