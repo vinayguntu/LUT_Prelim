@@ -49,7 +49,7 @@ networkx==2.5
 NEURON==7.8.2
 nflows==0.14
 notebook==6.2.0
-numpy==1.19.5
+numpy==1.22.0
 oauthlib==3.1.0
 opt-einsum==3.3.0
 packaging==20.8
